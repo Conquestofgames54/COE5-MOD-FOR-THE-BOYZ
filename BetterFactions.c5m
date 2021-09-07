@@ -2202,7 +2202,6 @@ newritual "Tartarian Gate" #High end spell, summons titans but costs a temple.
 	level 3
 	cost 5 250
 	terr -2
-	destroyterr 100
 	summoning
 	addstring "c*Tartarian Cyclops"
 	addstring "c*Tartarian Smith"
