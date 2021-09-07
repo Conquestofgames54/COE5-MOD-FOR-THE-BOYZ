@@ -1,0 +1,7730 @@
+icon "betterbanner.tga"
+description "This mod is intended to give all factions new abilities, units and rituals. The goal is to have a living and breathing Elysium"
+
+####################### Tools/ To-Do List
+
+#to do list 
+#make the sea father a spell about flooding shit
+#make pale ones destroy shit and make their spells fight shit.
+#make dyrad class
+#make illisionist
+#make druid and dyrad able to destroy brigand lairs
+#make terr alt for savanna and desert.
+#Make ability to cut fungus forest
+#make raids give bloods
+
+#For Testing
+#playerevent
+#addresources -2 4 1000
+#addresources -2 1 1000
+#addresources -2 0 1000
+#addresources -2 7 1000
+#addresources -2 8 1000
+#addresources -2 9 1000
+#addresources -2 10 1000
+#addresources -2 5 1000
+#addresources -2 3 1000
+#addresources -2 2 1000
+#addresources -2 12 1000
+#endevent
+
+################## Hummanise 
+
+selectmonster "Dwarf Worker"
+	human
+	
+selectmonster "Rune Smith"
+	human
+	
+selectmonster "Elder Rune Smith"
+	human
+	
+selectmonster "Outdoor Dwarf"
+	human
+	
+selectmonster "Dwarf Arbalest"
+	human
+	
+selectmonster "Dwarf"
+	human
+	
+selectmonster "Dwarf Warrior"
+	human
+	
+selectmonster "Dwarf Guard"
+	human
+	
+selectmonster "Dwarf Commander"
+	human
+	
+selectmonster "Queen's Councilor"
+	human
+	
+selectmonster "Dwarven Ballista"
+	human
+	
+selectmonster "Rime Warrior"
+	human
+	
+selectmonster "Rime Guard"
+	human
+	
+selectmonster "Rime Brand Warrior"
+	human
+	
+selectmonster "Rime Brand Guard"
+	human
+	
+selectmonster "Rime Branded Arbalest"
+	human
+	
+selectmonster "Rime Branded Ballista"
+	human
+	
+selectmonster "Furnace Warrior"
+	human
+	
+selectmonster "Furnace Guard"
+	human
+	
+selectmonster "Flame Brand Warrior"
+	human
+	
+selectmonster "Flame Brand Guard"
+	human
+	
+selectmonster "Flame Branded Arbalest"
+	human
+	
+selectmonster "Flame Branded Ballista"
+	human
+	
+selectmonster "Dvalin's Warrior"
+	human
+	
+selectmonster "Council Guard"
+	human
+	
+selectmonster "Dvalin's Best"
+	human
+	
+selectmonster "Queen's Guard"
+	human
+	
+selectmonster "Defender of the Halls"
+	human
+	
+selectmonster "Earth Branded Ballista"
+	human
+	
+selectmonster "Chosen of Dvalin"
+	human
+	
+selectmonster "Chosen of Dvalin" 1
+	human
+	
+selectmonster "Satyr"
+	human
+	
+selectmonster "Satyr Warrior"
+	human
+	
+selectmonster "Satyr Javelinist"
+	human
+	
+selectmonster "Satyr Hoplite"
+	human
+
+selectmonster "Steel Hoplite"
+	human
+	
+selectmonster "Satyr Commander"
+	human
+	
+selectmonster "Hoplite Commander"
+	human
+	
+selectmonster "Dai Bakemono"
+	human
+	
+selectmonster "Bakemono General"
+	human
+	
+selectmonster "Dai Bakemono Archer"
+	human
+	
+selectmonster "Bakemono Sorceror"
+	human
+	
+selectmonster "Bakemono Great Sorceror"
+	human
+	
+selectmonster "Bakemono Kunshu"
+	human
+	
+selectmonster "Bakemono O Kunshu"
+	human
+	
+selectmonster "O Bakemono"
+	human
+	
+selectmonster "Airya Spearman"
+	human
+	
+selectmonster "Airya Archer"
+	human
+	
+selectmonster "Airya Swordsman"
+	human
+	
+selectmonster "Iceclad"
+	human
+	
+selectmonster "Dawn Guard"
+	human
+	
+selectmonster "Dusk Guard"
+	human
+	
+selectmonster "Cloud Lord"
+	human
+	
+selectmonster "Eagle King"
+	human
+	
+selectmonster "Storm Captain"
+	human
+	
+selectmonster "Cloud Caster"
+	human
+	
+selectmonster "Airya Scout"
+	human
+	
+selectmonster "Ogre"
+	human
+
+selectmonster "Ogre Chief"
+	human
+
+##################### Terrain Edits
+
+selectterr 1 #hobo city
+hands 1
+sacr 2
+fungus 3
+herbs 3
+
+selectterr 3 #pk temple
+trade 2
+hands 2
+sacr 4
+gems 4096 #random
+
+selectterr 4 #Ancient Forest. All factions can own it and stop it making new creeps.
+ownable
+sacr 2 #Maenads or somthing
+hands 1
+fungus 6
+
+selectterr 5 #Farm
+fungus 1
+herbs 2
+
+selectterr 6 #Farm
+fungus 1
+herbs 2
+
+selectterr 12 #Mountians slower
+apcost 3
+farsight
+
+selectterr 13 #library
+library2
+sacr 2
+hands 1
+gold 4
+
+selectterr 16 #gy
+fungus 4
+hands 2 #doubled, this means seeking these out is stronger than just taking towns.
+
+selectterr 17 #town
+trade 2
+
+selectterr 19 #bf.
+ownable #otherwise relics can't be gained
+fungus 4
+hands 2 #again doubled
+
+selectterr 20 #stone tower 1
+gold 1 #from travel tarriffs.
+trade 1
+
+selectterr 21 #stone tower 2
+gold 1
+trade 1
+
+selectterr 22 #castle
+sacr 3
+trade 2
+
+selectterr 23 #Demo Citadel
+library1
+bonusrelics 1
+
+selectterr 25 #Temple of El
+gold 3
+sacr 2
+library1
+gems 4096
+
+selectterr 26 #Witch tower
+gold 1
+fungus 3
+herbs 3
+weed 1
+gems 4096
+
+selectterr 27 #Sea
+apcost 1 #Cheaper to walk in, makes aquatic units much better
+
+selectterr 28 #druid hut
+apcost 1 #why was it slow?
+herbs 3
+weed 2
+gold 2
+
+selectterr 29 #Warlock tower
+library1
+gold 3
+trade 1
+
+selectterr 30 #Barons castle
+trade 1 #This means you can always trade for iron from the go.
+
+selectterr 32 #Troll Pit
+sacr 2
+hands 1
+
+selectterr 33 #Gold stream
+iron 1
+
+selectterr 37 #shadow forest
+hands 1
+fungus 6
+
+selectterr 38 #old castle ruin
+hands 2
+fungus 4
+sacr 2
+library2
+dead 25
+
+selectterr 39 #ancient temple
+gold 3
+sacr 2
+hands 1
+
+selectterr 40 #gems red?
+gems 2 #doubled
+gold 3
+apcost 1
+
+selectterr 41 #gems blue
+gems 16
+gold 3
+apcost 1
+
+selectterr 42 #gems white?
+gems 64
+gold 3
+apcost 1
+
+selectterr 43 #gems green?
+gems 1024
+gold 3
+apcost 1
+
+selectterr 45 #red corral
+gold 2
+apcost 1
+
+selectterr 46 #White corral
+gold 2
+apcost 1
+
+selectterr 47 #Rock Ground
+tempimmune
+
+selectterr 48 #bridge
+gold 2
+trade 1
+
+selectterr 49 #bridge
+gold 2
+trade 1
+
+selectterr 50 #Void
+dead 3 #thematic
+
+selectterr 53 #Magma
+apcost 2
+
+selectterr 54 #Hellscape frozen
+tempimmune
+
+selectterr 55 #Hellscape
+tempimmune
+
+selectterr 56 #Hellscape ash
+tempimmune
+
+selectterr 57 #infernal tower
+gold 2
+sacr 2
+hands 2
+bonusrelics 2
+tempimmune
+
+selectterr 58 #city of sinners
+gold 6
+trade 3
+sacr 4
+hands 3
+bonusrelics 2
+tempimmune
+
+selectterr 59 #infernal village
+sacr 2
+hands 1
+tempimmune
+
+selectterr 60 #Citadel of Belphegor
+gold 2
+sacr 4
+hands 2
+library1
+bonusrelics 2
+tempimmune
+
+selectterr 61 #Citadel of Sin
+gold 2
+sacr 4
+hands 2
+library1
+bonusrelics 2
+tempimmune
+
+selectterr 62 #Citadel of Abbadon
+gold 2
+sacr 4
+hands 2
+library1
+bonusrelics 2
+tempimmune
+
+selectterr 63 #Citadel of Buer
+gold 2
+sacr 4
+hands 2
+library1
+bonusrelics 2
+tempimmune
+
+selectterr 64 #Citadel of Geryron
+gold 4
+sacr 4
+hands 2
+library1
+bonusrelics 2
+tempimmune
+
+selectterr 65 #Citadel of the dead. True Hades capital.
+goldboost
+gold 5
+sacr 10
+hands 2
+bonusrelics 2
+
+selectterr 67 #River
+apcost 1
+
+selectterr 69 #Shallow Sea. Makes traveling by water viable.
+apcost 1
+
+selectterr 70 #hobo village
+sacr 1
+fungus 2
+herbs 2
+
+selectterr 72 #Watch tower
+trade 1
+
+selectterr 74 #trading post
+apcost 1
+
+selectterr 79 #port
+citadel
+trade 3
+hands 2
+
+selectterr 80 #port
+citadel
+trade 3
+hands 2
+
+selectterr 81 #port
+citadel
+trade 3
+hands 2
+
+selectterr 82 #port
+citadel
+trade 3
+hands 2
+
+#The idea with the capital changes are to make most factions really want to take and hold it. Now it gives a gold/trade boost and many hands/sacrifices.
+selectterr 83 #capital
+citadel
+gold 8
+trade 3
+hands 2
+sacr 3
+goldboost
+
+selectterr 84 #cap slums
+citadel
+gold 3
+sacr 3
+hands 4
+trade 2
+library2
+
+selectterr 85 #cap temple
+citadel
+gold 4
+sacr 5
+hands 2
+
+selectterr 86 #cap trade
+citadel
+tradeboost #This doesn't have a tooltip but still seems to work.
+gold 8
+trade 5
+sacr 4
+hands 3
+
+selectterr 87 #spoopy city
+citadel
+temple
+library1
+hands 3
+gold 3
+sacr 2
+trade 2
+
+selectterr 89 #magic column
+gems 4096 #random
+sacr 2
+apcost 1
+
+selectterr 90 #stonehenge
+herbs 5
+fungus 4
+weed 2
+
+selectterr 91 #shipstones
+herbs 4
+fungus 4
+weed 2
+
+selectterr 92 #temple
+gold 3
+sacr 2
+hands 1
+
+selectterr 93 #temple pyramid not the pk one
+gold 4
+sacr 4
+hands 3
+
+selectterr 95 #crystal globe
+bonusrelics 1
+
+selectterr 97 #iron bog. Made stronger to force some fighting in the wilds for those who want it's sweet iron supply.
+iron 1
+fungus 4
+herbs 3
+weed 2
+
+selectterr 98 #oasis
+gold 2
+trade 2
+sacr 2
+apcost 1
+forest
+
+selectterr 100 #labyrinth
+gold 4
+sacr 2
+hands 2
+
+selectterr 107 #Swamp
+fungus 3
+herbs 3
+weed 1
+
+selectterr 110 #Crystal Tower
+library1
+bonusrelics 1
+hands 1
+
+selectterr 112 #Bako cave
+sacr 1
+gold 2
+gems 4096
+
+selectterr 113 #Barbarian Camp
+gold 2
+herbs 2
+hands 1
+sacr 1
+trade 1
+
+selectterr 114 #desert palace
+gold 3
+sacr 2
+hands 1
+trade 2
+apcost 1
+
+selectterr 116 #Destroyed Jungle
+fungus 1 #had nothing before dispite wither wood's description
+apcost 1 #No longer slow
+
+selectterr 121 #pale ones cave
+mine
+gold 1
+iron 1
+sacr 1
+hands 1
+
+selectterr 124 #King's castle
+gold 4
+trade 3
+sacr 4
+hands 1
+goldboost
+tradeboost
+
+selectterr 125 #brigand lair
+woodencitadel
+forestcitadel
+trade 2
+gold 1
+sacr 2
+hands 3
+
+selectterr 126 #Dwarf city
+gold 2
+iron 4
+
+selectterr 130 #Troll Forest
+fungus 2
+herbs 2
+
+selectterr 131 #ancient troll forest
+ownable
+sacr 2
+hands 2
+
+selectterr 135 #haunted capital LA one
+citadel
+gold 3
+sacr 2
+hands 2
+#relic 2
+
+selectterr 136 #haunted slums
+citadel
+gold 1
+sacr 1
+hands 2
+#relic 2
+library2
+
+selectterr 137 #haunted temple dist
+citadel
+temple
+sacr 2
+hands 2
+#relic 2
+
+selectterr 138 #haunted trade dist
+citadel
+trade 3
+sacr 2
+hands 1
+
+selectterr 139 #Fimbul fortress
+library1
+gold 4
+farsight
+gems 72 #white plus blue
+
+selectterr 140 #inf capital
+citadel
+gold 6
+goldboost
+sacr 4
+hands 2
+tempimmune
+
+selectterr 141 #inf capital
+citadel
+gold 3
+sacr 4
+hands 4
+library2
+library1
+tempimmune
+
+selectterr 142 #inf capital
+citadel
+gold 5
+sacr 6
+hands 4
+tempimmune
+
+selectterr 143 #inf capital
+citadel
+gold 6
+trade 6
+sacr 6
+hands 6
+tradeboost
+tempimmune
+
+selectterr 144 #Ghost farm
+apcost 1 #Was slow, no idea why
+gold 2
+sacr 1
+fungus 3
+weed 2
+herbs 3
+
+selectterr 145 #Ghost hamlet
+gold 3
+sacr 1
+hands 1
+
+selectterr 146 #Ghost hamlet
+gold 3
+sacr 1
+hands 1
+
+selectterr 147 #Ghost village
+gold 4
+trade 1
+sacr 2
+hands 1
+
+selectterr 148 #Ghost town
+#citadel
+gold 5
+trade 2
+sacr 4
+hands 3
+walls
+
+selectterr 149 #city of the dead aka Ghost city
+temple
+library2
+gold 6
+trade 2
+sacr 4
+hands 3
+
+
+selectterr 153 #gallows
+gold 1
+hands 2
+fungus 2
+
+selectterr 154 #outpost
+trade 2
+
+selectterr 156 #Crystal Palace
+library1
+
+selectterr 157 #skull cave
+gold 2
+sacr 2
+hands 2
+
+selectterr 158 #Lion tribe village
+apcost 2 #From 3
+pop 10 #from 7
+
+selectterr 159 #Lion tribe 2
+apcost 2 #From 3
+pop 10
+
+selectterr 160 #desert palace 2 the repalaceing
+gold 4
+sacr 2
+hands 1
+trade 2
+apcost 1
+
+selectterr 161 #cultist port
+temple
+sacr 2 #from 1
+
+selectterr 165 #pyramids
+apcost 1
+gold 2
+sacr 1
+trade 1
+hands 2
+bonusrelics 1
+
+selectterr 166 #sphynx
+apcost 1
+gold 2
+trade 1
+bonusrelics 1
+
+selectterr 167 #ziggurat
+gold 3
+sacr 3
+hands 2
+farsight
+
+selectterr 168 #tower bridge
+gold 3
+hands 1
+sacr 2
+trade 2
+farsight
+
+selectterr 169 #tower bridge
+gold 3
+hands 1
+sacr 2
+trade 2
+farsight
+
+selectterr 170 #Deep water gems red?
+gems 2
+gold 2
+
+selectterr 171 #Deep water gems blue?
+gems 16
+gold 2
+
+selectterr 172 #Deep water gems white
+gems 128
+gold 2
+
+selectterr 173 #Deep water gems Green?
+gems 1024
+gold 2
+
+selectterr 174 #Deep Earth gems
+gems 2
+gold 2
+iron 1
+
+selectterr 175 #Deep Earth gems blue
+gems 16
+gold 2
+iron 1
+
+selectterr 176 #Deep Earth gems white
+gems 128
+gold 2
+iron 1
+
+selectterr 177 #Deep Earth gems green
+gems 1024
+gold 3
+iron 1
+
+selectterr 178 #Pearls
+gems 8
+gold 3
+apcost 1
+
+selectterr 179 #DE Gold
+gold 6
+
+selectterr 186 #DE Silver
+gold 4
+
+selectterr 187 #DE Iron
+iron 3
+
+selectterr 188 #Hyena Tribe
+pop 10
+
+selectterr 195 #Fungus Forest
+fungus 5
+herbs 4
+weed 3
+
+selectterr 180 #Ghost capital cap
+citadel
+gold 3
+sacr 4
+hands 3
+
+selectterr 181 #Ghost capital slums
+citadel
+gold 2
+sacr 4
+hands 4
+library2
+
+selectterr 182 #Ghost capital temple
+citadel
+gold 3
+sacr 4
+hands 2
+
+selectterr 183 #Ghost capital trade
+citadel
+gold 3
+sacr 4
+hands 4
+trade 4
+
+selectterr 184 #Ruined house
+
+selectterr 185 #Ruined city
+#walls #CoE5 does wierd things with walls, this does nothing
+hands 1
+
+selectterr 194 #Clouds
+tempimmune
+
+selectterr 196 #crystal forest
+gold 1
+iron 1
+
+selectterr 197 #faery circle. buffed to make up for it's rareness
+herbs 5
+fungus 5
+weed 3
+
+selectterr 198 #Flames
+tempimmune #stops stuff
+
+selectterr 207 #Small capital
+temple
+goldboost
+gold 6
+trade 3
+sacr 4
+hands 4
+library2
+
+selectterr 208 #Bigga clouds
+tempimmune
+
+selectterr 209 #Granite Citadel, Ele
+iron 5
+library2
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 1024
+
+selectterr 210 #Granite Citadel, Ele
+iron 5
+library2
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 1024
+
+selectterr 211 #Granite Citadel, Ele
+iron 5
+library2
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 1024
+
+selectterr 212 #Fire Citadel, Ele
+gold 3
+iron 2
+library2
+temple
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 2
+
+selectterr 213 #Fire Citadel, Ele
+gold 3
+iron 2
+library2
+temple
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 2
+
+selectterr 214 #Fire Citadel, Ele
+gold 3
+iron 2
+library2
+temple
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 2
+
+selectterr 215 #Cloud Citadel, Ele
+gold 4
+library2
+library1
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 128
+
+selectterr 216 #Cloud Citadel, Ele
+gold 4
+library2
+library1
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 128
+
+selectterr 217 #Cloud Citadel, Ele
+gold 4
+library2
+library1
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 128
+
+selectterr 218 #Coral Citadel, Ele
+gold 3
+library2
+temple
+trade 5
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 16
+
+selectterr 219 #Coral Citadel, Ele
+gold 3
+library2
+temple
+trade 5
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 16
+
+selectterr 220 #Coral Citadel, Ele
+gold 3
+library2
+temple
+trade 5
+sacr 2
+hands 1
+fungus 3
+bonusrelics 1
+farsight
+gems 16
+
+selectterr 222 #sacred spring
+gold 3
+trade 2
+bonusrelics 1
+
+selectterr 223 #Nexus, Ele
+citadel
+library1
+library2
+temple
+walls
+enchantedgate
+farsight
+bonusrelics 3
+gems 73728 #2random times 2
+
+selectterr 224 #Sheol Temple. Hades unique
+sacr 3
+hands 5
+library1
+library2
+bonusrelics 2
+temple
+
+selectterr 225 #Sealed chamber. Agartha unique
+gold 2
+iron 2
+bonusrelics 2
+temple
+gems 4096
+
+selectterr 226 #Unsealed chamber. Agartha unique. Why'd you do it huh? Well you now get a reward if you don't wipe to the gods.
+gold 4
+iron 4
+hands 20
+bonusrelics 3
+gems 8192
+
+selectterr 228 #Maelstorm
+gems 16 #Blue
+
+selectterr 229 #Forest of Cubes
+gems 4096
+bonusrelics 1
+
+selectterr 232 #Corkscrew Towers; void "capital"
+citadel
+goldboost
+ironboost
+tradeboost
+library1
+library2
+walls
+enchantedgate
+farsight
+bonusrelics 3
+gems 8192 #Randomx2
+
+selectterr 233 #statue of dvalin
+ownable
+gems 4096
+gold 10
+bonusrelics 2
+
+selectterr 236 #Sacred Grove
+ownable
+gold 1
+herbs 6
+hands 1
+sacr 2
+
+selectterr 237 #Grove of Gaia
+ownable
+gold 2
+hands 2
+herbs 7
+sacr 3
+temple
+
+selectterr 238 #Primal Forest
+ownable
+gold 3
+hands 3
+herbs 8
+sacr 4
+temple
+library1
+
+selectterr 239 #Ruined Port. Appears in barb age
+hands 2
+sacr 2
+trade 2
+
+selectterr 240 #Ruined Port
+hands 2
+sacr 2
+trade 2
+
+selectterr 241 #Ruined Port
+hands 2
+sacr 2
+trade 2
+
+selectterr 242 #Ruined Port
+hands 2
+sacr 2
+trade 2
+
+selectterr 243 #Barbarian Cap
+citadel
+gold 1
+hands 2
+sacr 3
+
+selectterr 244 #barb cap slums
+citadel
+gold 1
+sacr 3
+hands 3
+
+selectterr 245 #barb cap temple
+citadel
+sacr 3
+hands 2
+
+selectterr 246 #barb cap trade
+citadel
+gold 1
+trade 4
+sacr 4
+hands 4
+
+selectterr 248 #Small GY
+gold 1
+hands 1
+fungus 3
+
+selectterr 250 #Colour out of space
+gems 4096
+bonusrelics 2
+
+selectterr 252 #divine palace
+goldboost
+tradeboost
+ironboost
+gold 8
+hands 3
+sacr 5
+enchantedgate
+gems 73728 #2x2 random
+bonusrelics 3
+
+selectterr 253 #Spire base
+#farsight #This only works on ownable
+
+selectterr 254 #Spire tip
+#farsight
+
+selectterr 257 #mountain of power
+apcost 2
+lifeforce -5 #bigger
+
+selectterr 260 #Cloud city
+gems 128
+
+selectterr 261 #Cloud village
+gold 3
+gems 64
+
+selectterr 262 #Cloud hamlet
+gold 2
+
+selectterr 265 #CK cloud palace
+gold 2
+
+selectterr 270 #half burried sinners
+sacr 2
+hands 2
+
+selectterr 282 #Kobold lair
+
+selectterr 294 #Wild forest
+herbs 3
+fungus 2
+
+selectterr 307 #Thunder cloud
+gems 128 #2xdiamonds as this is leathal to cap
+
+selectterr 308 #Cloud fungus
+apcost 2 #these are 1ap for no reason
+herbs 2
+fungus 3
+weed 1
+
+selectterr 309 #Cloud flowers
+apcost 2
+herbs 3
+fungus 2
+weed 1
+
+selectterr 310 #Cloud GY
+hands 2
+fungus 2
+
+selectterr 311 #Kelp forest
+apcost 2
+weed 1
+herbs 2
+fungus 2
+
+selectterr 312 #Sunken temple
+gold 1
+hands 2
+gems 8
+
+selectterr 330 #Cloud tower
+citadel
+gold 1
+trade 1
+gems 64
+
+selectterr 329 #Bronze castle
+bonusrelics 3
+gold 3
+gems 8192
+
+selectterr 333 #Giant Geode
+gems 40960 #2x random + 1x random
+
+selectterr 343 #DE Temple
+gold 2
+gems 4096
+sacr 2
+bonusrelics 2
+
+####################### Inderpendent Changes
+
+newritpow
+
+newritual "Cut Dead Jungle For Resources"
+level 1
+free
+cost 1 -5 #Gives 5 iron
+cost 0 -1 #Gives 1 gold
+terr 116 #Makes Spell only applicable to jungle
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1*bear"
+addstring "1d5*wolf"
+addstring "1d10*deer"
+alterloc 119 #savanna
+descr "Cut dead jungle for resources. But beware some might intervene"
+
+selectmonster "Captain"
+power 0 1
+
+newritpow
+
+newritual "Cut Jungle For Resources"
+level 1
+free
+cost 1 -5 #Gives 5 iron
+cost 0 -1 #Gives 1 gold
+terr 36 #Makes Spell only applicable to destroyed stuff
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "8*lion tribe"
+addstring "1d5*lion"
+addstring "1d10*spider"
+alterloc 116 #dead jungle
+descr "Cut jungle for resources. But beware some might intervene"
+
+selectmonster "Captain"
+power 0 1
+
+newritpow
+
+newritual "Cut Dead Forest For Resources"
+level 1
+free
+cost 1 -5 #Gives 5 iron
+cost 0 -1 #Gives 1 gold
+terr 36 #Makes Spell only applicable to destroyed stuff
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1*bear"
+addstring "1d5*wolf"
+addstring "1d10*deer"
+alterloc 0 #plain
+descr "Cut woods for resources. But beware some might intervene"
+
+selectmonster "Captain"
+power 0 1
+
+newritpow
+
+newritual "Cut Forest For Resources"
+level 1
+free
+cost 1 -5 #Gives 7 iron
+cost 0 -1 #Gives 2 gold
+terr 2 #Makes Spell only applicable to destroyed stuff
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "3*bear"
+addstring "2d5*wolf"
+addstring "2d10*deer"
+alterloc 36 #Dead Forest
+descr "Cut woods for resources. But beware some might intervene"
+
+selectmonster "Captain"
+power 0 1
+
+newritpow
+
+newritual "Strip Broken Portal"
+level 1
+free
+cost 1 -20 #Gives 10 iron
+cost 0 -10 #Gives 10 gold
+terr 340 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These magic resources are needed elsewhere."
+
+selectmonster "Captain"
+power 0 1
+
+newritual "Strip Old Castle Ruin For Resources"
+level 1
+free
+cost 1 -40 #Gives 10 iron
+cost 0 -15 #Gives 10 gold
+terr 38 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These resources are needed elsewhere."
+
+selectmonster "Captain"
+power 0 1
+
+newritpow
+
+newritual "Strip Ruin"
+level 1
+free
+cost 1 -10 #Gives 10 iron
+cost 0 -10 #Gives 10 gold
+terr 184 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These resources are needed elsewhere."
+
+selectmonster "Captain"
+power 0 1
+
+newritpow
+
+newritual "Strip Ruins"
+level 1
+free
+cost 1 -15 #Gives 15 iron
+cost 0 -15 #Gives 15 gold
+terr 185 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These resources are needed elsewhere."
+
+selectmonster "Captain"
+power 0 1
+
+newritpow
+
+newritual "Make brigand Lair"
+level 1
+free
+cost 1 10 #Cost 30 Iron
+cost 0 50 #cost 75 gold
+terr 2 #Makes Spell only applicable to forests
+apcost 2
+summoning
+defctrl 100 #Makes The Monsters Ally
+addstring "1*Bandit Chest"
+alterloc 125 #brigand lair
+descr "Set up an outlaw lair and send out cutthroats to do our bidding."
+
+selectmonster "dark wizard"
+power 0 1
+
+newritpow
+
+newritual "Make Pirate Lair"
+level 1
+free
+cost 1 10 #Cost 25 Iron
+cost 0 50 #cost 100 gold
+terr -93 #Makes Spell only applicable to ports
+apcost 2
+summoning
+defctrl 100 #Makes The Monsters Ally
+addstring "1*Pirate Chest"
+alterloc 316 #pirate port
+descr "Set up an pirate crew and send out the crew to do our bidding with their new port."
+
+selectmonster "sea father"
+power 0 1
+
+newmonster "Pirate Chest"
+descr "Knowing these cuttthroats, This chest of the gangs booty is the only thing keeping them in line."
+spr1 "sprites/Chest.tga"
+hp 10
+str 5
+mor 99
+mr 3
+armor 2
+rank 0
+rearpos
+inanimate
+stationary
+immobile
+pierceres
+slashres
+poisonres 100
+fireres -50
+coldres 125
+charmres
+affres 100
+swallowres
+diseaseres
+stealth
+spawnoffs 1
+spawnmon 300
+
+newmonster "Privateer"
+descr "privateer in the words of the aristochry but to the common man, a jumped up cuttthroat."
+copystats "pirate captain"
+
+selectmonster "Privateer"
+semistupid
+
+selectmonster "Ship"
+semistupid
+fast
+
+############# Inderpendent Major Unit Changes
+
+selectmonster "God"
+affres 100
+mr 12
+
+selectmonster "Teotl of War"
+affres 100
+
+selectmonster "Teteo Inan"
+affres 100
+
+selectmonster "Teotl of the Sky"
+affres 100
+
+selectmonster "Teotl of Rain"
+affres 100
+
+selectmonster "Teotl of the Night"
+affres 100
+
+selectmonster "Teotl of the Underworld"
+affres 100
+
+selectmonster "King of Earth"
+affres 100
+
+selectmonster "King of Deeper Earth"
+affres 100
+
+selectmonster "King of Mountains"
+affres 100
+
+selectmonster "King of Flames"
+affres 100
+
+selectmonster "King of Fire"
+affres 100
+
+selectmonster "King of Magma"
+affres 100
+
+selectmonster "Queen of Storms"
+affres 100
+
+selectmonster "Queen of Thunder"
+affres 100
+
+selectmonster "Queen of Clouds"
+affres 100
+
+selectmonster "Queen of the Deeps"
+affres 100
+
+selectmonster "Queen of the Sea"
+affres 100
+
+selectmonster "Queen of the Lake"
+affres 100
+
+selectmonster "Troll King"
+affres 100
+
+selectmonster "King of the Deep"
+affres 100
+
+############# Inderpendent Unit Changes
+
+newmonster "Bandit Chest"
+descr "Knowing these cuttthroats, This chest of the gangs loot is the only thing keeping them in line."
+spr1 "sprites/Chest.tga"
+hp 10
+str 5
+mor 99
+mr 3
+armor 2
+rank 0
+rearpos
+inanimate
+stationary
+immobile
+pierceres
+slashres
+poisonres 100
+fireres -50
+coldres 125
+charmres
+affres 100
+swallowres
+diseaseres
+stealth
+spawnmon 300
+
+newmonster "Paid Bandit"
+descr "These bandits are being paid by someone to harass the countryside." 
+copystats "bandit"
+
+selectmonster "Paid Bandit"
+semistupid
+
+#Regular unit changes
+
+selectweapon "Boulder"
+wallkill
+
+selectweapon "Boulders"
+wallkill
+
+selectmonster "Catapult"
+clearmove
+slow
+battleslow2
+rangedweapon 30 "Boulder"
+
+selectmonster "Trebuchet"
+clearmove
+slow
+battleslow2
+rangedweapon 25 "Boulders"
+
+############# Spell Changes
+
+####################### Faction List
+
+#Baron Done
+#Necromancer Done
+#Demonologist Done
+#Witch Done
+#High Priestess Not Done
+#Bakamono Not Done
+#Barbarian Done
+#Senator Done
+#Pale One Done
+#Druid Sorta Done
+#Burgmeister Not Done
+#Warlock Not Done
+#Priest King Sorta Done
+#Troll King Done
+#Enchanter done
+#Hight Cultist Done
+#Dwarf Queen Done
+#Voice Of El Done
+#illusionist Not Done
+#Markgraf sorta Done
+#Dyrad Queen Not Done
+#Scourge Lord Done
+#Cloud Lord Done
+#Kobold King Not Done
+
+####################### Terrain Edits
+
+selectterr 24 #Dark Citadel
+hands 3
+dead 100
+farsight
+temple
+snowok
+library2
+
+selectterr 152 #Hades Dark Tower
+gold 2
+hands 3
+temple
+
+selectterr 151 #Hades Dark Citadel
+gold 2
+hands 3
+farsight
+
+selectterr 147 #ghost village
+hands 1
+
+selectterr 148 #ghost town
+hands 2
+
+selectterr 149 #ghost city
+hands 3
+
+selectterr 202 #Gateway To Hades
+hands 10
+
+selectterr 336 #Oven Of Sin
+hands 5
+sacr  5
+
+selectterr 334 #ghost port
+hands 2
+
+selectterr 16 #graveyard
+hands 4
+
+selectterr 38 #old castle
+hands 3
+
+selectterr 19 #old battle
+hands 3
+
+selectterr 28 #hut
+forest
+herbs 6
+gold 2
+
+selectterr 30 #Baron Castle
+gold 3
+hands 1
+temple
+iron 2
+farsight
+
+#emeralds on vocanos
+selectterr 102
+gems 1026
+
+####################### Baron Faction 1
+
+############# Monk Rituals
+
+selectritual "Raise Castle" #More terrain options. Was just farms.
+	terr -8 #Farm-village
+
+newritual     "View Kings Castle"
+ritpow                27 # monk
+level                  2
+cost              0   10 # 10 Gold
+randnewloc           -31 # Sets target location to a kings castle
+scryloc               35 # Scry radius 3.5 around target location.
+soundfx               70 # Sound effect when the ritual is cast: echo.wav.
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+closewin                 # Closes cast ritual window.
+descr "The king hopes to obtain a map of the castle and the surrounding area."
+
+newritual "Outfit King's Castle" #Turns his castle into a king's castle
+	free
+	ritpow 6 #Baron rituals
+	level 2 #Baron tier
+	cost 0 1500
+	terr 30 #Baron castle
+	alterloc 124 #King's castle
+	soundfx 57
+	nomonworldreq
+	addstring "(-)King"
+	addstring "(-)Emperor"
+	addstring "(-)Dark Emperor"
+	addstring "(-)God Emperor"
+	addstring "(-)God Emperor of the Underworld"
+	descr "Gold can buy many things in Elysium, one of them being skilled craftsmen. By spending enough hard taxed coin a baron can improve his castle to something worthy of a king. ^Any existing Kings or Emperors will no doubt stifle any efforts to do this however."
+
+selectritual     "Drain Swamp"
+clearritspec
+ritpow                27 # Monk
+level                  1
+cost              0   25 # 25 Gold
+apcost                 1 # Actual AP cost: 2.
+terr                 -20 # Required terrain: swamp/bog.
+alterloc               0 # Change target location's terrain to: Plane.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "Draining a swamp turns a useless tract of fenland into a fertile plot suitable to build a farm on."
+
+newritual     "Desert Fertilization"
+ritpow                27 # Monk
+level                  1
+cost              0   25 # 25 Gold
+apcost                 1 # Actual AP cost: 2.
+terr                 117 # Required terrain: Desert.
+alterloc             119 # Change target location's terrain to: savanna.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "The Monk transforms an inhospitable desert into a savanna."
+
+newritual     "Build Farm"
+ritpow                27 # Monk
+level                  1
+cost              0   25 # 25 Gold
+apcost                 1 # Actual AP cost: 2.
+terr                   0 # Required terrain: Plain.
+alterloc               5 # Change target location's terrain to: Farm.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+sacrscale                # Scale summoning amount with sacrifice production of target square.
+summoning                # The ritual will summon the monsters specified in a random string.
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+addstring     "1d4+1*Levy"
+nonearby1req 5 #Makes it so towns cant be adjancent to one another
+descr "The monk donates money to a family to convince them to set up a farm."
+
+newritual     "Upgrade Farm"
+ritpow                27 # Monk
+level                  1
+cost              0   50 # 50 Gold
+apcost                 1 # Actual AP cost: 2.
+terr                   -103 # Required terrain: Farm.
+alterloc               7 # Change target location's terrain to: Hamlet.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+sacrscale                # Scale summoning amount with sacrifice production of target square.
+summoning                # The ritual will summon the monsters specified in a random string.
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+addstring     "1d4+1*Levy" 
+descr "The monk donates money to a farm to convince them to start expansion."
+
+newritual     "Settle Tent Village"
+ritpow                27 # Monk
+level                  1
+cost              0   50 # 50 Gold
+apcost                 1 # Actual AP cost: 2.
+terr                   109 # Required terrain: Farm.
+alterloc               7 # Change target location's terrain to: Hamlet.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+sacrscale                # Scale summoning amount with sacrifice production of target square.
+summoning                # The ritual will summon the monsters specified in a random string.
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+addstring     "1d4+1*Levy"
+descr "The monk Settles a tent village."
+
+newritual     "Upgrade Hamlet"
+ritpow                27 # Monk
+level                  2
+cost              0   75 # 75 Gold
+apcost                 2 # Actual AP cost: 3.
+terr                 -40 # Required terrain: hamlets & coastal hamlets.
+alterloc              18 # Change target location's terrain to: Village.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+sacrscale                # Scale summoning amount with sacrifice production of target square.
+summoning                # The ritual will summon the monsters specified in a random string.
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+addstring     "1d4+1*Levy" 
+descr "The abbot donates money to the hamlet's citizens to convince them to expand."
+
+newritual "Develop A Town"
+ritpow 27
+level 2
+free
+cost 1 40 #Cost 40 Iron
+cost 0 200
+terr -16 #Makes Spell only applicable to villages size settlements
+apcost 5
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "2d12*wolf tribe warrior"
+addstring "2d5*wight"
+addstring "2d5*serpent"
+addstring "2d10*bandit"
+addstring "1*ogre chief & 2d2*ogre"
+alterloc 17 #Town
+nonearby1req 17 #Makes it so towns cant be adjancent to one another
+descr "Trade and infrastructure is the life blood of this kingdom. But Beware there are many jealous of the empire of man."
+
+newritual     "Rebuild Town"
+ritpow                27 # Monk
+level                  1
+cost              0   100 # 200 Gold
+cost              1    50 #  50 Iron
+apcost                 1 # Actual AP cost: 2.
+terr                   185 # Required terrain: Destroyed City.
+alterloc              17 # Change target location's terrain to: city.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "Let us restore this great city in the name of el."
+
+newritual     "Rebuild Hamlet"
+ritpow                27 # Monk
+level                  1
+cost              0   30 # 30 Gold
+cost              1    10 #  10 Iron
+apcost                 1 # Actual AP cost: 2.
+terr                   184 # Required terrain: House Ruins.
+alterloc              7 # Change target location's terrain to: Hamlet.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "Let us rebuild in the name of el."
+
+newritual "Destroy Graveyard"
+ritpow 27
+level 1
+free
+cost 1 20 #Cost 10 Iron
+terr 16 #Makes Spell only applicable to graveyards
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "2d12*ghoul 1*corpse mage"
+addstring "1d3*banshee 1*corpes mage"
+addstring "1d5*wight 1*corpse mage"
+addstring "1d20*longdead & 1*corpse mage"
+alterloc 0 #plain
+descr "Destroy this unholy place and what ever is in it. In the name of the el."
+
+newritual "Develop A Port"
+ritpow 27
+level 2
+free
+cost 1 45 #Cost 40 Iron
+cost 0 260
+terr 78 #Makes Spell only applicable to coastal hamlets
+apcost 5
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "3d5*sea dog"
+addstring "2*kraken"
+addstring "2d5*ichtyid warrior"
+addstring "2d10*bandit"
+addstring "1*pirate captain & 2d5*pirate"
+alterloc 79 #port
+nonearby1req -93 #Makes it so towns cant be adjancent to one another
+descr "Trade is the real life blood of this kingdom, so we must build a port to spread the word of el and our dear king."
+
+############# Baron Unit Changes
+
+selectmonster "knight"
+semistupid
+
+selectmonster "Tower Guard" #Tougher but slow, encourages using them as defence rather than general troops.
+	hp 9 #from 7
+	mr 6
+	mor 7
+	slow
+	aihold 1 #Makes the AI use them for defence.
+	aimaxshop 15
+	
+selectmonster "Unicorn Knight"
+	affres 60
+	hadesres 100
+	voidsanity 10
+	clearmove
+	fast
+	
+selectmonster "High Lord"
+	rearpos
+
+####################### Necromancer Faction 2
+
+############# Necromancer Faction Rituals
+
+newritual "Gate of the Dead" #Can now open a gate to hades. Doesn't replace tiles in hades just opens a portal exit there, I know it looks shit but infernal gate doesn't either.
+	ritpow 1 #Necro
+	level 3
+	rarestart
+	cost 5 200 #Hands
+	cost 14 44 #Corpses
+	terr -42 #Land only
+	planereq 3 #Should be elysium
+	alterloc 202 #Gateway to hades
+	makeportal 1000
+	planeloc 6 #Hades, same place
+	soundfx 57
+	makeportal 1000
+	centerloc
+	descr "The necromancer clears the land and constructs a large archway out of 44 human corpses which he then imbunes with necromantic energies. The gateway opens into Hades, the land of the dead. Creatures of Elysium may enter, and creatures of Hades may leave, but the mortal world is often of little interest to them."
+		
+newritual "Effigy"
+ritpow 1
+level 1
+free
+cost 14 10 #Cost 10 bodies
+terr -1 #Makes Spell only applicable to everywhere
+apcost 1
+summoning
+defctrl 100 
+addstring "1*effigy"
+descr "There be bones aplenty why not put them to use."
+
+newritual "Hang Them"
+ritpow 1
+level 2
+free
+cost 5 -20 #give 20 hands
+cost 0 -20 #give 20 gold
+terr 125 #Makes Spell only applicable to brigand lairs
+apcost 2
+alterloc 153 #gallows
+descr "kill these bandits and take their hands and make this place unholy"
+
+selectritual "Twiceborn"
+	cost 5 15 #from 30
+
+newritual "Build Crumbling Castle"
+ritpow 1
+level 2
+cost 5 50 #cost 50 hands
+cost 1 100 #cost 100 iron
+terr -1 #Makes Spell only applicable to anywhere
+apcost 2
+alterloc 38 #old castle ruin
+descr "Make a ruined castle for our dark master"
+
+newritual "Dead Rise"
+ritpow 1
+level 2
+free
+cost 5 -100 #Cost 100 hands
+cost 17 80 #Cost 80 corpses
+terr -1 #Makes Spell only applicable to all terrain
+apcost 5
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d12*wolf tribe warrior"
+addstring "1d5*pale ones"
+addstring "1d5*serpent"
+addstring "1d10*levy"
+addstring "1d10*bandit"
+addstring "1d10*knight"
+addstring "1d3*Inquisitor & 1d6*Paladin & 3d6*Templar & 4d6#*Crossbowman" 
+alterloc 16 #graveyard
+descr "Enough restless souls and bodies are here to erect a graveyard. But beware Many will try to stop this unholy ritual"
+
+newritual     "Summon Prince Of Death" 
+ritpow                 1 # Necromancy
+level                  3
+cost              5  850 # A massacre
+cost		       14 50
+planereq               0 # Can only be cast on this plane: Elysium.
+varcost              100 # Can spend as little as 0% of cost.
+defctrl               100 # % default control chance for summonings. Can be overridden by monster's own ctrlchance.
+summoning                # The ritual will summon the monsters specified in a random string.
+rarestart
+addstring     "c*Prince of Death"     # Actual base control chance: 100%.
+
+newritual     "Erect Monument Of Hades"
+ritpow                 1 # Necromancer
+level                  3
+cost              5  100 # 100 Hands
+terr                 -1 # Required terrain: anywhere.
+apcost                 3 # Actual AP cost: 4.
+summoning                # The ritual will summon the monsters specified in a random string.
+nomonreq                 # Monsters in strings beginning with "(-)" must not be here.
+addstring     "(-)Monument of Hades"     # This string will only be used by nomonreq or nomonworldreq.
+addstring     "Monument of Hades"
+descr "The necromancer constructs a monument to hades. The monument will guard the village from beasts and brigands, not to mention the undead that the monument calls forth."
+
+newritual "Hades Rift"
+ritpow 1
+terr 				-1 #anywhere
+level 				2
+cost               0 0
+planeloc 			5 # Hades 
+teleportloc            2 # Teleport caster's entire army to target location.
+free
+closewin 			# closes cast ritual window
+descr "By tapping into the realm of the dead, the necromancer is able to open a temporary portal to Hades."
+
+newritual "Escape Hades"
+ritpow 1
+terr 				-1 #anywhere
+level 				2
+cost               0 0
+planeloc 			0 # Elysium 
+teleportloc            2 # Teleport caster's entire army to target location.
+free
+closewin 			# closes cast ritual window
+descr "By tapping into the realm of the dead, the necromancer is able to open a temporary portal to Elysium."
+
+newritual "Extract Life"
+ritpow 1
+free
+level 1
+apcost 2
+cost 0 -10
+cost 5 -15
+cost 1 -10
+cost 14 -25
+terr -64
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d10*bandit"
+addstring "1d10*levy"
+addstring "1d5*archer & 1d8*levy"
+reducetown
+descr "At the cost of taking our subjects lifes we may extract all the resources we can"
+
+newritual "Extract Souls"
+ritpow 1
+free
+level 2
+apcost 2
+cost 0 -30
+cost 5 -35
+cost 1 -25
+cost 17 -50
+terr -16
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d20*bandit"
+addstring "1d20*levy"
+addstring "1d10*archer & 1d10*levy"
+reducetown
+descr "At the cost of taking our subjects lifes we may extract all the resources we can"
+
+newritual "Extract Port Souls"
+ritpow 1
+free
+level 3
+apcost 2
+cost 0 -50
+cost 5 -40
+cost 1 -30
+cost 17 -60
+terr -93
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d20*bandit"
+addstring "1d20*levy"
+addstring "1d10*archer & 1d10*levy"
+addstring "1d10*archer & 1d10*pirate"
+reducetown
+descr "At the cost of taking our port subjects lifes we may extract all the resources we can"
+
+newritual "Extract Souls Inside Of The Walls"
+ritpow 1
+free
+level 3
+apcost 2
+cost 0 -30
+cost 5 -50
+cost 1 -25
+cost 17 -50
+terr 31
+alterloc 0
+descr "At the cost of taking our subjects lifes we may extract all the resources we can"
+
+newritual "Collect Corpses"
+ritpow 1
+free
+level 2
+apcost 0
+cost 5 25
+cost 17 -25
+terr -1
+descr "bring the corpses for experimentation"
+
+newritual "Purge Town"
+ritpow 1
+free
+level 2
+apcost 3
+cost 0 -75
+cost 5 -50
+cost 1 -30
+cost 17 -100
+terr 17
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d20*bandit & 1*bandit king"
+addstring "1d40*levy"
+addstring "1d20*archer & 1d20*levy"
+addstring "1*Inquisitor & 1d6*Paladin & 3d6*Templar & 4d6#*Crossbowman"
+reducetown
+descr "At the cost of taking our subjects lifes we may extract all the resources we can"
+
+newritual "Extract City"
+ritpow 1
+free
+level 2
+apcost 3
+cost 0 -100
+cost 5 -100
+cost 1 -60
+cost 17 -200
+terr 9
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d20*bandit & 1*bandit king"
+addstring "1d40*levy"
+addstring "1d30*archer & 1d20*levy"
+addstring "2*Inquisitor & 1d6*Paladin & 3d6*Templar & 4d6#*Crossbowman"
+reducetown
+descr "At the cost of taking our subjects lifes we may extract all the resources we can"
+
+newritual "Raise A wight"
+ritpow 1
+level 2
+apcost 6
+cost 0 50
+cost 5 80
+cost 1 10
+terr -1
+soundfx 32
+defctrl 100 #Makes The Monster Ally
+summoning
+nomonreq
+addstring "c*Mausoleum Wight"
+descr "With these resources we can chant an unholy prayer and make the dead restless in this Area"
+
+newritual "Tartarian Gate" #High end spell, summons titans but costs a temple.
+	ritpow 1
+	level 3
+	cost 5 250
+	terr -2
+	destroyterr 100
+	summoning
+	addstring "c*Tartarian Cyclops"
+	addstring "c*Tartarian Smith"
+	addstring "c*Tartarian Manticore"
+	addstring "c*Tartarian Mother"
+	descr "Deep in the firey depths of inferno lies an impossibly deep pit to a realm far more evil, Tartarus was created by ancient beings as a prison for powerful gods, titans and their most threatening followers. ^This ritual destroys a temple to open a brief gateway for one such being to step through under the casters command."
+
+############# Necromancer/Undead Unit Changes
+
+newweapon "Lightning Javelin" #Breddy much a chain lightning
+	range 8
+	init 4
+	dmgtype 6
+	aoe 9205 #Default 5005
+	an
+	#flysound 24
+	look 58
+	sound 24
+	nextdmg 64
+	
+newweapon "Shock Stun"
+	trgrank 9
+	range 1
+	init 4
+	dmgtype 12
+	mr
+	strresist
+	sound -1
+
+newmonster "Tartarian Cyclops"
+	spr1 "Sprites/tarcyclops.tga"
+	spr2 "Sprites/tarcyclops1.tga"
+	rank 1
+	hp 197
+	armor 3
+	mr 6
+	mor 99
+	str 16
+	meleeweapon 25 730 #Magic Greatsword
+	meleeweapon 25 730
+	huge
+	extraeyes -1
+	coldres 100
+	poisonres 100
+	undead
+	sleepres
+	charmres
+	diseaseres
+	pierceres
+	minorstartaff 70
+	affres 90
+	shield
+	water
+	weaponslots
+	fear 1
+	nametype 7
+	descr "Deep in the firey depths of inferno lies an impossibly deep pit to a realm far more evil, Tartarus was created by ancient beings as a prison for powerful gods, titans and their most threatening followers. ^Cyclops are giants with one eye, they served as bodyguards and elite warriors eons ago. Now their flesh and minds are rotten and decayed, but their martial prowess remain sharp as ever."
+
+newmonster "Tartarian Smith"
+	spr1 "Sprites/tarsmith.tga"
+	spr2 "Sprites/tarsmith1.tga"
+	rank 0
+	hp 161
+	armor 1
+	mr 6
+	mor 99
+	str 16
+	rangedweapon 10 "Lightning Javelin"
+	meleeweapon 20 0 #Fist, will be replaced by his randomweapon
+	huge
+	extraeyes -1
+	coldres 100
+	poisonres 100
+	undead
+	sleepres
+	charmres
+	diseaseres
+	pierceres
+	minorstartaff 70
+	affres 70
+	water
+	randomweapon 100
+	weaponslots
+	fear 1
+	nametype 7
+	descr "Deep in the firey depths of inferno lies an impossibly deep pit to a realm far more evil, Tartarus was created by ancient beings as a prison for powerful gods, titans and their most threatening followers. ^Cyclops are giants with one eye, they served as bodyguards and elite warriors eons ago. Some were smiths of legend forging bolts of pure lightning to throw with fearsome strength."
+
+newmonster "Tartarian Manticore"
+	spr1 "Sprites/tarmanticore.tga"
+	spr2 "Sprites/tarmanticore1.tga"
+	rank 1
+	hp 233
+	armor 3
+	mr 6
+	mor 99
+	str 18
+	rangedweapon 18 144 #Flick barb
+	meleeweapon 35 297 #Ghoul Claw
+	meleeweapon 40 41 #Venomous Bite
+	huge
+	coldres 100
+	poisonres 100
+	undead
+	pierceres
+	sleepres
+	charmres
+	diseaseres
+	water
+	minorstartaff 70
+	affres 80
+	fear 2
+	nametype 49
+	descr "Deep in the firey depths of inferno lies an impossibly deep pit to a realm far more evil, Tartarus was created by ancient beings as a prison for powerful gods, titans and their most threatening followers. ^Manticores have the body of a scorpion-tailed lion, with the face of a man with three rows of teeth. The time spent in Tartarus has rotted their minds, bodies and wings but their hunger is even greater than ever."
+
+newmonster "Tartarian Mother"
+	spr1 "Sprites/tarmother.tga"
+	spr2 "Sprites/tarmother1.tga"
+	rank 1
+	hp 182
+	armor 2
+	mr 8
+	mor 99
+	str 9
+	meleeweapon 20 0
+	meleeweapon 20 0
+	huge
+	coldres 100
+	poisonres 100
+	undead
+	sleepres
+	charmres
+	diseaseres
+	pierceres
+	water
+	minorstartaff 70
+	affres 80
+	fear 2
+	weaponslots
+	nametype 35
+	poisoncloud 4
+	descr "Deep in the firey depths of inferno lies an impossibly deep pit to a realm far more evil, Tartarus was created by ancient beings as a prison for powerful gods, titans and their most threatening followers. ^Tartarian Mothers were once beautiful titanesses, cursed with a serpents tail for daring to spurn the advances of a forgotten god of old. Their onece desired bodies are rotten and decayed now inspiring fear and disgust."
+	
+selectmonster "Tartarian Spirit" #adds a description
+	descr "Deep in the firey depths of inferno lies an impossibly deep pit to a realm far more evil, Tartarus was created by ancient beings as a prison for powerful gods, titans and their most threatening followers. Tartarian Spirits are malformed monsters made from half-escaped beings bound to a mass of flesh by ancient chains intended to keep the being trapped for all time."
+
+selectmonster "necromancer's apprentice"
+hands 1
+
+selectmonster "necromancer"
+hands 2
+goldcarrier 20
+saner 1
+
+selectmonster "grand necromancer"
+hands 3
+goldcarrier 50
+saner 2
+spiritsight
+fastheal
+
+selectmonster "wight king"
+hands 6
+unaging
+saner 5
+fastheal
+
+selectmonster "ghost king"
+hands 7
+unaging
+saner 7
+fastheal
+
+selectmonster "wight mage"
+hands 3
+unaging
+saner 5
+spiritsight
+fastheal
+
+selectmonster "ghost lord"
+hands 5
+unaging
+saner 5
+spiritsight
+fastheal
+
+selectmonster "corpse mage"
+hands 2
+unaging
+saner 4
+spiritsight
+fastheal
+
+selectmonster "ghost mage"
+hands 1
+unaging
+saner 3
+fastheal
+
+selectmonster "vampire"
+saner 5
+hands 5
+unaging
+goldcarrier 50
+thrallhunt 1
+fastheal
+
+selectmonster "vampire count"
+saner 10
+hands 10
+unaging
+goldcarrier 100
+thrallhunt 3
+fastheal
+
+selectmonster "lich"
+hands 8
+saner 10
+unaging
+goldcarrier 100
+prebatweapon 25 "Summon Longdead"
+fastheal
+
+selectmonster "demilich"
+hands 10
+saner 20
+unaging
+goldcarrier 150
+prebatweapon 30 "Summon Longdead"
+fastheal
+
+selectmonster "wraith"
+hands 2
+unaging
+saner 5
+fastheal
+
+selectmonster "wraith lord"
+hands 5
+unaging
+saner 10
+fastheal
+
+selectmonster "iron gate"
+unaging
+
+selectmonster "Tartarian Spirit"
+unaging
+hands 5
+fastheal
+water
+
+selectmonster "ziz"
+unaging
+fastheal
+
+selectmonster "Wight Lord"
+hands 8
+unaging
+saner 10
+fastheal
+
+selectmonster "Wraith Lord"
+hands 8
+unaging
+saner 10
+
+selectmonster "Wraith king"
+hands 15
+unaging
+saner 10
+fastheal
+
+selectmonster "ghost"
+unaging
+fastheal
+
+selectmonster "Longdead" 0                                
+unaging
+
+selectmonster "Longdead" 1                                  
+unaging
+
+selectmonster "Longdead" 2                                 
+unaging
+
+selectmonster "Longdead Velite"                            
+unaging
+
+selectmonster "Longdead Hastatus"                          
+unaging
+
+selectmonster "Longdead Triarius"
+unaging
+
+selectmonster "Longdead" 0                                 
+unaging
+affres 100
+water
+selectmonster "Longdead" 1                                   
+unaging
+affres 100
+water
+selectmonster "Longdead" 2                                  
+unaging
+affres 100
+water
+selectmonster "Longdead" 3                                  
+unaging
+affres 100
+water
+selectmonster "Longdead" 4                                  
+unaging
+affres 100
+water
+selectmonster "Longdead" 5                                  
+unaging
+affres 100
+water
+selectmonster "Longdead" 6                                  
+unaging
+affres 100
+water
+selectmonster "Longdead" 7                                  
+unaging
+affres 100
+water
+selectmonster "Longdead" 8                                  
+unaging
+affres 100
+water
+selectmonster "Longdead" 9                                
+unaging
+affres 100
+water
+selectmonster "Armored Longdead"                           
+unaging
+affres 100
+water
+selectmonster "Bane Fire Archer"                           
+unaging
+affres 100
+water
+selectmonster "Bane-Bones"                                 
+unaging
+affres 100
+water
+selectmonster "Mound King"                                 
+unaging
+affres 100
+water
+selectmonster "Longdead Velite"                            
+unaging
+affres 100
+water
+selectmonster "Longdead Hastatus"                          
+unaging
+affres 100
+water
+selectmonster "Longdead Principe"                          
+unaging
+affres 100
+water
+selectmonster "Longdead Triarius"                          
+unaging
+affres 100
+water
+selectmonster "Soulless"                                   
+unaging
+affres 100
+water
+selectmonster "Soulless Soldier"                           
+unaging
+affres 100
+water
+selectmonster "Armored Soulless"                           
+unaging
+affres 100
+water
+selectmonster "Mummy"                                      
+unaging
+affres 100
+water
+selectmonster "Ghoul" #Can eat bodies to multiply. Also wander when not controlled. This means you can get A LOT of ghouls, so they are weaker to compensate.
+	hp 6 #from 10
+	mr 2 #from 4
+	semistupid
+	eatdead 7
+	money2 #should like to stay in towns
+	aggressive
+	minorstartaff 30
+	sensedead 0 #This is just annoying
+	unaging
+affres 100
+water
+selectmonster "Wight"                                      
+unaging
+affres 100
+water
+fastheal
+selectmonster "Bane"                                       
+unaging
+affres 100
+water
+selectmonster "Bane Lord"                                  
+unaging
+affres 100
+water
+selectmonster "Corpse Mage"                                
+unaging
+affres 100
+water
+selectmonster "Wight Mage"                                 
+unaging
+affres 100
+water
+selectmonster "Wight King"                                 
+unaging
+affres 100
+water
+selectmonster "Ghost"                                      
+unaging
+affres 100
+water
+selectmonster "Ghost Mage"                                 
+unaging
+affres 100
+water
+selectmonster "Ghost King"                                 
+unaging
+affres 100
+water
+selectmonster "Ancestral Archer"                           
+unaging
+affres 100
+water
+selectmonster "Ancestral Warrior"                          
+unaging
+affres 100
+water
+selectmonster "Ghost Captain"                              
+unaging
+affres 100
+water
+selectmonster "Ghost Warrior"                              
+unaging
+affres 100
+water
+selectmonster "Spectral Archer"                            
+unaging
+affres 100
+water
+selectmonster "Spectral Horseman"                          
+unaging
+affres 100
+water
+selectmonster "Shade Beast"                                
+unaging
+affres 100
+water
+selectmonster "Wraith"                                     
+unaging
+affres 100
+water
+selectmonster "Wraith Lord"                                
+unaging
+affres 100
+water
+regeneration 1 
+selectmonster "Wraith King"                                
+unaging
+affres 100
+water
+regeneration 1 
+selectmonster "Stygian Ghost"                              
+unaging
+affres 100
+water
+selectmonster "Stygian King"                               
+unaging
+affres 100
+water
+regeneration 1 
+
+selectmonster "Banshee" #More health but weaker to magic.
+	hp 10 #From 8
+	mr 6 #From 8
+	mor 15 #From 8
+	clearweapons
+	rangedweaponbonus 999 48 #Death Wail, now ranged
+	meleeweapon 4 204 #Touch of the Dead
+	rearpos
+	water
+	unaging
+selectweapon "Death Wail" #Smaller but doesn't kill allies.
+	range 2
+	aoe 10 #from 25
+	onlyenemy
+selectmonster "Carrion"                                    
+unaging
+affres 100
+water
+selectmonster "Death Knight"                               
+unaging
+affres 100
+water
+selectmonster "Vampire"                                    
+unaging
+affres 100
+water
+regeneration 1 
+selectmonster "Lich"                                       
+unaging
+affres 100
+water
+regeneration 1 
+selectmonster "Demilich"                                   
+unaging
+affres 100
+water
+regeneration 1 
+selectmonster "Dracolich"                                  
+unaging
+affres 100
+water
+selectmonster "Tartarian Spirit"                           
+unaging
+affres 100
+water
+selectmonster "Ziz"                                        
+unaging
+affres 100
+water
+selectmonster "Shade"                                      
+unaging
+affres 100
+water
+selectmonster "Shade Lord"                                 
+unaging
+affres 100
+water
+selectmonster "Shade Mage"                                 
+unaging
+affres 100
+water
+selectmonster "Dusk Elder"                                 
+unaging
+affres 100
+water
+selectmonster "Dispossessed Spirit"                        
+unaging
+affres 100
+water
+selectmonster "Ancestor Spirit"                            
+unaging
+affres 100
+water
+selectmonster "Ancestral Archer"                           
+unaging
+affres 100
+water
+selectmonster "Ancestral Warrior"                          
+unaging
+affres 100
+water
+selectmonster "Ancestral Hero"                             
+unaging
+affres 100
+water
+selectmonster "Ancestor Guide"                             
+unaging
+affres 100
+water
+selectmonster "Ancestral Shaman"                           
+unaging
+affres 100
+water
+selectmonster "Ancestral Chief"                            
+unaging
+affres 100
+water
+selectmonster "Ancestral Lancer"                           
+unaging
+affres 100
+water
+selectmonster "Wight Lord"                                 
+unaging
+affres 100
+water
+fastheal
+selectmonster "Dust Walker"                                
+unaging
+affres 100
+water
+selectmonster "Dust King"                                  
+unaging
+affres 100
+water
+selectmonster "Dust Priest"                                
+unaging
+affres 100
+water
+selectmonster "Unfrozen"                                   
+unaging
+affres 100
+water
+selectmonster "Unfrozen Warrior"                           
+unaging
+affres 100
+water
+selectmonster "Unfrozen Lord"                              
+unaging
+affres 100
+water
+selectmonster "Unfrozen Mage"                              
+unaging
+affres 100
+water
+selectmonster "Longdead Animal"                           
+unaging
+affres 100
+water
+selectmonster "Longdead Beast"                            
+unaging
+affres 100
+water
+selectmonster "Carrion Beast"                              
+unaging
+affres 100
+
+selectmonster "Carrion Stalker"                            
+unaging
+affres 100
+
+newmonster "Mausoleum Wight"
+spr1 "sprites/wightmage01.tga"
+spr2 "sprites/wightmage02.tga"
+descr "With this summoned wight it will produce 2 undead warriors for patrol"
+copystats "wight mage"
+armor 2
+rank 0
+rearpos
+inanimate
+stationary
+immobile
+pierceres
+slashres
+poisonres 100
+fireres -50
+coldres 125
+charmres
+affres 100
+swallowres
+diseaseres
+unaging
+stealth
+spawnmon 200
+spiritsight
+spellweapon50 38 3
+
+newmonster "Mausoleum Soulless"
+spr1 "sprites/mausoleumsoulless01.tga"
+spr2 "sprites/mausoleumsoulless02.tga"
+descr "These soulless are bound to the dark master." 
+copystats "Armored Soulless"
+
+selectmonster "Mausoleum Soulless"
+semistupid
+unaging
+
+
+selectmonster "soulless"
+semistupid
+unaging
+deployoutside 20
+
+selectmonster "death knight"
+unaging
+hands 3
+fastheal
+reanimate 5
+
+selectmonster "pyramid of skulls"
+hands 1
+unaging
+
+selectmonster "Monument of Hades"
+hands 5
+unaging
+fastheal
+
+selectmonster "mummy"
+semistupid
+unaging
+deployoutside 10
+
+selectmonster "shade"
+semistupid
+unaging
+deployoutside 10
+fastheal
+
+selectmonster "spectral archer"
+unaging
+fastheal
+
+selectmonster "mound king"
+unaging
+
+selectmonster "spectral horseman"
+unaging
+fastheal
+
+selectmonster "bane"
+unaging
+fastheal
+
+####################### Demonologist Faction 3
+
+#Demonologist
+#Class
+selectclass 3
+clearstartunits
+addstartcom "Cultist"
+addstartunits "Fiery Imp" 10
+addstartunits "Ice Imp" 10
+setmaincom "Demonologist"
+
+clearrec
+nostdtroops
+addcomrec   "Cultist" 6 50 20 0
+templerec
+addcomrec "Astrologer" 1 75 50 0
+libraryrec
+addunitrec "Imp" 100 5 25 0 0
+recxcost 4 5
+reclimiter "+Cultist"
+reclimiter "+Demonologist"
+reclimiter "+Goetic Master"
+addunitrec "Imp Familiar" 100 5 75 0 0
+recxcost 4 15
+reclimiter "+Cultist"
+reclimiter "+Demonologist"
+reclimiter "+Goetic Master"
+addunitrec "Shadow Imp" 100 5 45 0 0
+recxcost 4 15
+reclimiter "+Demonologist"
+reclimiter "+Goetic Master"
+addunitrec "Fiery Imp" 100 5 50 0 0
+recxcost 4 10
+reclimiter "+Demonologist"
+reclimiter "+Goetic Master" 
+addunitrec "Ice Imp" 100 5 60 0 0
+recxcost 4 15
+reclimiter "+Demonologist"
+reclimiter "+Goetic Master"
+addcomrec "Devil" 10 50 0 0
+recxcost 4 30
+reclimiter "+Demonologist"
+reclimiter "+Goetic Master"
+addcomrec "Succubus" 10 50 0 0
+recxcost 4 35
+reclimiter "+Demonologist"
+reclimiter "+Goetic Master"
+addunitrec "Spine Devil" 10 2 50 0 0
+recxcost 4 35
+reclimiter "+Demonologist"
+reclimiter "+Goetic Master"
+addunitrec "Bone Devil" 10 5 50 0 0
+recxcost 4 40
+reclimiter "+Demonologist"
+reclimiter "+Goetic Master"
+addcomrec "Greater Devil" 2 150 0 0
+recxcost 4 100
+reclimiter "+Goetic Master"
+addunitrec "Hellhound" 20 2 75 0 0
+recxcost 4 50
+reclimiter "+Goetic Master"
+
+############# Demonologist Rituals
+
+newritual "Demon Promotion"
+ritpow 3
+descr "With this ritual, the Demon promotes a few imps into lesser demons"
+level 1
+cost 4 10
+terr -1
+soundfx 57
+promotion 3
+addstring "Bone Imp"
+addstring "Bone Devil"
+addstring "Ice Imp"
+addstring "Frost Fiend"
+addstring "Shadow Imp"
+addstring "Fiend of Darkness"
+
+newritual "Greater Demon Promotion"
+ritpow 3
+descr "With this ritual, the Demon promotes a couple underlings into Greater Demons"
+level 2
+cost 4 20
+terr -1
+soundfx 57
+promotion 2
+addstring "Imp"
+addstring "Devil"
+addstring "Fiery Imp"
+addstring "Hellhound"
+addstring "Serpent Fiend"
+addstring "Disease Demon"
+addstring "Spine Devil"
+addstring "Demonic Locust"
+
+newritual "Lieutenant Promotion"
+ritpow 3
+descr "With this ritual, the Demon lord promotes one of their underlings into a Lieutenant."
+level 3
+cost 4 90
+terr -1
+soundfx 57
+promotion -1
+addstring "Harlequinn"
+addstring "Succubus"
+addstring "Fiend of Darkness"
+addstring "Heliophagus"
+addstring "Frost Fiend"
+addstring "Ice Devil"
+addstring "Lesser Demon"
+addstring "Greater Demon"
+addstring "Devil"
+addstring "Greater Devil"
+
+newritual "Invade Heavens"
+ritpow 					3 # Demonologist
+terr 					-74 # Inferno locations
+level 					3
+cost               		4 1000 # 1000 sacrifices
+apcost					17
+portalroom				-77 # Celestial Plane locations
+noportalreq				1
+free
+closewin 				# closes cast ritual window
+descr "The Goetic Master conducts a massive sacrifice in Inferno in order to link it and the Celestial Plane. This marks the start of the War for Heaven."
+
+newritual     "Impish Horde"
+ritpow                 	3 # Demonologist
+level                 	1
+rebatelvl				3
+free
+cost              		4 120 # 120 sacrifices and 50 gold, half at T3
+cost					0 50
+apcost					5
+planereq 				0
+summoning
+addstring "40*Imp"
+addstring "20*Shadow Imp"
+addstring "10*Fiery Imp & 10*Imp Familiar"
+addstring "20*Ice Imp"
+addstring "20*Bone Imp"
+soundfx               	57
+descr "The Cultist expends great effort and dozens of sacrifices to conjure and cage a horde of imps. Half price for Goetic Masters."
+
+newritual     "Devilish Throng"
+ritpow                 	3 # Demonologist
+level                 	2
+rebatelvl				3
+free
+cost              		4 300 # 300 sacrifices and 150 gold, half at T3
+cost					0 150
+apcost					5
+planereq 				0
+summoning
+addstring "8d5*Bone Devil"
+addstring "5d4*Spine Devil"
+addstring "c*Fiend of Darkness & 20d2Shadow Imp"
+addstring "c*Frost Fiend & 20d3*Ice Imp"
+addstring "c*Devil & 20d3*Fiery Imp"
+soundfx               	57
+descr "The Demonologist expends great time, effort, and a large number of sacrifices to bring forth and entrap a large number of Devils and Imps for safe binding. Note: Control may still fail. Half price for Goetic Master."
+
+newritual     "Demonic Swarm"
+ritpow                 	3 # Demonologist
+level                 	3
+free
+cost              		4 750 # 750 sacrifices and 250 gold
+cost					0 250
+apcost					8
+planereq 				0
+summoning
+addstring "c*Demon & 8d8*Lesser Demon & 100*Imp"
+addstring "c*Storm Demon & 2d5*Storm Demon & 10*Serpent Fiend"
+addstring "c*Ice Devil & 5d2*Frost Fiend & 20d4*Ice Imp"
+addstring "c*Arch Devil & 1d5*Devil & 2d5*Lesser Devil & 2d15*Fiery Imp"
+soundfx               	57
+descr "The Goetic Master expends great time, effort, and a massive number of sacrifices to bring forth and entrap a large number of Demons, Devils, and Imps for safe binding. Note: Control may still fail. Half price for Goetic Master."
+
+newritual "Protection Against Fire"
+ritpow				3 # Demonologist
+level				3
+free
+apcost				-1
+cost				4 20 #20 sacrifices
+bentargall			4
+soundfx				57
+descr "The Goetic Master uses the power of blood to protect his troops against fire, a common weapon of the denizens of Inferno. Lasts 1 turn."
+
+newritual "Protection Against Water"
+ritpow				3 # Demonologist
+level				3
+free
+apcost				-1
+cost				4 20 #20 sacrifices
+bentargall			8
+soundfx				57
+descr "The Goetic Master uses the power of blood to protect his troops against ice-based magic, a semi-common weapon of the denizens of Inferno. Lasts 1 turn."
+
+############# Demonologist Unit Changes
+
+selectritual "Greater Demon Summoning"
+defctrl 65
+
+selectmonster "Devil"
+ctrlchance 60
+
+selectmonster "Hellhound"
+ctrlchance 60
+
+selectmonster "Storm Demon"
+ctrlchance 60
+
+selectmonster "Disease Demon"
+ctrlchance 60
+
+selectritual "Infernal Horde"
+defctrl 55
+
+selectmonster "Demon Knight"
+ctrlchance 55
+
+selectmonster "Demonic Locust"
+ctrlchance 55
+
+selectmonster "Bloodsworn"
+ctrlchance 55
+
+selectritual "Summon Demon Lieutenant"
+defctrl 45
+
+selectmonster "Greater Devil"
+power 0 2
+
+selectmonster "Greater Demon"
+power 0 2
+
+selectmonster "Succubus"
+power 0 2
+
+selectmonster "Ice Devil"
+power 0 2
+
+selectmonster "Heliophagus"
+power 0 2
+
+selectritual "Summon Demon Lord"
+defctrl 40
+
+selectmonster "Duke of Hell"
+ctrlchance 30
+affres 100
+power 0 3
+
+selectmonster "Prince of Death"
+sensedead 1
+hands 50
+ctrlchance 25
+affres 100
+power 0 3
+
+selectmonster "Lord of Corruption"
+ctrlchance 45
+affres 100
+power 0 3
+
+selectmonster "Demon Lord"
+ctrlchance 40
+affres 100
+power 0 3
+
+selectmonster "Arch Devil"
+ctrlchance 40
+affres 100
+power 0 3
+
+
+selectmonster "Goat Sun"
+ctrlchance 40
+affres 100
+power 0 3
+
+selectmonster "Monster of Fraud"
+ctrlchance 40
+affres 100
+power 0 3
+
+####################### Witch Faction
+
+selectritual  "Marshlands"
+clearritspec
+ritpow                 4 # Witchery
+level                  1
+cost              3   25 # 25 Fungus
+terr                   0 # Required terrain: Plain.
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "10*deer tribe"
+addstring "1d5*levy"
+addstring "1d10*bandit"
+alterloc             107 # Change target location's terrain to: Swamp.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+descr "When man arrived in Elysium many swamps were drained and became fertile farms.  This ritual lets the farmlands return to their original swampy state. But Beware Expect enemies."
+
+newritual  "Make Witch Tower"
+clearritspec
+ritpow                 4 # Witchery
+level                  1
+cost              3   25 # 25 Fungus
+cost              0   10 # 10 Iron
+terr                   36 # Required terrain: deadwood.
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1*bear"
+addstring "1d5*wolf"
+addstring "1d10*deer"
+alterloc             26 # Change target location's terrain to: Tower.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+descr "Use the decomposing woods to create a base of operation."
+
+newritual     "Boglands"
+ritpow                 4 # Witchery
+level                  2
+cost              3   15 # 15 Fungus
+apcost                 1 # Actual AP cost: 2.
+terr                 107 # Required terrain: Swamp.
+alterloc              97 # Change target location's terrain to: Iron Bog.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+descr "The witch uses her magic to charm a swamp into having iron."
+
+newritual     "Destroy Druids Hut"
+ritpow                 4 # Witchery
+level                  2
+cost              3   -15 # 15 Fungus
+apcost                 1 # Actual AP cost: 2.
+terr                 28 # Required terrain: Swamp.
+alterloc              107 # Change target location's terrain to: Iron Bog.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+descr "Let them pray to their pathetic goat god to save them."
+
+############# Witch Unit Changes
+
+selectmonster "Bramble Gate" #Makes it feel different to other gates.
+	armor 1 #from 2
+	hp 40 #From 20
+	mr 3
+	meleeweapon 3 "Branch"
+	meleeweapon 3 "Branch"
+	meleeweapon 3 "Branch"
+	
+selectmonster "Bramble wall" #Makes it feel different to other gates.
+	armor 1 #from 2
+	hp 120 #From 20
+	mr 3
+	meleeweapon 3 "Branch"
+	meleeweapon 3 "Branch"
+	meleeweapon 3 "Branch"
+	
+	selectmonster "Giant Mushroom" #Mushrooms start outside siege walls
+	deployoutside 1
+	
+selectmonster "Blue Giant"
+	deployoutside 1
+	
+selectmonster "Death Fungus"
+	deployoutside 1
+	
+selectmonster "Blood Fungus"
+	deployoutside 1
+
+selectmonster "Devil Fungus"
+	deployoutside 1
+
+selectmonster "Snow Fungus"
+	deployoutside 1
+	
+selectmonster "Shadow Tree"
+	deployoutside 1
+	
+selectmonster "Androphag Lord" #Androphag have poisonres
+	rank 0
+	poisonres 50
+
+selectmonster "Androphag Cavalry"
+	poisonres 50
+
+selectmonster "Androphag Spearman"
+	poisonres 50
+
+selectmonster "Androphag Spearman" 1
+	poisonres 50
+
+selectmonster "Androphag Archer"
+	poisonres 50
+
+selectmonster "Androphag Archer" 1
+	poisonres 50
+
+selectritual "Bog Eye"
+	rarestart
+	
+selectritual "Marshlands"
+	rarestart
+	
+selectmonster "Bog Beast"
+	poisonres 100
+
+selectmonster "Gelatinous Cube"
+	clumsy
+	
+selectmonster "Giant Toad"
+	rank 1
+	rearpos
+	
+selectmonster "Giant Snail" #farther forwards
+	rank 1
+	rearpos
+	
+selectmonster "Giant Snail" 1 #farther forwards
+	rank 1
+	rearpos
+	
+selectmonster "Swamp Monster" #Less tanky due to how easliy they can be massed.
+	armor 0 #From 1
+	poisonres 100
+	
+selectmonster "Will o'the Wisp"
+	poisonres 100
+
+selectmonster "Mortal Gorgon" #A bit tankier to allow it's petrification to work properly. Same for other Gorgonites.
+	armor 1
+	
+selectmonster "Gorgon"
+	armor 1
+	
+selectmonster "Erinye"
+	armor 1
+
+selectmonster "Catoblepas"
+	mr 5
+	
+selectmonster "Mother of Monsters" #Stands behind her children but is weaker.
+	hp 102 #Fromr 114
+	armor 1 #From 2
+	mr 7 #From 9
+	rank 0
+	slow
+	
+selectmonster "Rootmonster" #No longer heals, like a golem
+	noheal
+	poisonres 100 #Wasn't before for some reason.
+	diseaseres 100
+	
+selectmonster "Swamp God" #Tougher but less hp
+	hp 151 #from 192
+	mr 6 #down a little
+	fastheal
+	affres 100
+	diseaseres
+	armor 2 #From 1
+	
+selectmonster "Ancient Presence" #Gets regeneration but less hp.
+	hp 92 #From 120
+	mr 7 #From 8
+	hpoverflow 1
+	regeneration
+	affres 100
+	
+selectmonster "Witch's Apprentice"
+	poisonres 50 #Previously 0%, this allows some of them to survive into witchhood.
+	diseaseres
+	
+selectmonster "Witch"
+	poisonres 100 #A massive change to her early game as it stops suicide. Changed from 50%.
+	swamp
+	diseaseres
+
+selectmonster "Hag"
+	swamp
+	diseaseres
+	
+selectmonster "Bog Witch"
+	diseaseres
+
+############# Androphag Lord Ritual
+
+newritpow
+
+newritual "Cut Forest For Evil"
+level 1
+free
+cost 1 -5 #Gives 7 iron
+cost 0 -1 #Gives 2 gold
+terr 2 #Makes Spell only applicable to destroyed stuff
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "3*bear"
+addstring "2d5*wolf"
+addstring "2d10*deer"
+alterloc 36 #Dead Forest
+descr "Cut woods to spite nature. But beware some might intervene"
+
+selectmonster "Androphag Lord"
+power 0 1
+
+newritpow
+
+newritual "Cut Dead Forest For Evil"
+level 1
+free
+cost 1 -5 #Gives 5 iron
+cost 0 -1 #Gives 1 gold
+terr 36 #Makes Spell only applicable to destroyed stuff
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1*bear"
+addstring "1d5*wolf"
+addstring "1d10*deer"
+alterloc 0 #plain
+descr "Cut woods for resources. But beware some might intervene"
+
+selectmonster "Androphag Lord"
+power 0 1
+
+newritpow
+
+newritual "Cut Dead Jungle For Evil"
+level 1
+free
+cost 1 -5 #Gives 5 iron
+cost 0 -1 #Gives 1 gold
+terr 116 #Makes Spell only applicable to jungle
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1*bear"
+addstring "1d5*wolf"
+addstring "1d10*deer"
+alterloc 119 #savanna
+descr "Cut dead jungle for resources. But beware some might intervene"
+
+selectmonster "Androphag Lord"
+power 0 1
+
+newritpow
+
+newritual "Cut Jungle For Evil"
+level 1
+free
+cost 1 -5 #Gives 5 iron
+cost 0 -1 #Gives 1 gold
+terr 36 #Makes Spell only applicable to destroyed stuff
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "8*lion tribe"
+addstring "1d5*lion"
+addstring "1d10*spider"
+alterloc 116 #dead jungle
+descr "Cut jungle for resources. But beware some might intervene"
+
+selectmonster "Androphag Lord"
+power 0 1
+
+####################### High Priestess Faction 4
+
+############# High Priestess Rituals
+
+selectritual "Lesser Blood Feast" #Was too cheap for the new unit quality.
+	cost 4 20 #Up from 15
+	
+newritual "Mirror of Blood" #Just a minor thing to make up for her otherwise lack of scouting.
+	ritpow 8
+	level 1
+	cost 4 5
+	randterrloc -32 #Village+
+	centerloc
+	scryloc 5 #Just the target square
+	soundfx 57
+	closewin
+	rarestart
+	descr "By gazing into a pool of freshly spilt blood, a priestess of Baal can see the location of a settlement to sacrifice to the dark god."
+	
+selectritual "Lesser Ceremony to Baal" #Even better in deserts
+	addstring "(117)1d4+2*Mazzik"
+	addstring "(117)Se'ir"
+
+selectritual "Ceremony to Baal"
+	addstring "(117)2d3*Se'ir"
+	addstring "(117)1d2*Shed"
+	addstring "(117)3d6*Mazzik"
+	addstring "(117)1d3*Lilot"
+	
+############# High Priesess Unit Changes
+
+selectmonster "Anakite" #Better equipped.
+	allitemslots
+	
+selectmonster "Anakite Captain"
+	rearpos
+	allitemslots
+	
+selectmonster "Adon"
+	allitemslots
+	
+selectmonster "Zamzummite"
+	allitemslots
+	
+selectmonster "Rephaite"
+	allitemslots
+
+selectmonster "Melqart"
+	allitemslots
+	
+selectmonster "Ditanu"
+	allitemslots	
+	
+selectmonster "Malik"
+	allitemslots
+	
+selectmonster "Small Spider" #Spiders stealthy
+	stealth
+	
+selectmonster "Large Spider"
+	stealth
+	
+selectmonster "Scorpion"
+	stealth
+	
+selectmonster "Shed"
+	rank 0
+	
+selectmonster "Desert Sun"
+	stupid #fits the lore
+
+####################### Bakamono Faction 5
+
+############# Bakamono Unit Changes
+
+selectmonster "Dai Oni"
+	rank 1 #Will now prefer melee, as you know it's an Oni.
+	hp 120
+	allitemslots
+	
+selectmonster "Spectral Oni King"
+	rank 1
+	allitemslots
+
+####################### Barbarian Faction 6
+
+######## Barbarian Rituals
+
+newritpow
+
+newritual "Raid The Temple Of The El"
+free
+level 1
+apcost 2
+cost 0 -300
+cost 1 -100
+cost 14 -300
+cost 15 -100
+cost 2 -125
+terr 85
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d20*temple guard & 1*pontiff & 4d12*Crossbowman & 4*bishop"
+addstring "1d40*levy 6*bishop"
+addstring "1d20*archer & 1d20*levy 4*bishop"
+addstring "1*Inquisitor & 1d6*Paladin & 3d6*Templar & 4d6*Crossbowman 4*bishop"
+addstring "1*legate & 1d9*Paladin & 3d9*Templar & 4d12*Crossbowman 4*bishop"
+alterloc 245
+descr "Long enough have the tribes been looked down upon for our worship, they will now fear the thunder"
+
+selectmonster "Barbarian Leader"
+power 0 1
+
+newritpow
+
+newritual "Build Camp"
+free
+level 2
+apcost 2
+cost 0 50
+terr -61
+nonearby5req 113
+alterloc 113
+descr "Use This prebuilt land to develop a new camp for the horde"
+
+selectmonster "Barbarian Leader"
+power 0 1
+
+newritpow
+
+newritual "Raze Town"
+free
+level 1
+apcost 2
+cost 0 -50
+cost 1 -40
+cost 14 -100
+cost 15 -25
+cost 2 -75
+terr -28
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d20*bandit & 1*bandit king"
+addstring "1d40*levy"
+addstring "1d20*archer & 1d20*levy"
+addstring "1*Inquisitor & 1d6*Paladin & 3d6*Templar & 4d6#*Crossbowman"
+reducetown
+descr "At the cost of taking these Pathetic lifes we may extract all the resources we can and move on to the next raid"
+
+selectmonster "Barbarian Leader"
+power 0 1
+
+newritpow
+
+newritual "Raid Hamlets"
+free
+level 1
+apcost 2
+cost 0 -10
+cost 1 -10
+cost 14 -25
+terr -64
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d10*bandit"
+addstring "1d10*levy"
+addstring "1d5*archer & 1d8*levy"
+reducetown
+descr "At the cost of taking farmers lifes we may extract all the resources we can and move on."
+
+selectmonster "Barbarian Leader"
+power 0 1
+
+newritpow
+
+newritual "Raid Villages"
+free
+level 1
+apcost 2
+cost 0 -30
+cost 1 -25
+cost 14 -50
+terr -16
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d20*bandit"
+addstring "1d20*levy"
+addstring "1d10*archer & 1d10*levy"
+reducetown
+descr "At the cost of taking our villagers lifes we may extract all the resources we can and move on"
+
+selectmonster "Barbarian Leader"
+power 0 1
+
+newritpow "Barbarian Leader Powers"
+
+newritual "Contact Ancient Tribe" #Can get indie tribes as allies.
+	level 1
+	terr -10 #Forest/Jungle/Swamp
+	cost 0 150
+	cost 2 600
+	free
+	summoning
+	addstring "(107)c*Goblin Chieftain & 3d6*Goblin & 2d6*Goblin Archer" #Swamp only
+	addstring "(115)c*Witch Doctor & 2d6*Hyena Tribe Warrior & 2d4*Pygmy" #Jungle only
+	addstring "c*Wolf Tribe Shaman & 2d6*Wolf Tribe Warrior & 2d4*Wolf Tribe Bowman"
+	addstring "c*Deer Tribe Shaman & 2d6*Deer Tribe Warrior & 2d4*Deer Tribe Bowman"
+	sum0chance 100 #always get gobbos in swamps
+	sum1chance 100 #Always get pygmies in jungles
+	descr "By invoking ancient agreements and ritual smoking of the peace pipe, other tribes can be convinced to join the barbarian hordes. The tribe contacted depends on where the call is made."
+
+
+############# Mounted Chief
+
+newritpow
+
+newritual "Cut Dead Jungle For Resources"
+level 1
+free
+cost 1 -5 #Gives 5 iron
+cost 0 -1 #Gives 1 gold
+terr 116 #Makes Spell only applicable to jungle
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1*bear"
+addstring "1d5*wolf"
+addstring "1d10*deer"
+alterloc 119 #savanna
+descr "Cut dead jungle for resources. But beware some might intervene"
+
+selectmonster "mounted chief"
+power 0 1
+
+newritpow
+
+newritual "Cut Jungle For Resources"
+level 1
+free
+cost 1 -5 #Gives 5 iron
+cost 0 -1 #Gives 1 gold
+terr 36 #Makes Spell only applicable to destroyed stuff
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "8*lion tribe"
+addstring "1d5*lion"
+addstring "1d10*spider"
+alterloc 116 #dead jungle
+descr "Cut jungle for resources. But beware some might intervene"
+
+selectmonster "mounted chief"
+power 0 1
+
+newritpow
+
+newritual "Cut Dead Forest For Resources"
+level 1
+free
+cost 1 -5 #Gives 5 iron
+cost 0 -1 #Gives 1 gold
+terr 36 #Makes Spell only applicable to destroyed stuff
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1*bear"
+addstring "1d5*wolf"
+addstring "1d10*deer"
+alterloc 0 #plain
+descr "Cut woods for resources. But beware some might intervene"
+
+selectmonster "mounted chief"
+power 0 1
+
+newritpow
+
+newritual "Cut Forest For Resources"
+level 1
+free
+cost 1 -5 #Gives 7 iron
+cost 0 -1 #Gives 2 gold
+terr 2 #Makes Spell only applicable to destroyed stuff
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "3*bear"
+addstring "2d5*wolf"
+addstring "2d10*deer"
+alterloc 36 #Dead Forest
+descr "Cut woods for resources. But beware some might intervene"
+
+selectmonster "mounted chief"
+power 0 1
+
+newritpow
+
+newritual "Strip Broken Portal"
+level 1
+free
+cost 1 -20 #Gives 10 iron
+cost 0 -10 #Gives 10 gold
+terr 340 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These magic resources are needed elsewhere."
+
+selectmonster "mounted chief"
+power 0 1
+
+newritual "Strip Old Castle Ruin For Resources"
+level 1
+free
+cost 1 -40 #Gives 10 iron
+cost 0 -15 #Gives 10 gold
+terr 38 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These resources are needed elsewhere."
+
+selectmonster "mounted chief"
+power 0 1
+
+newritpow
+
+newritual "Strip Ruin"
+level 1
+free
+cost 1 -10 #Gives 10 iron
+cost 0 -10 #Gives 10 gold
+terr 184 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These resources are needed elsewhere."
+
+selectmonster "mounted chief"
+power 0 1
+
+newritpow
+
+newritual "Strip Ruins"
+level 1
+free
+cost 1 -15 #Gives 15 iron
+cost 0 -15 #Gives 15 gold
+terr 185 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These resources are needed elsewhere."
+
+selectmonster "mounted chief"
+power 0 1
+
+selectritual "Carve Totempole"
+	cost 2 200 #Reduced from 300
+
+############# Barbarian Unit Changes
+
+selectmonster "barbarian warrior"
+semistupid
+
+selectmonster "barbarian bowman"
+semistupid
+
+selectmonster "Barbarian Leader" #Leader is much tougher also has "hero" immunities.
+	hp 21
+	mr 7
+	armor 1
+	power 0 1 #Leader powers
+	gatherherbs
+	affres 100
+	diseaseres
+	voidsanity 20 #Can explore the void if he walks there.
+	armytrainer 1
+	ainofollower
+	
+selectmonster "Deer Tribe Shaman"
+	power 13 1 #Spirit summons
+
+selectmonster "Wolf Tribe Shaman"
+	power 13 1 #Spirit summons
+
+selectmonster "Ancestor Spirit"
+	maxsum 75
+	
+selectmonster "Ancestral Hero" #Ancestor Commanders now have spirit sight.
+	spiritsight
+	hp 21
+	affres 100
+	voidsanity 10
+	allitemslots
+	
+selectmonster "Ancestor Guide"
+	spiritsight
+	power 13 1 #Now has spirit summons.
+	allitemslots
+	
+selectmonster "Ancestral Shaman"
+	spiritsight
+	allitemslots
+	
+selectmonster "Ancestral Chief"
+	spiritsight
+	hp 12
+	allitemslots
+	
+selectmonster "Ancestral Archer" #Ancestorrs are tougher.
+	hp 4 #From 3
+	allitemslots
+	
+selectmonster "Ancestral Warrior"
+	hp 5 #From 4
+	allitemslots
+	
+selectmonster "Ancestral Lancer"
+	hp 7 #From 5
+	allitemslots
+
+selectmonster "Barbarian Cavalry" #Now engages in melee.
+	rank 1
+	rearpos
+
+####################### Senator Faction 7
+
+############# Senator Rituals
+
+newritual     "View Capital"
+ritpow                31 # Senator
+level                  2
+cost              0   20 # 20 Gold
+randnewloc           -22 # Sets target location to a capital
+scryloc               35 # Scry radius 3.5 around target location.
+soundfx               70 # Sound effect when the ritual is cast: echo.wav.
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+closewin                 # Closes cast ritual window.
+descr "The senator obtains a map of the capital and the surrounding area."
+
+newritual     "Fortify Position"
+ritpow                 	31 # Senator
+level                 	1
+free
+cost              		0 50 # 50 gold and 25 iron
+cost					1 25
+apcost					5
+terr                 	-1 # anywhere
+alterloc             	154 # Roman Fort
+nonearby7req			154
+soundfx               	57
+descr "The Senator orders his Legions to erect a fort at this location. Must be 5 tiles from nearest fort. WARNING: Can destroy any traversable terrain."
+
+############# Centurion
+
+newritual "Build A Coal Mine"
+ritpow 31 1
+level 1
+free
+cost 1 20 #Cost 20 Iron
+terr 73 #Makes Spell only applicable to hills
+apcost 1
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d12*goblin"
+addstring "1d2*Ochre Jelly"
+addstring "1d9*pale one"
+addstring "1d10*bandit"
+addstring "1d5*Giant Ant"
+alterloc 105 #Coal Mine
+descr "With our great engineers we can easily build a coal mine for the glory of the empire, But Beware Dangers Are Everywhere."
+
+newritual "Build A Iron Mine"
+ritpow 31 1
+level 1
+free
+cost 1 35 #Cost 35 Iron
+terr -5 #Makes Spell only applicable to mountains
+apcost 5
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "3d12*goblin & 1*goblin shaman"
+addstring "3d5*dwarf worker"
+addstring "2d2*Ochre Jelly"
+addstring "2d9*pale one"
+addstring "2d10*bandit"
+addstring "1*giant ant queen & 2d3*Giant Ant"
+alterloc 14 #Iron Mine
+nonearby1req -4 #Makes it so mines cant be adjancent to one another
+descr "It is a must for our military to be armed and ready. For the evil of elysium does not sleep, you will be given enough materials for the construction of an iron mine. But Beware There Will Be Resistance"
+
+newritual "Develop A Village"
+ritpow 31 1
+level 1
+free
+cost 1 20 #Cost 20 Iron
+cost 0 100
+terr 7 #Makes Spell only applicable to hamlets
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "1d12*wolf tribe warrior"
+addstring "1d5*pale ones"
+addstring "1d5*serpent"
+addstring "1d5*bandit"
+alterloc 18 #village
+descr "Nothing to be proud about but in time surely it will be built to our empires standards."
+
+newritual "Destroy Graveyard"
+ritpow 31 1
+level 1
+free
+cost 1 20 #Cost 10 Iron
+terr 16 #Makes Spell only applicable to graveyards
+apcost 2
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "2d12*ghoul 1*corpse mage"
+addstring "1d3*banshee 1*corpes mage"
+addstring "1d5*wight 1*corpse mage"
+addstring "1d20*longdead & 1*corpse mage"
+alterloc 0 #plain
+descr "Destroy this unholy place and what ever is in it. In the name of the empire."
+
+newritual "Develop A Town"
+ritpow 31 1
+level 1
+free
+cost 1 40 #Cost 40 Iron
+cost 0 250
+terr -16 #Makes Spell only applicable to villages size settlements
+apcost 5
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "2d12*wolf tribe warrior"
+addstring "2d5*wight"
+addstring "2d5*serpent"
+addstring "2d10*bandit"
+addstring "1*ogre chief & 2d2*ogre"
+alterloc 17 #Town
+nonearby1req 17 #Makes it so towns cant be adjancent to one another
+descr "Trade and infrastructure is the life blood of this empire. But Beware there are many jealous of the empire of man."
+
+newritual "Develop A City"
+ritpow 31 1
+level 1
+free
+cost 1 50 #Cost 50 Iron
+cost 0 400
+terr 17 #Makes Spell only applicable to towns
+apcost 7
+summoning
+defctrl -100 #Makes the monsters hostile
+addstring "3d12*wolf tribe warrior 2*wolf tribe shaman"
+addstring "2d5*wight & 1*wraith"
+addstring "2d5*serpent"
+addstring "1*bandit king & 2d10*bandit"
+addstring "1*ogre chief & 4d2*ogre"
+addstring "1d4*Rock Troll"
+addstring "4d6*goblin 10*goblin spearmen 20*goblin archer & 1*goblin king"
+alterloc 9 #city
+nonearby1req -4 #Makes it so city cant be adjancent to one another
+descr "We are the envy of the world for only we can build a city and maintain it. Beware this new development with surely bring enemies at the gate."
+
+newritual "Develop A Port"
+ritpow 31 1
+level 1
+free
+cost 1 45 #Cost 40 Iron
+cost 0 260
+terr 78 #Makes Spell only applicable to coastal hamlets
+apcost 5
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "3d5*sea dog"
+addstring "2*kraken"
+addstring "2d5*ichtyid warrior"
+addstring "2d10*bandit"
+addstring "1*pirate captain & 2d5*pirate"
+alterloc 79 #port
+nonearby1req 79 #Makes it so towns cant be adjancent to one another
+descr "Trade is the real life blood of this empire so build a port to spread the word of our glory."
+
+newritual     "Rebuild City"
+ritpow                31 1 # Centurion
+level                  1
+cost              0   150 # 150 Gold
+cost              1    40 #  40 Iron
+apcost                 1 # Actual AP cost: 2.
+terr                   185 # Required terrain: Destroyed City.
+alterloc              9 # Change target location's terrain to: city.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "Let us restore this great city in the name of the empire."
+
+newritual     "Rebuild Hamlet"
+ritpow                31 1 # Centurion
+level                  1
+cost              0   20 # 20 Gold
+cost              1    5 #  5 Iron
+apcost                 1 # Actual AP cost: 2.
+terr                   184 # Required terrain: House Ruins.
+alterloc              7 # Change target location's terrain to: Hamlet.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "Let us rebuild in the name of the empire."
+
+selectmonster "Centurion"
+power 31 1
+
+####################### Pale Ones Faction 8
+
+############# Pale Ones Rituals
+
+newritual     "Make Pale One Lair"
+ritpow              15 # Pale One Shaman
+level               1
+rebatelvl			3
+free
+cost              	1   100 # 100 iron and 50 emerald, half at T3
+cost				10	25
+apcost              5
+terr                47 # Agartha Ground
+alterloc          	121 # Pale One Lair
+nonearby5req		121
+soundfx             57
+descr "The shaman finds a suitable spot to create a new 'court' for the King."
+
+newritual     "Plant Fungal Forest"
+ritpow              15 # Pale One Shaman
+level               1
+free
+cost              	10 5 # 5 emerald
+apcost              1
+terr                47 # Agartha Ground
+alterloc          	195 # Fungus Forest
+soundfx             57
+descr "The shaman uses some geomantic power to bring forth one of the Deep Forests."
+
+newritual     "Growth Crystals"
+ritpow              15 # Pale One Shaman
+level               1
+free
+cost              	9 10 # 10 diamond
+apcost              2
+terr                195 # Fungus Forest
+alterloc          	196 # Crystal Forest
+soundfx             57
+descr "The shaman strategically places crystals in the stems of some giant mushrooms. With time, the mushrooms crystalize and produce crystalline spores."
+
+newritual     "Unearth Iron"
+ritpow              15 # Pale One Shaman
+level               1
+free
+cost              	0 25 # 25 Gold and 10 emerald
+cost				10 10
+apcost              2
+terr                47 # Agartha Ground
+alterloc          	187 # Agartha Iron Mine
+nonearby1req		187
+soundfx             57
+descr "The shaman dowses for a vein of ore and orders his followers to dig it up."
+
+newritual     "Unearth Silver"
+ritpow              15 # Pale One Shaman
+level               2
+free
+cost              	0 75 # 75 gold and 20 emeralds
+cost				10 20
+apcost              5
+terr                47 # Agartha Ground
+alterloc            186 # Agartha Silver Mine
+nonearby3req		186
+soundfx             57
+descr "The shaman dowses for a vein of silver and orders his followers to dig it up."
+
+newritual     "Unearth Diamond"
+ritpow              15 # Pale One Shaman
+level               2
+free
+cost              	0   25 # 25 Gold
+cost				1 25
+apcost              2
+terr                47 # Agartha Ground
+alterloc            176 # Agartha Silver Mine
+nonearby3req		176
+soundfx             57
+descr "The shaman dowses for a deposit of gems and orders his followers to dig it up."
+
+newritual     "Unearth Emerald"
+ritpow              15 # Pale One Shaman
+level               2
+free
+cost              	0   25 # 25 Gold
+cost				1 25
+apcost              2
+terr                47 # Agartha Ground
+alterloc            177 # Agartha Silver Mine
+nonearby3req		177
+soundfx             57
+descr "The shaman dowses for a deposit of gems and orders his followers to dig it up."
+
+newritual     "Unearth Ruby"
+ritpow              15 # Pale One Shaman
+level               2
+free
+cost              	0   25 # 25 Gold
+cost				1 25
+apcost              2
+terr                47 # Agartha Ground
+alterloc            174 # Agartha Silver Mine
+nonearby3req		174
+soundfx             57
+descr "The shaman dowses for a deposit of gems and orders his followers to dig it up."
+
+newritual     "Unearth Sapphire"
+ritpow              15 # Pale One Shaman
+level               2
+free
+cost              	0   25 # 25 Gold
+cost				1 25
+apcost              2
+terr                47 # Agartha Ground
+alterloc            175 # Agartha Silver Mine
+nonearby3req		175
+soundfx             57
+descr "The shaman dowses for a deposit of gems and orders his followers to dig it up."
+
+newritual "Temple Portal to Earth"
+ritpow 				15 # Pale One Shaman
+planeloc			0
+terr				-2 # temples
+level 				3
+cost                15 250 # 250 gems, randomly distributed
+portalroom			-51
+noportalreq			1
+free
+soundfx				57
+descr "The shaman seeks out the deep realms of the Earthen King and, if found, creates a portal made of gems to seek him out. Note: Elemental planes might not spawn on mapgen. Having a warlock in play should ensure they do. Cannot be used where another portal exists."
+
+newritual "Temple Portal to Water"
+ritpow 				15 # Pale One Shaman
+planeloc			0
+terr				-2 # temples
+level 				3
+cost                15 250 # 250 gems, randomly distributed
+cost				0 250
+portalroom			-49
+noportalreq			1
+free
+soundfx				57
+descr "The shaman seeks out the deep realms of the Watery King and, if found, creates a portal made of gems to seek him out. Note: Elemental planes might not spawn on mapgen. Having a warlock in play should ensure they do. Cannot be used where another portal exists"
+
+newritual 	"Call Denizens of the Deep"
+ritpow 				15 # Pale One Shaman
+cost 				0 250 #250 gold and 100 random gems
+cost				15 100
+free
+level 				2
+apcost 				8
+summoning
+addstring "c*Pale One Commander & 2d10*Pale One & 2d10*Pale One Soldier & 6d5*Pale One Slinger"
+addstring "c*Ancient Commander & 2d4*Ancient Pale One& 2d4*Ancient Hurler"
+addstring "c*Dwarf Commander & 3d10*Dwarf & 2d10*Dwarf Warrior & 6d6*Outdoor Dwarf"
+addstring "c*Champion of Mountains & 1d5*Earth Elemental & 10*Lesser Earth"
+descr "The shaman sends for anyone, be they Pale Ones or another race, who will heed the call of the King of the Deep."
+
+newritpow #Geomancy
+
+newritual "Raise Hills"
+	level 1
+	cost 10 10
+	apcost 8
+	terr 0 #Plains.
+	alterloc 73 #Hills
+	soundfx 57
+	free
+	descr "Raises a few good hills from some less exciting plains."
+	
+newritual "Raise Mountains"
+	level 1
+	cost 10 20
+	apcost 15
+	terr 73 #Hills
+	alterloc 12 #Mounts
+	soundfx 57
+	free
+	descr "Nurtures some friendly hills into adult mountains."
+	
+newritual "Soften Hills"
+	level 1
+	cost 10 10
+	apcost 15
+	terr 73 #Hills
+	alterloc 0 #Hills
+	soundfx 57
+	free
+	descr "Pushes some overly eager hills down into a calm plains."
+	
+newritual "Calm Mountains"
+	level 1
+	cost 10 20
+	apcost 15
+	terr 12 #Mounts
+	alterloc 73 #Hills
+	soundfx 57
+	free
+	descr "Assures some mountains there's noone watching them, and they can nap safely."
+	
+newritual "Form River"
+	level 1
+	cost 8 20
+	apcost 8
+	terr 0 #Plains
+	alterloc 67 #River
+	soundfx 57
+	free
+	descr "Encourages a local river to live in a plains."
+	
+newritual "New Lands"
+	level 2
+	cost 8 10
+	cost 7 10
+	apcost 8
+	terr -43 #Any Sea.
+	alterloc 0 #Plains
+	soundfx 57
+	free
+	descr "Brings some seabed up to meet the sunshine."
+	
+newritual "Raise Volcano"
+	level 2
+	cost 10 50
+	cost 7 100
+	apcost 8
+	terr 73
+	alterloc 102
+	soundfx 57
+	soundfx 53
+	soundfx 45
+	descr "Kindly asks some magma to rise out of a hill."
+	
+selectritual "Awaken Guardians" #Cheaper and always start with it
+	free
+	cost 10 10 #From 20
+	apcost 2
+	
+newritual "Tremorsense" #New scouting ritual.
+	ritpow 15 #Pale ones
+	level 2
+	free
+	cost 10 10 #10 Emeralds
+	randomloc 3 #Enemy commander
+	scryloc 5 #Just that square
+	airare 5
+	soundfx 57
+	descr "The oracle places his hands firmly on the ground and reaches out through the earth to feel the tremors of an enemy army marching."
+	
+############# Pale One Unit Changes
+
+selectmonster "King of the Deep" #now a bit tougher and gets a sweep attack. Unlike the TK he cannot be replaced.
+	hpoverflow 1
+	hp 160
+	gathergems #keeps you in the game if your starting earth reader dies
+	allitemslots
+	clearweapons
+	meleeweapon 18 "Granite Spear"
+	affres 80
+	voidsanity 10
+
+selectmonster "Pale One"
+	hp 11
+	hpoverflow 1
+
+selectmonster "Pale One Scout"
+	hp 11
+	hpoverflow 1
+
+selectmonster "Pale One Soldier"
+	hp 12
+	hpoverflow 1
+
+selectmonster "Cavern Guard"
+	hp 13
+	hpoverflow 1
+
+selectmonster "Pale One Commander"
+	hp 16
+	hpoverflow 1
+
+selectmonster "Ancient Commander"
+	hp 65
+	hpoverflow 1
+	allitemslots
+
+selectmonster "Ancient Pale One"
+	hp 58
+	hpoverflow 1
+	allitemslots
+
+selectmonster "Seal Guard"
+	hp 70
+	hpoverflow 1
+	allitemslots
+
+selectmonster "Ancient Hurler"
+	hp 48
+	hpoverflow 1
+	clearweapons #More damaging boulders
+	siegeweapon 22 237 #Up from 13
+	rangedweapon 22 305
+	meleeweapon 9   0
+	allitemslots
+
+selectmonster "Troglodyte" #Now a sort of attack rat/man/thing
+	hp 21 #From 25
+	mor 4 #from 8
+	fast
+	frontpos
+	meleeweapon 5 "Claw"
+	meleeweapon 5 "Claw"
+
+selectmonster "Penumbral"
+	hp 12
+	hpoverflow 1
+
+selectmonster "Penumbral" 1
+	hp 12
+	hpoverflow 1
+
+selectmonster "Umbral"
+	hp 32
+	hpoverflow 1
+	
+selectmonster "Cavern Wight"
+	hp 32
+	hpoverflow 1
+	
+selectmonster "Sepulchral"
+	hp 102
+	hpoverflow 1
+	allitemslots
+	
+selectmonster "Olm"
+	hp 18
+
+selectmonster "Cave Grub"
+	hp 48
+	affres 70
+	
+selectmonster "Sentinel" #Weaker because the ritual is cheaper
+	hp 20 #was 30
+	affres 100
+	deployoutside 1 #Melee statues worse at defending siege locations.
+	
+selectmonster "Granite Guardian"
+	hp 80 #was 120
+	affres 100
+	deployoutside 1
+	
+selectmonster "Marble Oracle" #too strong for casters
+	hp 120 #was 160
+	affres 100
+	
+selectmonster "Onyx Oracle"
+	hp 140 #Was 175
+	affres 100
+
+####################### Druid Faction 9
+
+############# Druid Rituals
+
+newritual     "Plant Forest"
+ritpow                 5 # Druidism
+level                  1
+cost              2   20 # 50 Herbs
+apcost                 1 # Actual AP cost: 2.
+terr                   0 # Required terrain: Plain.
+alterloc               2 # Change target location's terrain to: Forest.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "The druid grows a forest for his own use."
+
+newritual     "Plant Tundra Forest"
+ritpow                 5 # Druidism
+level                  1
+cost              2   20 # 60 Herbs
+apcost                 1 # Actual AP cost: 2.
+terr                   44 # Required terrain: Plain.
+alterloc               2 # Change target location's terrain to: Forest.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "The druid grows a forest for his own use."
+
+newritual "Sense Forest" #Druids can now scry for ancient forests.
+	ritpow 5 #Druid
+	level 1
+	cost 2 25
+	terr -6 #forest
+	randnewloc 4
+	soundfx 57
+	scryloc 5
+	closewin
+	descr "The druid reaches out into the forest to find its heart. This reveals the location of an unseen ancient forest."
+	
+newritual "Naturalise"
+ritpow 5
+free
+	level 2
+	apcost 2
+	terr -8 #Hamlets-Villages
+	cost 2 -150 #Herbs
+	reducetown
+	soundfx 57
+	free
+	descr "The wrath of nature is terrifying to behold, vines and creepers grow rapidly taking over settlements and driving men away. Vine Lords unleash these powers on those who threaten their sacred groves. ^The herbs and other plants that grow are then harvested by druids for use in rituals."
+	
+	selectritual "Heart of the Forest"
+	free
+
+selectritual "Lord of the Wild"
+	free
+
+newritual     "Plant Jungle"
+ritpow                 5 # Druidism
+level                  1
+cost              2   30 # 50 Herbs
+apcost                 1 # Actual AP cost: 2.
+terr                 119 # Required terrain: Savanna.
+alterloc             115 # Change target location's terrain to: Jungle.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "The druid grows a Jungle for his own use."
+
+newritual     "Restore Forest"
+ritpow                 5 # Druidism
+level                  1
+cost              2   10 # 30 Herbs
+apcost                 0 # Actual AP cost: 1.
+terr                  36 # Required terrain: Dead Forest.
+alterloc               2 # Change target location's terrain to: Forest.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "The druid restores a dead forest to life."
+
+newritual     "Restore Jungle"
+ritpow                 5 # Druidism
+level                  1
+cost              2   20 # 30 Herbs
+apcost                 0 # Actual AP cost: 1.
+terr                 116 # Required terrain: Destroyed Jungle.
+alterloc             115 # Change target location's terrain to: Jungle.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+descr "The druid restores a destroyed jungle to life."
+
+newritual     "Plant Ancient Forest"
+ritpow                 5 # Druidism
+level                  3
+cost              2  550 # 550 Herbs
+apcost                 2 # Actual AP cost: 3.
+terr                  -6 # Required terrain: forests/jungles.
+alterloc               4 # Change target location's terrain to: Ancient Forest.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+descr "The druid empowers a forest or jungle to turn it into an ancient forest."
+
+newritual     "Destroy witch tower"
+ritpow                 5 # Druidism
+level                  2
+cost              2  10 # 10 Herbs
+apcost                 2 # Actual AP cost: 3.
+terr                  26 # Required terrain: Tower.
+alterloc               36 # Change target location's terrain to: dead forest.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+descr "The druid empowers a forest or jungle to turn it into an ancient forest."
+
+newritual     "Make A Hut"
+ritpow                 5 # Druidism
+level                  1
+free
+cost              2  10 # 10 Herbs
+cost              0  10 # 10 Iron
+apcost                 2 # Actual AP cost: 3.
+terr                  -13 # Required terrain: Tower.
+alterloc               28 # Change target location's terrain to: Hut.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+descr "Make A hut for the tribes."
+
+newritual     "Make Savanna Into Plain"
+ritpow                 5 # Druidism
+level                  1
+cost              2  10 # 10 Herbs
+apcost                 2 # Actual AP cost: 3.
+terr                  119 # Required terrain: Savanna.
+alterloc               0 # Change target location's terrain to: plain.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+descr "Make A hut for the tribes. reverse scourge lord"
+
+newritual     "Make Desert Into Savanna"
+ritpow                 5 # Druidism
+level                  1
+cost              2  10 # 10 Herbs
+apcost                 2 # Actual AP cost: 3.
+terr                  117 # Required terrain: Desert.
+alterloc               119 # Change target location's terrain to: Savanna.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+descr "Make A hut for the tribes. reverse scourge lord"
+
+newritual "Bramble Fortess"
+copyritual "bramble Fort"
+ritpow 5
+level 1
+free
+cost 2 50
+apcost 2
+terr 4
+
+############# Vergobret
+
+newritpow
+
+newritual "Strip Broken Portal"
+level 1
+free
+cost 1 -20 #Gives 10 iron
+cost 0 -10 #Gives 10 gold
+terr 340 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These magic resources are needed elsewhere."
+
+selectmonster "Vergobret"
+power 0 1
+
+newritual "Strip Old Castle Ruin For Resources"
+level 1
+free
+cost 1 -40 #Gives 10 iron
+cost 0 -15 #Gives 10 gold
+terr 38 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These resources are needed elsewhere."
+
+selectmonster "Vergobret"
+power 0 1
+
+newritpow
+
+newritual "Strip Ruin"
+level 1
+free
+cost 1 -10 #Gives 10 iron
+cost 0 -10 #Gives 10 gold
+terr 184 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These resources are needed elsewhere."
+
+selectmonster "Vergobret"
+power 0 1
+
+newritpow
+
+newritual "Strip Ruins"
+level 1
+free
+cost 1 -15 #Gives 15 iron
+cost 0 -15 #Gives 15 gold
+terr 185 #Makes Spell only applicable to destroyed stuff
+apcost 2
+alterloc 0 #plain
+descr "These resources are needed elsewhere."
+
+selectmonster "Vergobret"
+power 0 1
+
+############# Druid Unit Changes
+
+selectmonster "deer"
+semistupid
+
+selectmonster "moose"
+semistupid
+
+selectmonster "wolf"
+semistupid
+
+selectmonster "bear"
+semistupid
+
+selectmonster "boar"
+semistupid
+
+selectmonster "great boar"
+semistupid
+
+selectmonster "monster boar"
+semistupid
+
+selectmonster "serpent"
+semistupid
+
+selectmonster "rabbit"
+semistupid
+
+selectmonster "snake"
+semistupid
+
+selectmonster "elephant"
+semistupid
+
+selectmonster "giant crab"
+semistupid
+
+selectmonster "cockatrice"
+semistupid
+
+selectmonster "giant mantis"
+semistupid
+
+selectmonster "lion"
+semistupid
+
+selectmonster "ent"
+semistupid
+
+####################### Burgmeister Faction 10
+
+###################### Warlock Faction 11
+
+newritual     "View Elemental Plane of Fire"
+ritpow                18 # Warlock of Fire
+level                  2
+cost              7   10 # 10 Rubies
+newlocplanes         -48 # Sets target location to a corresponding elemental citadel.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+scryloc               55 # Scry radius 5.5 around target location.
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+closewin                 # Closes cast ritual window.
+descr "The warlock views an elemental citadel and the surrounding areas corresponding to his elemental affinity."
+
+newritual     "View Elemental Plane of Water"
+ritpow                19 # Warlock of Water
+level                  2
+cost              8   10 # 10 Saphires
+newlocplanes         -49 # Sets target location to a corresponding elemental citadel.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+scryloc               55 # Scry radius 5.5 around target location.
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+closewin                 # Closes cast ritual window.
+descr "The warlock views an elemental citadel and the surrounding areas corresponding to his elemental affinity."
+
+newritual     "View Elemental Plane of Air"
+ritpow                20 # Warlock of Air
+level                  2
+cost              9   10 # 10 Diamonds
+newlocplanes         -50 # Sets target location to a corresponding elemental citadel.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+scryloc               55 # Scry radius 5.5 around target location.
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+closewin                 # Closes cast ritual window.
+descr "The warlock views an elemental citadel and the surrounding areas corresponding to his elemental affinity."
+
+newritual     "View Elemental Plane of Earth"
+ritpow                21 # Warlock of Earth
+level                  2
+cost             10   10 # 10 Emralds
+newlocplanes         -51 # Sets target location to a corresponding elemental citadel.
+soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
+scryloc               55 # Scry radius 5.5 around target location.
+free                     # This ritual is learned for free and everyone will know it from the start if able to.
+closewin                 # Closes cast ritual window.
+descr "The warlock views an elemental citadel and the surrounding areas corresponding to his elemental affinity."
+
+newritpow #Flamegate
+
+newritual "Elemental Gate of Fire"
+	level 3
+	cost 7 200
+	planereq 3
+	terr 102 #Volcano
+	makeportal 1000 #880
+	setplane 9
+	randterrloc 212 #Picks a flame citadel
+	soundfx 57
+	makeportal 1000 #880
+	centerloc
+	free
+	descr "The elemental lord makes a portal from a volano back to a citadel in his elemental plane. Others may use this portal to enter the plane, however they may not survive long."
+	
+selectmonster "King of Fire"
+	power 0 3
+	classcost -20
+	changetemp 30
+	affres 100
+	allrit 18
+	
+selectmonster "King of Flames"
+	power 0 3
+	classcost -20
+	changetemp 30
+	affres 100
+	allrit 18
+
+selectmonster "King of Magma"
+	power 0 3
+	classcost -20
+	changetemp 30
+	affres 100
+	allrit 18
+	
+selectritual "Summon King of Fire"
+	cost 7 250 #From 200
+	
+newritpow #Earthgate
+
+newritual "Elemental Gate of Earth"
+	level 3
+	cost 10 200
+	planereq 3
+	terr -12 #Mines
+	makeportal 1000 #881
+	setplane 9
+	randterrloc 210 #Earth citadel
+	soundfx 57
+	makeportal 1000 #881
+	centerloc
+	free
+	descr "The elemental lord makes a portal from a deep mine back to a citadel in his elemental plane. Others may use this portal to enter the plane."
+	
+selectmonster "King of Mountains"
+	power 0 3
+	classcost -20
+	affres 100
+	allrit 21
+	
+selectmonster "King of Earth"
+	power 0 3
+	classcost -20
+	affres 100
+	allrit 21
+	
+selectmonster "King of Deeper Earth"
+	power 0 3
+	classcost -20
+	affres 100
+	allrit 21
+	
+selectritual "Summon King of Earth"
+	cost 10 250 #From 200
+	
+newritpow #Watergate
+
+newritual "Elemental Gate of Water"
+	level 3
+	cost 8 200
+	planereq 4
+	terr 68 #Deep sea
+	makeportal 1000 #882
+	setplane 9
+	randterrloc 218 #Water citadel
+	soundfx 57
+	makeportal 1000 #882
+	centerloc
+	free
+	descr "The elemental lord makes a portal from the deep sea back to a citadel in her elemental plane. Others may use this portal to enter the plane, however they may not survive long."
+	
+selectmonster "Queen of the Sea"
+	power 0 3
+	classcost -20
+	affres 100
+	allrit 19
+	
+selectmonster "Queen of the Deeps"
+	power 0 3
+	classcost -20
+	affres 100
+	allrit 19
+	
+selectmonster "Queen of the Lake"
+	power 0 3
+	classcost -20
+	affres 100
+	allrit 19
+	
+selectritual "Summon Queen of Water"
+	cost 8 250 #From 200
+	
+newritpow #Airgate
+
+newritual "Elemental Gate of Air"
+	level 3
+	cost 9 200
+	planereq 4
+	terr 12 #Mountain
+	makeportal 1000 #883
+	setplane 9
+	randterrloc 215 #Air citadel
+	soundfx 57
+	makeportal 1000 #883
+	centerloc
+	free
+	descr "The elemental lord makes a portal from a mountaintop back to a citadel in her elemental plane. Others may use this portal to enter the plane, however they may not survive long."
+	
+selectmonster "Queen of Storms"
+	power 0 3
+	classcost -20
+	affres 100
+	allrit 20
+
+selectmonster "Queen of Clouds"
+	power 0 3
+	classcost -20
+	affres 100
+	allrit 20
+
+selectmonster "Queen of Thunder"
+	power 0 3
+	classcost -20
+	affres 100
+	allrit 20
+	
+selectritual "Summon Queen of Air"
+	cost 9 250 #From 200
+	
+newritpow #Nexus gate
+	
+newritual "Nexus Gate"
+	level 3
+	cost 14 200
+	planereq 3
+	terr 29 #Tower of elements
+	makeportal 884
+	setplane 9
+	randterrloc 223 #Nexus
+	soundfx 57
+	makeportal -884
+	centerloc
+	free
+	descr "The Tower of Elements has a large chamber beneath it designed for the sole purpose of housing a gate to the Nexus, the centre of the elemental planes. Once a greater pact has been made with an elemental lord, the Warlock can open a portal to the Nexus through which he can enter the planes with any followers he desires. While the portal will not close while the tower stands, it will not let him return to Elysium either. The inhabitants of the planes will not take this invasion lightly and will no doubt attack the Warlock."
+	
+selectmonster "Great Warlock of Fire"
+	power 0 3
+
+selectmonster "Great Warlock of Water"
+	power 0 3
+	
+selectmonster "Great Warlock of Air"
+	power 0 3
+	
+selectmonster "Great Warlock of Earth"
+	power 0 3
+
+selectritual "Lesser Fire Summoning" #Early summons were very expensive for noheal units. Now 20% cheaper.
+	cost 7 20 #From 25
+	
+selectritual "Lesser Water Summoning"
+	cost 8 20 #From 25
+	
+selectritual "Lesser Air Summoning"
+	cost 9 20 #From 25
+	
+selectritual "Lesser Earth Summoning"
+	cost 10 20 #From 25
+
+newritual "Earth's Knowledge" #Can scry for useful mines. Reveals a larger area becasue of the value gems have to warlock.
+	ritpow 21 #Warlock earth
+	level 2
+	cost 10 5 #Emeralds
+	randnewloc -4 #Mines
+	scryloc 15 #3x3 scry or a 1.5 tile circle
+	soundfx 70
+	closewin
+	free
+	rebateterr20 -51
+	descr "This ritual reveals the location and surroundings of a previously unknown mine."
+	
+newritual "Water's Renvigoration"
+	ritpow 19 #Water lock
+	level 2
+	cost 8 20 #Water
+	rarestart
+	bentarg 4096 #Regen
+	scatterscry 20
+	benrestrict 4096 #Can't already regen
+	soundfx 70
+	rebateterr50 -45 #Cheaper in water plane.
+	descr "The warlock asorbs much of the power from several saphires, causing his body to quickly regenerate, even healing old wounds, this effect is short lasting however, and powerful water warlocks must cast it every month to keep the effects. In addition the remaining energies will reveal the immediate area to him."
+	
+newritual "Fire's Embrace"
+	ritpow 18 #Fire lock
+	level 2
+	cost 7 35 #Rubies
+	rarestart
+	bentargall 1024 #Fireshield
+	benrestrict 1024 #Can't already be shielded
+	soundfx 70
+	rebateterr50 -44 #Cheaper in fire plane.
+	descr "The warlock unleashes the power of many rubies to give himself and all who follow him an aura of fire that strikes at attackers. The aura lasts a very short time however, less than a day in most cases."
+	
+newritual "Air's Current"
+	ritpow 20
+	level 2
+	cost 9 10
+	rarestart
+	terr -5 #Mountains
+	chooseterrloc -5 #Mountains
+	unfollowtarg
+	teleportloc 1 #Only caster
+	centercaster
+	closewin
+	soundfx 66 #Wind
+	descr "Calls a strong air current the warlock can ride from any one mountain to another. Only the caster can ride the current, any followers will be left behind."
+	
+############# Warlock Unit Changes
+
+selectmonster "Lesser Fire"
+	affres 100
+	changetemp 1
+	
+selectmonster "Fire Elemental"
+	changetemp 3 #Makes it's current terrain hotter
+	affres 100
+	
+selectmonster "Champion of Flames"
+	changetemp 3
+	
+selectmonster "Flame Spirit"
+	changetemp 3
+	
+selectmonster "Child of Catharsis"
+	changetemp 1
+	
+selectmonster "Child of Rhuax"
+	changetemp 1
+	
+selectmonster "Child of Pyriphlogos"
+	changetemp 1
+	
+selectmonster "Fire Giant"
+	changetemp 20
+	
+selectmonster "Fire Titan"
+	changetemp 30
+	
+selectmonster "Lesser Water"
+	affres 100
+	
+selectmonster "Water Elemental"
+	affres 100
+	
+selectmonster "Frost Drake"
+	changetemp -1
+	
+selectmonster "Winter Wolf"
+	changetemp -2
+	affres 60
+
+selectmonster "Cloud Elemental" #Also nerfed it's lightning in the weapons section. Takes a turn to reload.
+	affres 100
+	
+selectmonster "Air Elemental"
+	affres 100
+
+selectmonster "Lesser Earth" #One of the worst elementals, it tanks, but has noheal so you don't want it to, it now has more hp to make up for this.
+	hp 12 #From 9
+	affres 100
+	
+selectmonster "Earth Elemental"
+	affres 100
+	
+selectmonster "Stone Warrior" #Didn't have passwall for some reason
+	passwall
+	affres 60
+	
+selectmonster "Magma Warrior" #Para-elementals weaker but have more morale.
+	mor 8 #From 6
+	slow
+	affres 60
+	
+selectmonster "Mud Warrior"
+	mor 8 #From 6
+	slow
+	affres 60
+	
+selectmonster "Smoke Warrior"
+	hp 8 #From 10
+	mor 8 #From 6
+	affres 60
+	
+selectmonster "Yeti" #Tankiness moved to armour
+	hp 37 #From 43
+	armor 1 #From 0
+	affres 50
+	
+selectmonster "Ember Warrior"
+	mor 8 #From 6
+	affres 60
+	changetemp 1
+
+selectmonster "Stone Warrior"
+	mor 8 #From 6
+	affres 60
+	
+selectmonster "Cyclops"
+	armor 1 #From 2
+	
+selectmonster "Thunderbird" #Less damage but more hp
+	hp 23 #From 19
+	clearweapons
+	rangedweapon 6 279 #Thunder from 10
+	rangedweapon 3 280
+	meleeweapon 6 12
+
+####################### Priest King Faction 12
+
+############# Priest King Rituals
+
+newritual     "Slash and Burn"
+ritpow                 	33 # Priest King
+level                 	1
+free
+cost              		0 -50 # 50 gold gain
+terr                 	115 # Jungle
+alterloc             	119 # Savanna
+soundfx               	57
+descr "The Priest King directs slaves to cut down a forest for extra timber."
+
+newritual     "Build Farm"
+ritpow                 	33 # Priest King
+level                 	1
+free
+cost              		0 5 # 5 gold
+terr                 	0 # Plain
+alterloc             	5 # Farm
+soundfx               	57
+descr "The priest king directs the population to start farming at this location."
+
+newritual     "Savanah Farming"
+ritpow                 	33 # Priest King
+level                 	1
+free
+cost              		0   5 # 5 gold
+terr                 	119 # Plain
+alterloc             	5 # Farm
+soundfx               	57
+descr "The priest king directs the population to start farming at this location."
+
+newritual     "Upgrade Farm"
+ritpow                 	33 # Priest King
+level                 	1
+free
+cost              		0   15 # 15 gold
+apcost					2
+terr                 	5 # Farm
+alterloc             	7 # Hamlet
+nonearby1req			7
+soundfx               	57
+descr "The priest king orders the farm expanded into a small community from which sacrifices can be drawn."
+
+newritual     "Form Village"
+ritpow                 	33 # Priest King
+level                 	1
+free
+cost              		0   30 # 30 gold
+apcost					2
+terr                 	7 # Hamlet
+alterloc             	18 # Village
+nonearby1req			18
+soundfx               	57
+descr "The priest king orders the farm expanded into a small community from which sacrifices can be drawn."
+
+newritual     "Build Sacrificial Pyramid"
+ritpow                 	33 # Priest King
+level                 	3
+free
+cost              		0   150 # 150 gold and 50 iron
+cost					1	50
+apcost					5
+terr                 	3 # Temple City
+alterloc             	93 # Temple Pyramid
+nonearby5req			93
+soundfx               	57
+descr "The High Priest demands the construction of a sacrificial pyramid within an existing Temple City."
+
+newritual     "Build Temple City"
+ritpow                 	33 # Priest King
+level                 	2
+free
+cost              		0   75 # 75 gold and 25 iron
+cost					1	25
+apcost					2
+terr                 	18 # Farm
+alterloc             	3 # Temple City
+nonearby5req			3
+soundfx               	57
+descr "The Priest King orders the creation of a new temple city."
+
+newritual     "Call on Lesser Kings"
+ritpow                 	33 # Priest King
+level                 	2
+free
+cost              		0   200 # 200 gold and 30 sacrifices
+cost					4	30
+summoning
+addstring "c*Tribal King & 4d5*Tribal Warrior & 4d5*Jungle Warrior"
+addstring "c*Tribal King & 3d5*Jaguar Warrior & 2d5*Eagle Warrior"
+addstring "c*Tribal King & 3d5*Sun Warrior & 3d5*Moon Warrior"
+soundfx               	57
+descr "The Priest King calls upon the Tribal Kings to provide a tithe of warriors."
+
+newritual "Journey to Aztlan"
+ritpow					33 # Cultist
+level					3
+free
+cost					4 250
+planeswap				6
+centercaster
+soundfx 				43
+descr "The High Priest gathers a prodigious sacrifice in order to be accepted into Aztlan by the gods. Carries the typical risks of planeswapping."
+
+newritual "Protection Against Weapons"
+ritpow				33 # Priest King
+level				3
+free
+apcost				-1
+cost				4 20 #20 sacrifices
+bentargall			2
+soundfx				57
+descr "The High Priest uses the power of blood to harden the flesh of his warriors. Lasts 1 turn."
+
+newritual "Protection Against Fire"
+ritpow				33 # Priest King
+level				3
+free
+apcost				-1
+cost				4 20 #20 sacrifices
+bentargall			4
+soundfx				57
+descr "The High Priest uses the power of blood to protect his troops against fire. Lasts 1 turn."
+
+############# Priest King Unit Changes
+
+selectmonster "Slave" #More hp allows them to resist damage more but the lower mr makes them weaker to enslave/cc. Encourages using them a meatshield.
+	hp 4 #From 3
+	mr 2 #From 4
+	mor 1
+	str 3
+	deployoutside 20
+
+####################### Troll King Faction 13
+
+newmonster "Rock Troll King"
+copyspr "Rock Troll"
+copystats "Troll King"
+armor 4
+hp 131
+regeneration
+slashres
+pierceres
+gathergems
+power 58 1
+clearweapons
+spellweapon 6 2
+siegeweapon 30 "Boulders"
+meleeweapon 30 "Great Club"
+descr "Rock Troll Kings are considerably more durable than regular Troll Kings, thanks to a steady diet of rocks ranging from pebbles to mountains. What's worse, the typical Rick Troll King has a fairly strong connection to the element of Earth and can summon rock from nothing. If a Rock Troll King should ever come down from the mountains, every possible effort to kill it quickly must be taken. Note: Placeholder sprite until palette swap/resizing done."
+
+selectclass 14
+clearstartunits
+addstartunits "Goblin Archer" 15
+addstartunits "Goblin Spearman" 15
+addstartunits "Goblin" 20
+addstartunits "Shadow Tree" 2
+setmaincom "Troll King"
+
+clearrec
+nostdtroops
+addunitrec "Goblin" 100 20 50 0 0
+addunitrec "Goblin Legion" 15 20 0 0 30
+reclimiter "=Goblin"
+addunitrec "Goblin Fanatic" 20 20 0 0 0
+reclimiter "=Goblin"
+recxcost 3 40
+addunitrec "Goblin Spearman" 100 15 50 0 0
+addunitrec "Goblin Legion Spearman" 15 15 10 0 20
+reclimiter "=Goblin Spearman"
+addunitrec "Goblin Archer" 100 15 50 0 0
+addunitrec "Goblin Legion Archer" 15 15 0 0 15
+reclimiter "=Goblin Archer"
+addcomrec   "Goblin Shaman" 4 35 20   0
+templerec
+addunitrec  "Wolf Kin" 30 10   50  0   0
+addunitrec  "Wolf Kin Reaver" 20  7   50  0  10
+addunitrec  "Ogre" 100  1   25  0   0
+addunitrec  "Ettin" 10  1   75  0   0
+addunitrec "Forest Troll" 50 1 40 0 10
+addunitrec  "Troll" 30  1   50  0  20
+addcomrec   "Troll Shaman" 2   75 50   0
+templerec
+addcomrec "Troll Prince" 100   0 0 100
+reclimiter "-Troll Prince"
+recxcost 3 250
+addunitrec  "Rock Troll" 20  1   50  0  60
+addcomrec  "Rock Troll Prince" 100   0 0  400
+reclimiter "-Rock Troll Prince"
+recxcost 3 100
+addcomrec "Fire Troll Shaman" 1   60 0 0
+templerec
+recxcost 3 50
+addunitrec "Fire Troll" 25 1 60 0 0
+reclimiter "+Fire Troll Shaman"
+recxcost 3 10
+addcomrec "Lake Troll Prince" 100 0 0 50
+reclimiter "-Lake Troll Prince"
+recxcost 3 500
+addunitrec "Lake Troll" 50 2 90 0 0
+reclimiter "+Lake Troll Prince"
+addunitrec "Lake Troll Warrior" 33 1 75 0 20
+reclimiter "+Lake Troll King"
+addunitrec  "Hill Giant"  5  1  100  0   0
+addcomrec   "Goblin Chieftain" 7      25 20   0
+addcomrec   "Ogre Chief"   5      35 20   0
+addcomrec   "Forest Giant"  5      70 20   
+addmercrec  "Goblin Murderer"  5  1   10 40   0
+addcomrec   "Goblin Hero"  5      10 50   0
+
+############# Troll King Rituals
+
+
+
+newritual     "Troll Coronation"
+ritpow              22 # troll
+terr                32
+level               1
+rebatelvl			3
+cost              	3 500 # 500 fungus and 100 gold, half at T3
+cost				0 100 
+apcost				5
+soundfx             57
+promotion           1
+free
+addstring     "Troll Prince"
+addstring     "Troll King"
+nomonplayerreq "(-)Troll King"
+descr "With the Troll King dead, a shaman may crown a Troll Prince as the new Troll King. The search begins anew for another Troll Prince."
+
+newritual     "Rock Troll Coronation"
+ritpow              22 # troll
+terr                32
+level               3
+rebatelvl			3
+cost              	3 500 # 500 fungus and 100 gold
+cost				0 100 
+apcost				5
+soundfx             57
+promotion           1
+free
+addstring     "Rock Troll Prince"
+addstring     "Rock Troll King"
+nomonplayerreq "(-)Rock Troll King"
+descr "With the Troll King dead, a shaman may crown a Troll Prince as the new Troll King. The search begins anew for another Troll Prince."
+
+newritual     "Lake Troll Coronation"
+ritpow              22 # troll
+terr                32
+level               2
+cost              	3 500 # 500 fungus and 100 gold
+cost				0 100 
+apcost				5
+soundfx             57
+promotion           1
+free
+addstring     "Lake Troll Prince"
+addstring     "Lake Troll King"
+nomonplayerreq "(-)Lake Troll King"
+descr "With the Troll King dead, a shaman may crown a Troll Prince as the new Troll King. The search begins anew for another Troll Prince."
+
+#Disabled for now in favor of limited direct recruitment
+#newritual     "Seek Troll Prince"
+#ritpow              22 # troll
+#level               2
+#cost              	3 250 # 250 fungus and iron
+#cost				1 50 
+#apcost				5
+#soundfx             57
+#summoning
+#addstring "Troll Prince"
+#nomonplayerreq "(-)Troll Prince"
+
+#newritual     "Seek Lake Troll Prince"
+#ritpow              22 # troll
+#level               2
+#cost              	3 500 # 500 fungus
+#apcost				5
+#soundfx             57
+#summoning
+#addstring "Lake Troll Prince"
+#nomonplayerreq "(-)Lake Troll Prince"
+
+#newritual     "Seek Rock Troll Prince"
+#ritpow              22 # troll
+#level               2
+#cost              	3 200 # 200 fungus and 400 iron
+#cost				1 400 
+#apcost				5
+#soundfx             57
+#summoning
+#addstring "Rock Troll Prince"
+#nomonplayerreq "(-)Rock Troll Prince"
+
+newritual     "Raise Goblin Legion"
+ritpow              22 # troll
+level               1
+rebatelvl			3
+cost              	1 120 # 120 iron, half at T3
+soundfx             57
+promotion           60
+free
+addstring     "Goblin"
+addstring     "Goblin Legion"
+addstring     "Goblin Archer"
+addstring     "Goblin Legion Archer"
+addstring     "Goblin Spearman"
+addstring     "Goblin Legion Spearman"
+descr "The shaman distributes a collection of smashed and partially eaten weapons and armor for the goblins to fight over. Promotes 60 Goblins and Goblin archers to their Goblin Legion equivalents. 1% chance for any goblin to find an item"
+
+newritual     "Distribute Goblin Brew"
+ritpow              22 # troll
+level               1
+rebatelvl			3
+cost              	3 50 # 50 fungus, half price at T3
+soundfx             57
+promotion           30
+free
+addstring     "Goblin"
+addstring     "Goblin Fanatic"
+descr "The shaman grabs as many goblins as it can and force feeds them a foul fungal concoction before setting them loose. Promotes 30 Goblins to Goblin Fanatics."
+
+newritual     "Employ Fire Trolls"
+ritpow              22 # troll
+terr				36
+level               2
+cost              	3 300 # 375 fungus and 100 gold
+cost				0 100
+soundfx             57
+promotion           30
+free
+summoning
+addstring     "c*Fire Troll Shaman & 2d3*Fire Troll"
+descr "Trolls are loathe to accept their firey cousins, but they are still sometimes used as shock troops, mostly in the hope that they die. Summons Fire Troll Shaman and 2 to 6 Fire Trolls."
+
+newritual     "Employ Lake Trolls"
+ritpow              22 # troll
+terr 				107
+level               2
+cost              	3 600
+cost				0 100
+soundfx             57
+promotion           30
+free
+summoning
+addstring     "2d5*Lake Troll & 1d6*Lake Troll Warrior
+descr "High ranking trolls will sometimes pay members of a lake troll tribe to watch over their bogs and swamps."
+
+newritual  "Spread Spores"
+ritpow              	22 # Troll
+level               	1
+free
+cost              		3 25 # 25 fungus
+terr                	36 # Dead Forest
+alterloc            	2 # Forest
+soundfx             	57
+descr "Troll shamans spread giant fungus spores to bring life back to a forested area."
+
+newritual     "Plant Forest"
+ritpow                 	22 # Troll
+level                  	1
+rebatelvl				3
+free
+cost              		3 30 # 30 fungus
+terr                    0 # Plain
+alterloc                2 # Forest
+soundfx               	57
+descr "The shaman throws seeds and spores around haphazardly for several days, creating a forest."
+
+newritual     "Fungal Forest"
+ritpow                 	22 # Troll
+level                  	1
+rebatelvl				3
+free
+cost              		3 80 # 80 fungus
+terr                    2 # Plain
+alterloc                195 # Fungal Forest
+soundfx               	57
+descr "With enough spores, a shroomish parody of a forest can cover an area in record time."
+
+newritual     "Convert Jungle"
+ritpow                  22 # troll
+level                   1
+free
+cost              		3 10 # 10 fungus
+apcost                  2
+terr                 	115 # Jungle
+alterloc             	2 # Forest
+soundfx               	57
+descr "With considerable effort, jungle can be thinned enough to resemble a forest."
+
+newritual     "Flood Flatlands"
+ritpow                 	22 # Troll
+level                 	2
+rebatelvl				3
+free
+cost              		3   20 # 20 fungus
+apcost                 	2
+terr                 	0 # Plains
+alterloc             	107 # Swamp
+soundfx               	57
+descr "By redirecting rivers with uprooted trees or simply creating a basin and promoting the creation of mud and filth, trolls can produce marshlands."
+
+newritual     "Expose Iron"
+ritpow                 	22 # Troll
+level                 	2
+free
+apcost                 	4
+terr                 	107 # Swamp
+alterloc             	97 # Bog
+nonearby3req			97
+soundfx               	57
+descr "Marshlands have a strong connection to the elemental plane of earth. With enough brute force, some earthen riches may be unearthed, at the expense of some of the area's fungal harvest. Must be 3 tiles from nearest bog."
+
+newritual     "Empower Troll Forest"
+ritpow                  22 # Troll
+level                   3
+free
+cost              		3  500 # 500 fungus
+apcost                  11
+terr                    130 # troll forest
+alterloc                131 # ancient troll forest
+nonearby7req			131 
+soundfx               	57
+descr "A troll shaman can promote the growth of trolls deep within a troll forest. Must be 7 tiles from nearest ancient troll forest."
+
+newritual     "Make Lair"
+ritpow                  22 # Troll
+level                   2
+free
+cost              		3  100 # 100 fungus
+apcost                  5
+terr                    130 # forest or jungle
+alterloc                32 # troll pit
+nonearby7req			32
+soundfx               	57
+descr "A troll shaman makes a new lair for the tribe to gather. Must be 7 tiles from nearest troll pit."
+
+newritual     "Deplete Mountain"
+ritpow                  22 # Troll
+level                   2
+free
+cost              		1  -50 # gain 50 iron
+apcost                  8
+terr                    12 # mountain
+alterloc                73 # hills
+soundfx               	57
+descr "It is a well known fact that trolls like throwing rocks and rock trolls like eating rocks. At times, it is necessary for trolls to gather such large amounts of rocks that mountains are reduced to hills."
+
+newritpow #57
+
+newritual     "Form Lake"
+level                   1
+free
+cost              		8  5 # 5 sapphires
+apcost                  5
+terr                    0 # plain
+alterloc                10 # lake
+soundfx               	57
+descr "The Troll King digs out a basin and uses his connection with the plane of water to make a new lake."
+
+selectmonster "lake troll king"
+power 0 1
+
+newritual     "Summon Lake Tribe"
+terr 					10 # lake, won't work when frozen
+level               	1
+cost              		8 50 # 50 sapphires
+soundfx             	57
+free
+summoning
+addstring     "5*Lake Troll & 5*Lake Troll Warrior"
+descr "The King summons forth the members of his tribe."
+
+selectmonster "lake troll king"
+power 0 1
+
+newritual "Watery Trollpaths"
+terr 					-96 # lakes
+level 					1
+cost               		8 25 # 25 sapphires
+apcost					8
+chooseterrloc 			-96 # lakes
+teleportloc				2
+free
+closewin 				# closes cast ritual window
+descr "The troll king gathers his host and brings them to another lake. WARNING: Ritual may only target lakes."
+
+selectmonster "lake troll king"
+power 0 1
+
+newritual "Path to Water"
+terr 					131 # ancient troll forest
+level 					1
+cost               		8 200 # 200 sapphires
+portalroom				-49 # water citadel
+noportalreq				1
+free
+closewin 				# closes cast ritual window
+descr "Trolls know secret paths to the elemental planes that they have the closest connections to. WARNING: Portal may end up in void."
+
+selectmonster "lake troll king"
+power 0 1
+
+newritpow #58
+
+newritual     "Summon Rock Tribe"
+terr 					-5 # mountains
+level               	1
+cost              		10 75 # 75 emeralds
+soundfx             	57
+free
+summoning
+addstring     "10*Rock Troll"
+descr "The King summons forth the members of his tribe."
+
+selectmonster "Rock Troll king"
+power 0 1
+
+newritual "Rocky Trollpaths"
+terr 					131 # ancient troll forest
+level 					1
+cost               		10 25 # 25 sapphires
+chooseterrloc 			-5 # mountains
+teleportloc				2
+apcost					8
+free
+closewin 				# closes cast ritual window
+descr "The troll king gathers his host and sets off to a mountain. WARNING: Ritual must target a mountain."
+
+selectmonster "Rock Troll king"
+power 0 1
+
+newritual "Path to Earth"
+terr 					131 # ancient troll forest
+level 					1
+cost               		10 200 # 200 emeralds
+portalroom				-51 # earth citadel
+noportalreq				1
+free
+closewin 				# closes cast ritual window
+descr "Trolls know secret paths to the elemental planes that they have the closest connections to. WARNING: Portal may end up in void."
+
+selectmonster "Rock Troll king"
+power 0 1
+
+newritpow #59
+
+newritual     "Burn Troll"
+level               1
+cost              	7 5 # rubies
+soundfx             57
+free
+promotion				1
+addstring     "Troll"
+addstring	  "Fire Troll"
+addstring	  "Troll Shaman"
+addstring	  "Fire Troll Shaman"
+descr "The shaman finds a promising Fire Troll candidate and sets them on fire. Extra crispy!"
+
+selectmonster "troll shaman"
+power 0 1
+
+selectritual "Wither Wood" #complete rework
+	cost 3 -50 #gives 50 shrooms
+	apcost 2
+	descr "This will make a forest or jungle wither and die within a few days.  Herbs will stop growing, but the growth of fungus will not be affected. Much fungus will grow in the initial period which will be harvested immediately."
+
+############## Troll King Unit Changes
+
+selectmonster "Troll King"
+meleeambush 100
+fear 1
+localleadership 2
+frontpos
+allitemslots
+berserker
+charmres
+
+selectmonster "goblin"
+semistupid
+deployoutside 30
+
+selectmonster "goblin spearman"
+semistupid
+
+selectmonster "goblin archer"
+semistupid
+
+#Weapons
+newweapon "Burning Club"
+range 1
+init 3
+dmgtype 2
+sweep
+dmg 7
+next -411
+nextdmg 8
+sound 1
+
+#nextweapon
+newweapon "Club Fire"
+dmgtype 4
+an
+mr
+aoe 3003
+
+newweapon "Burning Staff"
+range 1
+init 3
+dmgtype 2
+dmg 6
+next -411
+nextdmg 12
+sweep
+sound 1
+
+#nextweapon
+newweapon "Staff Fire"
+dmgtype 4
+an
+mr
+aoe 3004
+
+newweapon "Goblin Spear"
+range 1
+init 7
+dmgtype 3
+dmg 5
+mundane
+sound 1
+
+newweapon "Spinny Flail"
+range 1
+init 3
+dmgtype 3
+dmg 7
+fullsweep
+sound 1
+
+
+newmonster "Fire Troll"
+spr1 "Sprites/Firetroll.tga"
+spr2 "Sprites/Firetroll2.tga"
+hp 50
+mor 6
+str 7
+mr 6
+armor 0
+fireres 100
+fireaura 3
+fastheal
+acutesenses
+troll 1
+battlefast
+rank 1
+mountain2
+money2
+allitemslots
+meleeweapon 10 "Burning Club"
+burnforest 1
+descr "Fire trolls are a very rare breed, if one considers that fire typically kills trolls posthaste. Some trolls - for whatever reason - are able to regenerate fast enough to keep from burning to death, but cannot put themselves out thanks to the flammability of troll flesh. Such trolls are shunned by others out of fear of what might happen if a flaming troll got into close proximity to anything else flammable, such as trees or themselves. Note: Placeholder sprite courtesy of CoE5."
+
+newmonster "Fire Troll Shaman"
+spr1 "Sprites/Firetrolls.tga"
+spr2 "Sprites/Firetrolls2.tga"
+copystats "Fire Troll"
+hp 65
+fireres 100
+fireaura 5
+fastheal
+acutesenses
+troll 1
+battlefast
+size2x2
+rank 1
+mountain2
+money2
+allitemslots
+clearweapons
+power 59 1
+spellweapon 3 1
+meleeweapon 12 "Burning Staff"
+burnforest 1
+descr "If fire trolls are rare, then Fire Troll Shamans are practically unheard of. Troll shamans are supposed to be smart enough to deduce that fire is hot, but thanks to either bad luck or a run-in with a wizard, this one caught fire and survived, gaining some measure of control over its constant tormentor: fire. Note: Placeholder sprites courtesy of CoE5.""
+
+newmonster "Troll Prince"
+copyspr "Troll"
+copystats "Troll"
+hp 75
+str 8
+armor 2
+descr "Trolls do not have a social heirarchy as we understand it, being little better than wild animals. However, while there is a Troll King, there is also a Troll Prince. The Troll Prince is always the second strongest troll in any group and is to be prioritized for elimination just like the Troll King. If a Troll King is killed, the Troll Prince will often take its place rather quickly."
+
+selectmonster "Troll King"
+siegeweapon 25 "Boulders"
+rank 0
+charmres
+
+newmonster "Rock Troll Prince"
+copyspr "Rock Troll"
+copystats "Troll Prince"
+armor 3
+hp 86
+regeneration
+slashres
+pierceres
+clearweapons
+spellweapon 6 1
+siegeweapon 24 "Boulder"
+meleeweapon 24 "Great Club"
+descr "Trolls do not have a social heirarchy as we understand it, being little better than wild animals. However, while there is a Troll King, there is also a Troll Prince. The Troll Prince is always the second strongest troll in any group and is to be prioritized for elimination just like the Troll King. If a Troll King is killed, the Troll Prince will often take its place rather quickly. Note: Placeholder sprite until pallete swap done."
+
+newmonster "Rock Troll King"
+copyspr "Rock Troll"
+copystats "Troll King"
+armor 4
+hp 131
+regeneration
+slashres
+pierceres
+gathergems
+power 58 1
+clearweapons
+spellweapon 6 2
+siegeweapon 30 "Boulders"
+meleeweapon 30 "Great Club"
+descr "Rock Troll Kings are considerably more durable than regular Troll Kings, thanks to a steady diet of rocks ranging from pebbles to mountains. What's worse, the typical Rick Troll King has a fairly strong connection to the element of Earth and can summon rock from nothing. If a Rock Troll King should ever come down from the mountains, every possible effort to kill it quickly must be taken. Note: Placeholder sprite until palette swap/resizing done."
+
+selectmonster "Lake Troll King"
+hp 75
+clearspec
+huge
+regeneration 15
+acutesenses
+clearweapons
+gathergems
+power 57 1
+spellweapon  4   2
+meleeweapon 11 "Magic Scepter"
+
+newmonster "Lake Troll Prince"
+copyspr "Lake Troll King"
+copystats "Lake Troll King"
+hp 60
+clearspec
+size2x2
+regeneration 15
+acutesenses
+clearweapons
+spellweapon  4   1
+meleeweapon 11 "Magic Scepter"
+descr "As with other trolls, Lake Troll heirarchy is based on overall strength. However, a magical connection to the Plane of Water is necessary for a Lake Troll to be considered for princedom."
+
+newmonster "Goblin Legion"
+spr1 "sprites/dagger.tga"
+spr2 "sprites/dagger2.tga"
+str 4
+hp 6
+armor 1
+mor 4
+mr 4
+allitemslots
+randomweapon 1
+shield
+meleeweapon 1 "Shortsword"
+descr "Goblins may seem stupid, but they posess a natural cunning similar to kobolds when it comes to thievery. The so-called Goblin Legionnaire is little better than a standard goblin in terms of character, but has managed to steal or scavenge the equipment of some other small race. This usually means hoburgers, but dwarfs are hardly safe from a goblin raid backed by trolls. Note: Placeholder sprite courtesy of Dominion Greenskins mod."
+
+newmonster "Goblin Legion Spearman"
+spr1 "sprites/Spear.tga"
+spr2 "sprites/Spear2.tga"
+str 4
+hp 5
+armor 1
+mor 4
+mr 4
+allitemslots
+randomitem 1
+shield
+meleeweapon 1 "Goblin Spear"
+descr "Goblins may seem stupid, but they posess a natural cunning similar to kobolds when it comes to thievery. The so-called Goblin Legionnaire is little better than a standard goblin in terms of character, but has managed to steal or scavenge the equipment of some other small race. This usually means hoburgers, but dwarfs are hardly safe from a goblin raid backed by trolls. This goblin was either smart enough or lucky enough to obtain a spear or a hoburger's pike, allowing it to attack humans at slightly more than arm's length. Note: Currently missing sprites."
+
+newmonster "Goblin Legion Archer"
+spr1 "sprites/garcher.tga"
+spr2 "sprites/garcher2.tga"
+str 3
+hp 4
+armor 1
+mor 3
+mr 4
+allitemslots
+randomitem 1
+meleeweapon 0 "Shortsword"
+rangedweapon 1 "Poison Bow"
+descr "Goblins may seem stupid, but they posess a natural cunning similar to kobolds when it comes to thievery. The so-called Goblin Legion Archers are somewhat different in that, sure, they stole or looted their ramshackle equipment, but their bows have been paired with poison-coated arrows. Note: Placeholder sprite courtesy of Dominions greenskins mod."
+
+newmonster "Goblin Fanatic"
+spr1 "sprites/Fanatic.tga"
+spr2 "sprites/Fanatic2.tga"
+battlefast
+str 5
+hp 7
+armor 0
+mr 3
+mor 30
+rank 1
+allitemslots
+clearweapons
+meleeweapon 1 "Spinny Flail"
+descr "Troll shamans have discovered that, when forced to ingest hallucinogenic mushrooms, even the most cowardly of goblins can be used as vicious - if short lived - shock troops. Equipped with a spiked mace on a chain, such goblins rush forward, swinging wildly around them as they come into contact with the enemy. Moreover, the effects of the mushrooms make them almost as hard to kill as something twice their size. Note: Placeholder sprite courtesy of the Dominions Greenskins mod."
+
+####################### Enchanter Faction 14
+
+############# Enchanter Rituals
+
+newritual        "Enchant equipment"
+ritpow            11 # Enchanter
+level 2
+cost              1 10 # 10 Iron
+cost              0 25 # 25 Gold
+free
+addstring "5*living bow & 5*animated armor"
+summoning
+descr            "Enchant a squad of equipment"
+
+newritual        "Enchanted Defenses"
+ritpow            11 # Enchanter
+level 2
+cost              1 75 # 75 Iron
+cost              0 50 # 50 Gold
+free
+addstring "2*guardian & 1d5*animated ballista"
+summoning
+descr            "Fortify A location"
+
+newritual        "Necrotise"
+ritpow            11 # Enchanter
+level 2
+cost              1 20 # 20 Iron
+cost             14 20 # 20 Humanoid corpses
+cost              0 20 # 20 Gold
+free
+addstring "1d3*necrotod & 2d3*flesh golem"
+summoning
+descr            "Using all materials is what separates the initiates from the masters. Converts corpses into Flesh golems and Necrotods"
+
+newritual "Harness The Swamp"
+ritpow 11 # Enchanter
+level 2
+free
+cost 20 1 #Cost 20 Iron
+terr -20 #Makes Spell only applicable to swamps
+apcost 4
+summoning
+defctrl 100 #Makes The Monsters controlled
+addstring "1d10*terracotta soldier & 2d5*terracotta soldier"
+ornext 50
+addstring "1*clay golem"
+alterloc 0
+descr "Harnessing the inate magical powers of the swamp our enchanters can sculpt legions of Terracotta soldiers or the occational clay golem."
+
+newritual "Animate Pickaxes" #Can now make pickaxes and tunnel.
+	ritpow 11
+	level 2
+	cost 1 20 #Iron
+	summoning
+	apcost 5
+	addstring "Animated Pickaxes"
+	airare -1 #They have no idea how to use these
+	descr "Animates some pickaxes and other mining tools to dig through the earth."
+	
+selectritual "Enliven Statue" #Much cheaper on terrain. For a t2 ritual with very precise terrain requirements it was far too poor.
+	destroyterr 0 #From 8
+
+selectritual "Sculpt Terracotta Soldier" #less terrain destruction
+	destroyterr 4 #From 8
+	
+selectmonster "Terracotta Soldier" #becasue you can spam these easier their tankiness is reduced, armour moved to hp
+	affres 100
+	rearpos
+	hp 6 #from 5
+	armor 1 #From 2
+	water
+
+selectritual "Animate Bow" #You'll start with all basic summons, but they're more expensive
+	cost 1 2
+	free
+	aiapprspam 25
+	
+selectritual "Animate Sword"
+	cost 1 2
+	free
+	aiapprspam 25
+	
+selectritual "Animate Spear"
+	cost 1 2
+	free
+	aiapprspam 15
+
+############# Enchanter Unit Changes
+
+newmonster "Animated Pickaxes"
+	copyspr "Animated Tools"
+	rank 1
+	rearpos
+	hp 4
+	armor 2
+	mr 5
+	mor 99
+	str 4
+	meleeweapon  0 441 #Pick Axe
+	meleeweapon  0 441 #Pick Axe
+	meleeweapon  0 441 #Pick Axe
+	meleeweapon  0 745 #Shovel
+	flying
+	water
+	poisonres 100
+	affres 100
+	sleepres
+	charmres
+	noheal
+	diseaseres
+	pierceres
+	inanimate
+	tunnel
+	descr "Enchanters sometimes animate pickaxes and other digging tools and tunnel through the earth to locate and secure underground mineral seams."
+	
+selectmonster "Enchanter's Apprentice" #QoL thing.
+	sensedead 1
+	
+selectmonster "Animated Tools" #All animate stuff can't get battle afflictions and can swim, better fits the lore.
+	affres 100
+	water
+	
+selectmonster "Dancing Tools"
+	affres 100
+	water
+	
+selectmonster "Mimic" #stronger, better attack
+	frontpos
+	affres 100
+	hp 32
+	clearweapons
+	meleeambush
+	prebatweapon 10 11
+	meleeweapon 10 11
+	
+selectmonster "Animated Ballista" #This and the bows can't operate underwater, so they can't swim.
+	affres 100
+	rank -1 #Stays farther back, won't get into melee range.
+	hp 10 #From 15, because they stay at a safe range
+	mr 4 #From 5
+	
+selectmonster "Living Bow"
+	affres 100
+	mr 4 #From 5
+	
+selectmonster "Dancing Spear"
+	affres 100
+	mr 4
+	
+selectmonster "Animated Armor"
+	affres 100
+	mr 4 #From 5
+	water
+	allitemslots
+	
+selectmonster "Gargoyle"
+	affres 100
+	water
+	
+selectmonster "Animated Statue" #can also wield magic swords.
+	hp 20 #From 15
+	weaponslots
+	affres 100
+	water
+	
+selectmonster "Necrotod" #I won't buy your game Necrotod!
+	hp 4 #From 9
+	affres 100
+	water
+
+selectmonster "Dancing Sword"
+	mr 4 #From 5
+	affres 100
+	water
+	
+selectmonster "Wood Golem"
+	affres 100
+	water
+	
+selectmonster "Stone Golem"
+	affres 100
+	water
+	
+selectmonster "Iron Golem"
+	affres 100
+	water
+	
+selectmonster "Oak Golem"
+	affres 100
+	water
+	
+selectmonster "Ice Golem"
+	affres 100
+	water
+	
+selectmonster "Clay Golem"
+	affres 100
+	water
+	
+selectmonster "Onyx Golem"
+	affres 100
+	water
+	
+selectmonster "Crystal Golem" #Tanks through mutating its slain foes, so it needs less armour.
+	affres 100
+	water
+	armor 2 #From 3
+	
+selectmonster "Crystal"
+	affres 100
+	water
+	
+selectmonster "Silver Golem"
+	affres 100
+	water
+	
+selectmonster "Gold Golem"
+	affres 100
+	water
+	
+selectmonster "Vessel of Iron Lore"
+	affres 100
+	water
+	voidsanity 20
+	weaponslots
+	
+selectmonster "Vessel of Silver Lore"
+	affres 100
+	water
+	voidsanity 20
+	weaponslots
+
+selectmonster "Vessel of Golden Lore"
+	affres 100
+	water
+	voidsanity 20
+	weaponslots
+
+selectmonster "Vessel of Iron Arcana"
+	affres 100
+	water
+	voidsanity 20
+	weaponslots
+
+selectmonster "Vessel of Silver Arcana"
+	affres 100
+	water
+	voidsanity 20
+	weaponslots
+	
+selectmonster "Vessel of Golden Arcana"
+	affres 100
+	water
+	voidsanity 20
+	weaponslots
+
+newweapon "Shocking Gaze" #New attack for Guardians, to replace the nerfed project lightning.
+	trgrank 9
+	aoe -2 #two line attacks
+	range 8
+	init 8
+	dmgtype 6
+	an
+	flymode 4
+	flylook 151
+	sound 27
+	next
+	nextdmg 64 #Stun effect
+	
+newweapon "Shock Stun" #weapon effect
+	trgrank 9
+	range 1
+	init 4
+	dmgtype 12
+	mr
+	strresist
+	sound -1
+	
+selectmonster "Guardian" #Matches other guards. More damage but weaker, helps with small animal attacks but still weak to armies.
+	hp 32 #From 42
+	clearweapons
+	rangedweaponbonus 5 "Shocking Gaze" #Two attacks at 5 was one at 8
+	farsight 1
+	affres 100
+	water
+	deployoutside 1 #Makes sure you can't spam Guardians to defend siege locations so easily.
+
+####################### High Cultist Faction 15
+
+############# High Cultist Rituals
+
+newritual     "Fund Coastal Cult"
+ritpow                 	23 # Cultist
+level                 	1
+rebatelvl				3
+free
+cost              		0   25 # 25 gold
+apcost					2
+terr                 	-17 # near water areas
+alterloc             	78 # Coastal Hamlet
+nearby5req				69
+soundfx               	57
+descr "The cultist directs funds and materials towards producing settlements along the coast wherein unspeakable things can be enacted. Must be within 5 tiles of the sea."
+
+newritual     "Attract Outsiders"
+ritpow                 	23 # Cultist
+level                 	1
+free
+cost              		0   -20 # 20 gold gained
+apcost					2
+terr                 	78 # Coastal Hamlet
+alterloc             	18 # Village
+nearby5req				69
+nonearby1req			18
+soundfx               	57
+descr "The cult expands a hamlet near the coast and places its more normal-looking members there. While still not friendly to outsiders, the village looks normal enough for travelers to stop there long enough to be kidnapped or worse. Must be within 5 tiles of the sea and one tile away from the nearest village."
+
+newritual     "Promote Coastal Trade"
+ritpow                 	23 # Cultist
+level                 	2
+free
+cost              		0 100 # 100 gold
+apcost					5
+terr                 	69 # Village
+alterloc             	81 # port
+nearby1req				-42 #land
+nonearby5req			81
+soundfx               	57
+descr "The cult pays for traders to set up shop in a designated area, as well as modest defenses to create the illusion of safety so that passersby might lower their own defenses when staying the night."
+
+newritual     "Lesser Elder Summoning"
+ritpow                 	23 # Cultist
+level                 	2
+rebatelvl				3
+free
+cost              		4 60 # 60 sacrifices, half at T3+
+terr                 	-93 # ports
+summoning
+addstring "2d8*Zombie"
+addstring "4d3*Parasitic Hybrid*
+addstring "1d5*Elder Thing"
+addstring "1d3*Horror of the Deeps"
+soundfx               	57
+descr "The Cult uses sacrifices to lure and bind some lesser Elder Beings to this plane."
+
+newritual     "Elder Summoning"
+ritpow                 	23 # Cultist
+level                 	3
+rebatelvl				4
+free
+cost              		4 150 # 150 sacrifices, half for Dagon
+apcost					1
+terr                 	-43
+summoning
+addstring "2d2*Shoggoth"
+addstring "1d6*Night Gaunt"
+addstring "1d9*Horror of the Deeps"
+addstring "2d15*Zombie & 2d10*Parasitic Hybrid"
+#addstring "1d5*Mi-Go"
+soundfx               	57
+descr "The Disciple gathers enough sacrifices for weeks of ceremony in the depths of the ocean and attempts to bind more dangerous servants of the Elder Gods to their cause. WARNING: Shoggoths, Gaunts, and Mi-Go's can break free and are each very dangerous."
+
+newritual "Greater Elder Summoning"
+ritpow                 	23 # Cultist
+level                 	4
+free
+cost              		0 300 # 300 sacrifices
+apcost					2
+terr                 	-43
+summoning
+addstring "c*Shambler Prince & 2d4*Shoggoth & 2d10*Night Gaunt & 20*Shambler"
+addstring "c*Shambler Prince & 3d6*Horror of the Deeps & 2d15*Elder Things"
+addstring "c*Cultist of the Deep & 6d6*Zombie & 5d8*Parasitic Hybrid & 5d6*Deep One"
+#addstring "c*Disciple of Dagon & 2d6*Mi-Go & 2d8*Night Gaunt"
+soundfx               	57
+descr "Dagon calls forth his servants and death stalks the shores. WARNING: Shoggoths, Gaunts, and Mi-Go's can break free and are each very dangerous."
+
+newritual "Watergate"
+ritpow					23 # Cultist
+level					4
+free
+cost					4 250
+terr					-2
+portalroom				-49
+noportalreq				1
+closewin
+descr "Fueled by the blood of the innocents, Dagon calls forth a portal to the plane of water, intent on taking it for himself."
+
+newritual "Stargate"
+ritpow					23 # Cultist
+level					4
+free
+cost					4 250
+planeswap				8
+centercaster
+soundfx 				43
+descr "Dagon creates a link with the outer realms and leads his retinue into the depths of madness. SURGEON GENERALS WARNING: Madness is not the leading cause of death in the Void."
+
+newritual     "Settle Dreamer"
+ritpow                 	23 # Cultist
+terr					-42 # land
+level                 	3
+free
+cost              		4 200 # 200 sacrifices
+apcost					5
+defctrl					75 # 25% chance to screw up
+summoning
+addstring "1*Dreamer"
+soundfx               	57
+descr "The Disciple is entrusted with the placement of a Dreamer somewhere to ensure its safety from those who would defile the places of the Elder Gods. WARNING: It would be wise to perform this ritual with backup and/or several sources of enslave spells in case something goes wrong."
+
+newritual     "Induction into the Cult of Dagon"
+ritpow              23 # Cultist
+terr                68
+level               1
+rebatelvl			3
+cost              	4 500 # 500 sacrifices
+soundfx             57
+promotion           1
+free
+addstring     "High Cultist"
+addstring     "Disciple of Dagon"
+descr "The High Cultist contacts the Cult of Dagon and undergoes the trials and rituals necessary to be inducted into their ranks at the cost of his human form."
+
+newritual     "Dagon Cult Apotheosis"
+ritpow                 	23 # Cultist
+level                 	3
+free
+cost              		4 1000 # 1000 sacrifices
+terr                 	-2 #TO-DO: Find temple of deep ID.
+promotion "Disciple of Dagon"
+addstring "Dagon"
+nomonworldreq "(-)Dagon"
+soundfx               	57
+descr "The Disciple of Dagon sheds his mortal form entirely to become the new incarnation of Dagon. The world trembles in fear."
+
+newritual "Call Horror Commander"
+ritpow                 	23 # Cultist
+descr "Calls Horrors powerful and smart enough to control others to your aid. Medium chance of failure. Best used in the void."
+level 2
+cost 4 120
+summoning
+addstring "c*Starspawn"
+addstring "c*Ether Lord & 2d2+2*Ether Warrior"
+addstring "c*Ythian Sage & 2d2+2*Ythian"
+defctrl 85
+rebateterr20 -76
+terrboost -76
+
+newritual "Call Doom Horror"
+ritpow                 	23 # Cultist
+descr "Doom Horrors are some of the strongest beings in Elysium, capable of annihilating entire armies by themselves. Summon at your own risk. Best used in the void."
+level 3
+cost 4 1000
+sum0chance 5
+summoning
+addstring "Legion of Gods"
+addstring "c*Maker of Ruins"
+addstring "c*Hunter of Gods"
+addstring "c*Slave to Unreason" 
+addstring "c*Unmaker of Souls" 
+addstring "c*Abomination of Desolation" 
+defctrl 75
+rebateterr20 -76
+
+newritual "Call Horror God"
+ritpow                 	23 # Cultist
+descr "Some creatures are legends of the Horrors, simply too powerful and destructive for any mortal force to fight without some strong tricks up their sleeves. Best used in the void."
+level 3
+cost 4 300
+summoning
+addstring "c*Horror Olm"
+addstring "c*King in Yellow"
+addstring "c*Elder Beholder"
+addstring "Eldritch Abomination"
+addstring "c*Void Lord"
+defctrl 80
+rebateterr20 -76
+
+newritual "Scrying" #New ritual for scouting. No cost but takes a Starspawn's whole turn.
+	ritpow 24
+	level 1
+	apcost 1
+	randomloc 1
+	centerloc
+	scryloc 15
+	soundfx 70
+	closewin
+	descr "The Starspawn peers into the the heavens to gain knowlege of a random place on Elysium."
+	
+selectritual "Call of the Deep" #More likley to get cultists.
+	sum0chance 15 #from 10%
+
+############# High Cultist Unit Changes
+
+newmonster "Disciple of Dagon"
+copyspr "Fish Bishop" #Placeholder
+power 23 3
+power 24 1
+hp 12
+armor 0
+mr 7
+mor 9
+str 6
+water
+coldres 75
+allitemslots
+spellweapon 42 2
+spellweapon 4 2
+meleeweapon 0 "Magic Scepter"
+descr "On rare occasions, a High Cultist will be inducted into the Cult of Dagon by the Icthyids. This involves shedding his human form but brings him closer to the Elder Gods than he could otherwise hope to get.
+
+newritual "Contract Ichtyids"
+ritpow 23
+level 1
+free
+cost 0 25 #25 Gold
+summoning
+addstring "c*Ichtyid Captain & 10*Ichtyid Warrior & 10*Ichtyid Raider"
+addstring "c*Bishop Fish & 10*Ichtyid Warrior & 10*Ichtyid Raider"
+descr #Local amphibious raiders can be bought to serve the dreamer"
+
+newritual "Convert worthless"
+ritpow 23
+level 1
+free
+cost 4 25 #25 Sacrifices
+summoning
+addstring "c*Shambler Prince & 30*Hybrid Soldier"
+descr "Convert the local scum into beings more closer in tune with the eldergods wishes"
+
+newmonster "Shoggoth"
+spr1 "sprites/Shoggoth.tga"
+spr2 "sprites/Shoggoth2.tga"
+hp 25
+armor 0
+mr 6
+str 7
+mor 99
+rank 1
+water
+fear 2
+voidsanity 99
+ctrlchance 80
+nonmaginvul
+miscslots
+semistupid
+meleeweapon 10 "Bite"
+meleeweapon 5 "Draining Tentacle"
+meleeweapon 5 "Tentacle"
+descr "Shoggoths are horrific, eye-speckled creatures created by the Elder Gods specifically to serve as slaves to their unknowable wills. While they can be summoned and guided to certain tasks, they are difficult to control and exceedingly dangerous."
+
+newmonster "Night Gaunt"
+spr1 "sprites/Ngaunt.tga" #placeholders
+spr2 "sprites/Ngaunt2.tga"
+armor 1
+hp 16
+mr 6
+str 7
+mor 99
+voidsanity 99
+frontpos
+flying
+water
+fear 2
+battlefast
+ctrlchance 80
+ethereal
+miscslots
+prebatweapon 8 "Dream Claws"
+meleeweapon 8 "Dream Claws"
+meleeweapon "Dream Poison"
+descr "Inhabitants of the Dreamlands, Night Gaunts resemble Devils thanks to their blackened exterior, wings, curved horns, and barbed tails. Unlike Devils, however, all Night Gaunts can fly and derive their sustenance by feasting on the dreams of the living, typically as they lay dying in a poison induced nightmare."
+
+newmonster "Dagon"
+spr1 "sprites/Dagon.tga"
+spr2 "sprites/Dagon2.tga"
+armor 2
+hp 127
+mr 9
+str 10
+mor 99
+rank 0
+huge
+fear 3
+water
+frontpos
+charmres
+coldres 100
+pierceres
+bluntres
+slashres
+fastheal
+healonterr -43 #seas and rivers, allegedly
+voidsanity 99
+power 23 3
+power 24 3
+spellweapon 42 3
+spellweapon 4 3
+meleeweapon 23 "Fists"
+meleeweapon 20 "Tentacle"
+descr "Dagon is the deity of the Deeps, who presides over the Deep Ones and the frail humans who worship them. It is precisely because Dagon is not one of the Old Ones that he is able to heed the summons of cultists without unraveling all of creation, though his foes might feel it better if all of creation were unraveled. If killed, the Cult of Dagon must bring another of their members to the point of apotheosis, but Dagon will never truly die unless the cult is eliminated."
+
+newmonster "Dreamer"
+spr1 "sprites/Dreamer.tga"
+spr2 "sprites/Dreamer2.tga"
+armor 0
+hp 38
+mr 9
+mor 99
+str 2
+rank -1
+water
+frontpos
+immobile
+stationary
+charmres
+miscslots
+spellweapon 42 3
+spellweapon 61 3
+descr "The Dreamers are fragments of the Elder Gods. Like their sources, terrible things occur if they are fully awakened and whole regions can be unmade if they are ever roused. Thankfully, they are difficult to rouse, limited in number, and relatively easy to banish back to the Outer Realms if left unprotected."
+
+newmonster "Zombie"
+spr1 "sprites/Deepzed.tga"
+spr2 "sprites/Deepzed2.tga"
+hp 12
+armor 0
+mr 3
+str 6
+mor 99
+voidsanity 99
+charmres
+fear 1
+bluntres
+pierceres
+slashres
+water
+semistupid
+miscslots
+meleeweapon 6 "Claw"
+meleeweapon 5 "Tentacle"
+meleeweapon 4 "Bite"
+descr "Though not undead in the traditional sense, so-called 'Cthulu Zombies' act in much the same way as normal undead. The only real difference is that it is a mixture of parasites, plant matter, and the dreams of Elder Gods that propel these horrors forward in search of flesh. Has a tendency to wander off."
+
+newmonster "Elder Thing"
+spr1 "sprites/Thinge.tga"
+spr2 "sprites/Thinge2.tga"
+hp 20
+armor 1
+mr 5
+str 5
+mor 12
+rank 1
+fear 1
+water
+slow
+voidsanity 99
+regeneration
+miscslots
+meleeweapon 8 "Bite"
+meleeweapon 4 "Tentacle"
+meleeweapon 4 "Tentacle"
+
+newmonster "Horror of the Deeps"
+spr1 "sprites/Thingd.tga"
+spr2 "sprites/Thingd2.tga"
+hp 27
+armor 1
+mr 5
+str 7
+mor 12
+rank 1
+fear 1
+water
+regeneration
+miscslots
+meleeweapon 8 "Bite"
+meleeweapon 4 "Claw"
+meleeweapon 4 "Claw"
+
+newmonster "Parasitic Hybrid"
+spr1 "sprites/Parazed.tga"
+spr2 "sprites/Parazed.tga"
+hp 9
+armor 0
+mor 99
+mr 4
+str 5
+rank 1
+frontpos
+water
+human
+voidsanity 99
+battlefast
+semistupid
+miscslots
+meleeweapon 6 "Draining Tentacle"
+meleeweapon 6 "Parasitic Tentacle"
+descr "Sometimes unions between the Deep Ones and humans don't result in 'normal' offspring, but instead parasite-riddled horrors that reproduce by draining and infecting others. These monstrosities are best pointed towards outsiders and let loose as shock troops. Might wander off if left unchained."
+
+selectterr 318
+deepspawn
+
+selectterr 81
+deepspawn
+
+#Weapons
+newweapon "Draining Tentacle"
+range 1
+init 3
+dmgtype 7
+drain
+inanimate
+sound     18
+
+newweapon "Parasitic Tentacle"
+range 1
+init 2
+dmgtype 3
+mundane
+replicate
+inanimate
+sound     18
+
+newweapon "Dream Claws"
+range 1
+init 7
+dmgtype 7
+stone
+next
+nextdmg 8
+sound 97
+
+newweapon "Dream"
+dmgtype 12
+
+newweapon "Dream Poison"
+range 1
+init 6
+dmgtype 9
+dmg 10
+stone
+
+newweapon "Shotgun"
+range 4
+init 4
+dmgtype 3
+aoe 2008
+next
+nextdmg 64
+mundane
+flymode 4
+flylook 2
+flysound 9
+sound -1
+
+newweapon "Shotgun Blast"
+dmgtype 12
+
+newweapon "Dynamite"
+range 3
+init 1
+dmgtype 2
+nextalways
+nextdmg 10
+flymode 1
+flylook 15
+flysound 68
+sound 27
+
+newweapon "Kaboom"
+dmgtype 4
+aoe 997
+
+newweapon "Point Blank Annihilation"
+range 1
+init 1
+dmgtype 7
+next
+nextdmg 999
+sound 40
+
+newweapon "Annhilation"
+dmgtype 4
+aoe 997
+
+####################### Dwarf Queen Faction 16
+
+############# Dwarf Queen Rituals
+
+newritual "Activate Runes of Power"
+ritpow 				28 #Dvala Rituals
+terr 				126 #Dwarven City
+cost 				0 1000 #1000 gold
+cost 				7 200 #200 rubies
+level 				3
+apcost 				8
+squareench 			8 #Vafur Flames
+descr "The Daughter of Dvalin activates the ancient runes of power upon the city gates, creating a wall of fire to thwart attackers."
+
+newritual "Develop Coal Mine"
+ritpow 30
+level 1
+free
+cost 1 20 #Cost 25 Iron
+terr -5 #Makes Spell only applicable to mountains
+apcost 3
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "2d6*goblin"
+addstring "1d4*Ochre Jelly"
+addstring "1d20*pale one"
+addstring "1d10*bandit"
+addstring "1*giant ant queen & 1d10*Giant Ant"
+addstring "1*living boulder"
+alterloc 105 #Coal Mine
+nonearby1req -4 #Makes it so mines cant be adjancent to one another
+descr "Use The Industrial Nature Of The Dwarfs To Construct A Coal Mine For The Glory Of Our Queen But Be Warned These Actions Will Not Go Unseen"
+
+newritual "Develop Mine"
+ritpow 30
+level 1
+free
+cost 1 40 #Cost 40 Iron
+terr -104 #Makes Spell only applicable to hills and coal mines
+apcost 3
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "4d6*goblin & 1*goblin king"
+addstring "2d4*Ochre Jelly"
+addstring "2d20*pale one"
+addstring "2d10*bandit & 1d2*bandit king"
+addstring "1*giant ant queen & 1d10*Giant Ant"
+addstring "1d2*living boulder"
+addstring "1d10*earth gnome"
+ornext 85
+alterloc 14 #Iron Mine
+ornext 95
+alterloc 15 #Silver Mine
+ornext 100
+alterloc 33 #Gold Stream
+descr "Iron Is Everywhere If You Know Where To Look. The Most Common Way To Set Up a Iron Mine, IS To Either In The Hills Or Reconstruct A Coal Mine To Get Deeper Materials"
+
+newritual "Construct Dwarven City"
+ritpow 30
+level 1
+free
+cost 1 100 #Cost 100 Iron
+terr 14 #Makes Spell only applicable to Mines
+apcost 3
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "6d6*goblin & 1d2*goblin king"
+addstring "2d4*Ochre Jelly"
+addstring "2d20*pale one"
+addstring "3d10*bandit & 1d2*bandit king"
+addstring "1*giant ant queen & 1d10*Giant Ant"
+addstring "1*living boulder"
+addstring "1d5*Rock Troll"
+alterloc 126 #Dwarven City
+descr "Using An Iron Mine Already Stripped Of Resources Can Still Be Made Use Of As A City For Our Kin But Beware Others Do Not Like An Aspiring Empire."
+
+newritual "Develop Agarthan Mine"
+ritpow 30
+level 1
+free
+cost 1 30 #Cost 30 Iron
+terr 47 #Makes Spell only applicable Rock Ground
+apcost 3
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "4d6*goblin & 1d2*goblin king"
+addstring "2d4*Ochre Jelly"
+addstring "2d20*pale one"
+addstring "1d4*Rock Troll"
+addstring "1d1*giant ant queen & 1d10*Giant Ant"
+addstring "1d2*living boulder"
+addstring "1d10*earth gnome"
+ornext 85
+alterloc 14 #Iron Mine
+ornext 95
+alterloc 15 #Silver Mine
+ornext 100
+alterloc 33 #Gold Stream
+nonearby1req -4 #Makes it so mines cant be adjancent to one another
+descr "All Manner Of Value Is Everywhere In Agartha If You Know Where To Look But Beware There Things Down Here That Do Not Sleep."
+
+newritual "Raise Mountain"
+ritpow 29
+level 2
+free
+cost 10 40 #Cost 40 Earth Gems
+terr -71 #Makes Spell only applicable To plains
+apcost 6
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "4d2*Lesser Earth"
+addstring "2d4*Ochre Jelly"
+addstring "1d10*earth gnome"
+addstring "2d10*bandit & 1d2*bandit king"
+addstring "1d1*giant ant queen & 1d10*Giant Ant"
+addstring "1d2*living boulder"
+alterloc 12 #Moutains
+descr "With The Great Power Of Our Magic. We Can Raise A Moutain Out Of The Ground With The Great Strength Of Our Rune Smiths"
+
+newritual "Develop Gold Mine"
+ritpow 29
+level 2
+free
+cost 10 50 #Cost 50 Earth Gems
+terr 33 #Makes Spell only applicable To Gold Streams
+apcost 3
+summoning
+defctrl -100 #Makes The Monsters Hostile
+addstring "4d6*goblin & 1d2*goblin king"
+addstring "2d4*Ochre Jelly"
+addstring "2d20*pale one"
+addstring "1d4*Rock Troll"
+addstring "1*giant ant queen & 1d10*Giant Ant"
+addstring "1*living boulder"
+addstring "1d10*earth gnome"
+alterloc 34 #Gold Mine
+descr "With The Power Of Our Superior Skill At Mining And Combined With Our Rune Magic We Can Turn Gold Deposits Into A Succesful Gold Mine."
+
+newritual	"Forge Trinket"
+descr "Forge a miscellaneous trinket."
+ritpow 				29 #rune smith
+level	        	1
+soundfx				57
+cost				0 100
+cost				1 5
+summoning
+addstring       	"1*Trinket Chest"
+
+newritual	"Forge Item"
+descr "Forge a common item."
+ritpow 				29 #rune smith
+level	     	    1
+soundfx				57
+cost				0 120
+cost				1 5
+summoning
+addstring       	"1*Item Chest"
+
+newritual "Forge Weapon"
+descr "Forge a weapon."
+ritpow 				29 #rune smith
+level				2
+soundfx				57
+cost				0 200
+cost				1 10
+summoning
+addstring       	"1*Weapon Chest"
+
+newritual	"Forge Rare"
+descr "Forge a rare item."
+ritpow 				29 #rune smith
+level	       		 2
+soundfx				57
+cost				0 300
+cost				1 10
+summoning
+addstring      		"1*Rare Chest"
+
+newritual	"Treasure Trove"
+descr "Forge a chest full of treasure."
+ritpow 				29 #rune smith
+level	       		3
+soundfx				57
+cost				0 500
+cost				1 40
+summoning
+addstring       	"1*Treasure Chest"
+
+newritual "Automate Forge"
+descr "The Rune Lord may be disdainful of innovation and newfangled gadgets, but he is not above enchanting his forge's equipment. Must be cast in dwarfen city."
+ritpow				29 #rune smith
+terr 				126 #dwarf city
+level				3
+free
+soundfx				57
+cost				10 25 #25 emeralds
+cost				7 25  #25 rubies
+apcost				2
+summoning
+addstring "1*Animated Tools"
+
+selectritual "Sense Mines" #Now costs gold rather than diamonds as it was pretty shit lategame.
+	cost 9 0 #From 5
+	cost 0 30 #From 0
+	apcost 2
+	scryloc 15 #From 5 now a 3x3 block.
+	
+selectritual "Found Colony"
+	apcost 11
+	cost 0 200 #from 250
+
+############# Dwarf Queen Unit Changes
+
+selectmonster "dwarf arbalest" ##### Made The Arbalest Not Slow
+clearmove
+snow
+mountain
+
+selectmonster "dwarf sapper" ###### Made The Sapper Able To Tunnel, But To balance Made Them Slow
+tunnel
+slow
+
+newmonster "Item Chest"
+descr "Useful place to store items. They are magically controlled and will defend themselves if necessary, despite being rather fragile."
+spr1 "sprites/Chest.tga"
+spr2 "sprites/ChestA.tga"
+hp 1
+str 5
+mor 5
+mr 3
+armor 1
+meleeweapon 1 "Bite"
+allitemslots
+randomitem	100
+
+newmonster "Trinket Chest"
+descr "Useful place to store items. They are magically controlled and will defend themselves if necessary, despite being rather fragile."
+spr1 "sprites/Chest.tga"
+spr2 "sprites/ChestA.tga"
+hp 1
+str 5
+mor 5
+mr 3
+armor 1
+meleeweapon 1 "Bite"
+allitemslots
+randommisc	100
+
+newmonster "Weapon Chest"
+descr "Useful place to store items. They are magically controlled and will defend themselves if necessary, despite being rather fragile."
+spr1 "sprites/Chest.tga"
+spr2 "sprites/ChestA.tga"
+hp 1
+str 5
+mor 5
+mr 3
+armor 1
+meleeweapon 1 "Bite"
+allitemslots
+randomweapon	100
+
+newmonster "Rare Chest"
+descr "Useful place to store items. They are magically controlled and will defend themselves if necessary, despite being rather fragile."
+spr1 "sprites/Chest.tga"
+spr2 "sprites/ChestA.tga"
+hp 1
+str 5
+mor 5
+mr 3
+armor 1
+meleeweapon 1 "Bite"
+allitemslots
+randomrare	100
+
+newmonster "Treasure Chest"
+descr "Useful place to store items. They are magically controlled and will defend themselves if necessary, despite being rather fragile."
+spr1 "sprites/Chest.tga"
+spr2 "sprites/ChestA.tga"
+hp 1
+str 5
+mor 5
+mr 3
+armor 1
+meleeweapon 1 "Bite"
+allitemslots
+randomitem	100
+randommisc	100
+randomweapon	100
+randomrare	100
+
+####################### Voice Of El Faction 17
+
+selectclass 21
+clearstartunits
+addstartcom "Bishop"
+addstartcom "Paladin"
+addstartunits "Crusader Spearman" 15
+addstartunits "Crusader Swordsman" 5
+addstartunits "Crusader Pikeman" 5
+addstartunits "Crusader Bowman" 10
+setmaincom "Arch Bishop"
+addstartterr 17
+
+clearrec
+nostdtroops
+addcomrec "Crusader" 10 50 0 10
+recxcost 12 5
+templerec
+addcomrec "Paladin" 6 75 0 20 #75 and 20 iron
+recxcost 12 15
+templerec
+reclimiter "+Arch Bishop"
+reclimiter "+Cardinal"
+reclimiter "+Pontiff"
+addcomrec "Grand Master" 3 100 0 25
+templerec
+recxcost 12 30
+reclimiter "+Cardinal"
+reclimiter "+Pontiff"
+addcomrec "Inquisitor" 2 50 20 0
+templerec
+recxcost 12 10
+reclimiter "+Cardinal"
+reclimiter "+Pontiff"
+addcomrec "High Inquisitor" 1 100 40 0
+templerec
+recxcost 12 25
+reclimiter "+Pontiff"
+addcomrec   "Bishop" 10 40 10 0
+templerec
+addunitrec  "Crusader Spearman" 100 5 50 0 5
+recxcost 12 1
+addunitrec  "Crusader Swordsman" 100 5 55 0 10
+recxcost 12 1
+addunitrec  "Crusader Pikeman" 100 5 55 0 10
+recxcost 12 1
+addunitrec  "Crusader Bowman" 100 5 50 0 5
+recxcost 12 1
+addunitrec  "Crusader Knight" 100 5 65 0 20
+recxcost 12 5
+reclimiter "+Grand Master"
+reclimiter "+Paladin"
+addunitrec  "Protectore Urbs" 100 5 55 0 15
+recxcost 12 5
+addunitrec "Defensore Fidelis" 100 5 65 0 25
+recxcost 12 5
+reclimiter "+Pontiff"
+addunitrec  "Temple Guard" 100 5 50 0 5
+recxcost    12 1
+reclimiter "+Arch Bishop"
+reclimiter "+Cardinal"
+reclimiter "+Pontiff"
+addunitrec  "Templar" 100 5 50 0 15
+recxcost    12  5
+reclimiter "+Cardinal"
+reclimiter "+Pontiff"
+addunitrec  "Catapult"  100  1   25  0  50
+addunitrec  "Trebuchet" 100 1 40 0 65
+reclimiter "+Arch Bishop"
+reclimiter "+Cardinal"
+reclimiter "+Pontiff"
+addcomrec  "Faithful" 10 30 20 0
+recxcost 12 2
+templerec
+
+############# Voice Of El Rituals
+
+newritpow
+
+newritual     "Form Commune"
+#ritpow                 	0 #First newritpow
+level                 	1
+free
+cost              		0 10 # 10 gold
+terr                 	0 # Plain
+alterloc             	5 # Farm
+soundfx               	57
+descr "The Crusader gathers some peasants into a commune devoted to the worship of El."
+
+newritual     "Upgrade Commune"
+#ritpow                 	0 # First newritpow
+level                 	1
+free
+cost              		0 15 # 15 gold
+terr                 	5 # Farm
+alterloc             	7 # Hamlet
+soundfx               	57
+descr "The Crusader brings more of the devout into one place to improve the local tithe. WARNING: Settlements upgraded after they have been converted will not have increased yearly tithes, only increased tile income. Blame El Ceremony events."
+
+newritual     "Form Monastic Community"
+#ritpow                 	0 # First newritpow
+level                 	1
+free
+cost              		0 25 # 25 gold
+cost					12 5
+apcost					2
+terr                 	7 # Hamlet
+alterloc             	18 # Village
+nonearby1req			18
+soundfx               	57
+descr "The Crusader gathers some relics in the area in order to attract a minor monastic order. WARNING: Settlements upgraded after they have been converted will not have increased yearly tithes, only increased tile income. Blame El Ceremony events.""
+
+newritual     "Build Faithful Town"
+#ritpow                 	0 # First newritpow
+level                 	2
+free
+cost              		0 50 # 50 gold and 10 relics
+cost					12 10
+apcost					2
+terr                 	18 # Village
+alterloc             	17 # Town
+nonearby1req			17
+soundfx               	57
+descr "The Templar gathers more relics and funds the construction of defenses in order to enlarge a monastic order. WARNING: Settlements upgraded after they have been converted will not have increased yearly tithes, only increased tile income. Blame El Ceremony events.""
+
+newritual     "Build Temple"
+#ritpow                 	0 # First newritpow
+level                 	2
+free
+cost              		0   100 # 100 gold and 25 relics
+cost					12	25
+apcost					5
+terr                 	18 # Village
+alterloc             	92 # Temple
+nonearby3req			92
+soundfx               	57
+descr "The Templar puts together a proper reliquary in a village and orders the construction of a temple over it. WARNING: Settlements upgraded after they have been converted will not have increased yearly tithes, only increased tile income. Blame El Ceremony events.""
+
+newritual     "Upgrade Temple"
+#ritpow                 	0 # First newritpow
+level                 	3
+free
+cost              		0   150 # 150 gold and 50 iron
+cost					1	50
+apcost					2
+terr                 	92 # Temple
+alterloc             	25 # El Temple
+nonearby5req			25
+soundfx               	57
+descr "The Paladin declares the temple a holy site and directs the faithful in creating defenses around it. WARNING: Settlements upgraded after they have been converted will not have increased yearly tithes, only increased tile income. Blame El Ceremony events.""
+
+newritual     "Rouse Faithful"
+#ritpow                 	0 # First newritpow
+level                 	2
+free
+cost              		0   250 # 250 gold and 75 relics
+cost					12	75
+planereq 				0
+summoning
+addstring "c*Crusader & 10*Crusader Spearman & 1d10*Crusader Swordsman & 5d2*Crusader Bowman & 1d5*Crusader Pikeman & 2*Crusader Knight"
+addstring "c*Angel & 10d3*Faithful"
+addstring "c*Saint & 10d3*Flagellant"
+soundfx               	57
+descr "The Templar goes about collecting men fit to serve El through force of arms. Sometimes uncovers particularly holy units."
+
+newritual     "Call on Holy Orders"
+#ritpow                 	0 # First newritpow
+level                 	3
+free
+cost              		0   250 # 250 gold and 75 relics
+cost					12	75
+planereq				0
+summoning
+addstring "c*Templar & 20*Crusader Knight & 5d2*Crusader Pikeman & 5d2*Temple Guard & 20*Crusader Bowman"
+addstring "c*Inquisitor & 8d4*Faithful & 5d4*Temple Guard & 20*Protectore Urbs"
+soundfx               	57
+descr "The Paladin gathers members of the outer circles of a Holy Order in order to purge the enemies of El."
+
+newritual     "Call on Inner Circle"
+#ritpow                 	0 # First newritpow
+level                 	4
+free
+cost              		0   500 # 500 gold and 150 relics
+cost					12	150
+planereq 				0
+summoning
+addstring "c*Paladin & 20*Crusader Knight & 20*Templar & 20*Crusader Bowman & 2d3*Trebuchet"
+addstring "c*High Inquisitor & 10d5*Faithful & 20*Protectore Urbs & 20*Crusader Bowman & 2d2*Trebuchet & 2*Catapult"
+addstring "c*Grand Master & 20*Defensore Fidelis & 10d3*Temple Guard & 20*Protectore Urbs & 2d3*Catapult"
+soundfx               	57
+descr "The Grand Master calls upon his peers and closest confidants to gather a host worthy of bringing doom to the enemies of El."
+
+newritual "Rapture"
+#ritpow					0 # First newritpow
+level					4
+free
+cost					12 250
+planeswap				1
+centercaster
+soundfx 				43
+descr "The by collecting a large number of holy relics of El, the Grand Master is able to transport an army to the Celestial Plane. Carries the typical risks of planeswapping."
+
+newritual "Invade Hell"
+#ritpow 					0 # First newritpow
+terr					-77 #celestial squares
+planereq				1 # celestial plane, to be doubly sure
+level 					4
+cost               		12 1000 # 1000 relics
+apcost					8
+portalroom				-74 # Inferno squares
+noportalreq				1
+free
+closewin 				# closes cast ritual window
+descr "The Grand Master has had enough of Inferno's guff and takes divine matters into his own hands by bridging the gap between Heaven and Hell. The process is exhausting and leaves the Grand Master vulnerable to the armies of El and Inferno for a season."
+
+newritual "Protection Against Fire"
+#ritpow				0 # First newritpow
+level				2
+free
+apcost				-1
+cost				12 20 #20 relics
+bentargall			4
+soundfx				57
+descr "The Templar uses the power of the Chapter's sacred relics to protect his troops against fire. Lasts 1 turn."
+
+############# Voice Of El Unit Changes
+
+selectmonster "Angel"
+clearspec
+clearmove
+flying
+semistupid
+temple2
+fastheal
+holy
+invisible
+allitemslots
+
+selectmonster "Saint"
+power 0 1
+clearspec
+clearmove
+semistupid
+holy
+human
+
+selectmonster "Grand Master"
+clearspec
+clearmove
+power 0 4
+semistupid
+holy
+human
+clearweapons
+spellweapon 49 3
+meleeweapon 2 "Greatsword"
+
+selectmonster "High Inquisitor"
+clearspec
+clearmove
+semistupid
+holy
+human
+
+selectmonster "Paladin"
+power 0 3
+clearweapons
+spellweapon       49 2
+meleeweaponspec   12 "Lance Charge"
+meleeweapon        2 "Broadsword"
+meleeweaponbonus   4 "Hoof"
+
+selectmonster "Paladin" [1]
+power 0 3
+clearweapons
+spellweapon       49 2
+meleeweaponspec   12 "Lance Charge"
+meleeweapon        2 "Broadsword"
+meleeweaponbonus   4 "Hoof"
+
+selectmonster "Paladin" [2]
+power 0 3
+clearweapons
+spellweapon       49 2
+meleeweaponspec   12 "Lance Charge"
+meleeweapon        2 "Broadsword"
+meleeweaponbonus   4 "Hoof"
+
+selectmonster "Templar"
+power 0 2
+
+selectmonster "Crusader"
+power 0 1
+holy
+
+newmonster "Crusader Swordsman"
+spr1 "sprites/Crusader.tga"
+spr2 "sprites/Crusader2.tga"
+hp 8
+armor 2
+mr 4
+mor 6
+str 4
+rank 1
+holy
+shield
+allitemslots
+meleeweapon 0 "Broadsword"
+descr "Though lesser in numbers than the spearmen, Crusader Swordsmen form the backbone of any Crusader army because swords are superior to spears - and not just in the eyes of El."
+
+newmonster "Crusader Spearman"
+spr1 "sprites/Crusaders.tga"
+spr2 "sprites/Crusaders2.tga"
+hp 8
+armor 1
+mr 4
+mor 6
+str 4
+rank 1
+shield
+holy
+allitemslots
+meleeweapon 1 "Spear"
+descr "Cheap to equip and maintain, spearmen make up the bulk of the Holy Crusade's armies. Each group of spearmen carries with them a holy relic that channels the power of El through them so long as they do not avoid attacking their foes in melee."
+
+newmonster "Crusader Pikeman"
+spr1 "sprites/Crusaderp.tga"
+spr2 "sprites/Crusaderp2.tga"
+hp 8
+armor 2
+mr 4
+mor 6
+str 4
+rank 1
+rearpos
+holy
+size1x1
+allitemslots
+meleeweapon 0 "Pike"
+descr "Sometimes, spears are not enough to ward off hordes of cavalry, trolls, giants, or other foul things. The leaders of the Holy Crusades have foreseen this problem and brought along pikes to equip some of the spearmen with longer poking implements. This has the added benefit of - if not pleasing El - not invoking El's wrath for avoiding glorious melee combat."
+
+newmonster "Crusader Bowman"
+spr1 "sprites/Crusaderb.tga"
+spr2 "sprites/Crusaderb2.tga"
+hp 6
+armor 1
+mr 4
+mor 6
+str 4
+holy
+rank 0
+frontpos
+human
+allitemslots
+rangedweapon 1 "Bow"
+meleeweapon 0 "Shortsword"
+descr "Unlike other Crusaders, the Crusader Bowman is naughty in the eyes of El, who demands that His warriors engage in glorious melee combat against unbeliever and demon alike. Still, they are proper El-fearing soldiers and carry with them holy relics to prevent misfortune from befalling the rest of the Crusade."
+
+newmonster "Crusader Knight"
+spr1 "sprites/Crusaderk.tga"
+spr2 "sprites/Crusaderk2.tga"
+hp 12
+armor 3
+mr 4
+mor 7
+str 5
+holy
+rank 0
+frontpos
+human
+largeshield
+allitemslots
+meleeweaponspec 12 "Lance Charge"
+meleeweapon 2 "Broadsword"
+meleeweapon 4 "Hoof"
+descr "Crusader Knights do not come from the ranks of commoners like other Crusaders. Instead, they only join when the aid of the Holy Orders is enlisted. They do not obey the orders of the Ecclesiarchy, but rather the Master of their Order. The Masters of the Holy Order do obey the Ecclesiarchy, so the distinction makes little difference."
+
+newmonster "Protectore Urbs"
+spr1 "sprites/Protectores.tga"
+spr2 "sprites/Protectores2.tga"
+hp 6
+armor 2
+mr 4
+mor 5
+str 4
+rank 0
+rearpos
+slow
+human
+largeshield
+allitemslots
+rangedweapon 0 "Crossbow"
+meleeweapon 0 "Broadsword"
+descr "Like the Crusader Bowman, the City Guard is not holy in the eyes of El because they favor ranged combat. Each group carries a small number of holy relics to avoid El's wrath."
+
+newmonster "Defensore Fidelis"
+spr1 "sprites/Defensores.tga"
+spr2 "sprites/Defensores2.tga"
+hp 10
+armor 3
+mr 5
+mor 8
+str 5
+rank 1
+frontpos
+slow
+holy
+human
+allitemslots
+meleeweapon 1 "Greatsword"
+descr "Defenders of the Faith are appointed by the Pontiff himself to either guard crucial holy sites or lead charges against heretics and apostates. Their appointment is reinforced by entrusting each with several holy relics that they must guard with their lives."
+
+newmonster "Faithful"
+spr1 "sprites/Teuton.tga"
+spr2 "sprites/Teuton2.tga"
+hp 5
+armor 2
+mr 4
+mor 7
+str 4
+rank 0
+frontpos
+spiritsight
+farsight 1
+stealth
+noleader
+human
+allitemslots
+meleeweapon 0 "Broadsword"
+meleeweapon 0 "Shortsword"
+descr "The eyes of the Faithful bring news from far and wide and little escapes their gaze. Unlike most scouts, the Faithful is competent in combat and might kill a few guards if caught. As they are so well armed and armored, as well as fanatically devoted to El, Inquisitors often use them as personal guards."
+
+####################### illusionist Faction 18
+
+####################### Markgraf Faction 19
+
+####################### Dyrad Queen Faction 20
+
+####################### Scourge Lord Faction 21
+
+############# Scourge Lord Rituals
+
+newritual "Desert Effigy"
+ritpow 48
+level 1
+free
+cost 14 10 #Cost 10 bodies
+terr -1 #Makes Spell only applicable to deserts
+apcost 1
+summoning
+defctrl 100 
+addstring "1*effigy"
+descr "There be bones aplenty why not put them to use."
+
+############# Scourge Lord Unit Changes
+
+selectmonster "scourge lord"
+desert
+desertstealth
+farsight
+
+selectmonster "scourge king"
+desert
+invisible
+spiritsight
+
+selectmonster "scourge herald"
+desert
+desertstealth
+farsight
+
+selectmonster "desert warrior"
+desert
+desertstealth
+
+selectmonster "camel rider"
+desert
+desertstealth
+
+newweapon "Scourge Drain"
+trgrank 9
+init	2
+sound	18
+flylook	74
+flymode	5
+dmgtype	7
+range 8
+an
+#drain
+ghoulify
+inanimate
+
+newweapon "Scourge Lord's Touch"
+trgrank 9
+init	2
+sound	18
+look	74
+dmgtype	7
+range 1
+an
+#drain
+ghoulify
+inanimate
+
+selectmonster "Scourge Flame"
+darkbless 1
+
+selectmonster "Scourge Wind"
+darkbless 1
+
+selectmonster "Monster Scarab"
+darkbless 1
+
+selectmonster "Scourge Flame"
+darkbless 1
+
+selectmonster "Dark Serpent"
+darkbless 1
+
+selectmonster "Scourge Worm"
+darkbless 1
+tunnel
+siegetunnel 100
+
+selectmonster "Dark Centipede"
+tunnel
+siegetunnel 5
+
+selectmonster "Scourge Ant"
+tunnel
+
+selectmonster "Black Ant"
+tunnel
+
+selectmonster "Scourge Herald"
+armor 2
+clearweapons
+spellweaponbonus 62 1
+meleeweapon 0 "Scourge Sword"
+
+
+selectmonster "Scourge Lord"
+clearweapons
+spellweaponbonus 62 2
+rangedweapon 1 "Scourge Drain"
+meleeweaponbonus 3 "Scourge Lord's Touch"
+
+selectmonster "Scourge King"
+clearweapons
+spellweapon	9 3
+spellweaponbonus 62 3
+rangedweapon 4 "Scourge Drain"
+meleeweaponbonus 6 "Scourge Lord's Touch"
+defiler 10
+
+####################### Cloud Lord Faction 22
+
+############# Cloud Lord Rituals
+
+newritual     "Form Cloud Castle"
+ritpow              49 # Cloud Lord
+level               2
+rebatelvl			3
+free
+cost				9	50
+cost				0	100
+apcost              5
+terr                194 # Cloud
+alterloc          	265 # Cloud Castle
+nonearby3req		265
+soundfx             57
+descr "The Cloud Lord creates a fortified castle from available cloud material."
+
+newritual     "Form Cloud Tower"
+ritpow              49 # Cloud Lord
+level               1
+rebatelvl			3
+free
+cost              	1 25
+cost				9 15
+apcost              5
+terr                194 # Cloud
+alterloc          	330 # Cloud Tower
+nonearby3req		330
+soundfx             57
+descr "The Cloud Caster gathers clouds into the semblance of a fortified tower."
+
+newritual     "Use Cloud Axes"
+ritpow              49 # Cloud Lord
+level               1
+free
+cost              	9 -8 # gain 10 diamonds and sapphires
+cost				8 -15
+apcost              2
+terr                208 # Cloud Forest
+alterloc          	194 # Cloud
+soundfx             57
+descr "By using axes made of clouds, a Cloud Caster's army can cut down a cloud forest and extract its elemental power."
+
+newritual     "Populate Clouds"
+ritpow              49 # Cloud Lord
+level               1
+free
+cost              	9 5 # 5 diamond
+apcost              2
+terr                194 # Cloud
+alterloc          	262 # Cloud Hamlet
+nonearby1req		262
+soundfx             57
+descr "The Cloud Caster makes or creates cloudfolk and encourages them to settle in this location."
+
+newritual     "Upgrade Hamlet"
+ritpow              49 # Cloud Lord
+level               1
+free
+cost				9 10
+apcost              2
+terr                262 # Cloud Hamlet
+alterloc          	261 # Cloud Village
+nonearby1req		261
+soundfx             57
+descr "The Cloud Caster organizes the local cloudfolk and works on expanding the cloud settlement."
+
+newritual     "Urbanize Clouds"
+ritpow              49 # Cloud Lord
+level               2
+free
+cost              	9 25 # 25 diamonds and sapphires
+cost				8 25
+apcost              5
+terr                261 # Cloud Village
+alterloc            260 # Cloud city
+nonearby3req		260
+soundfx             57
+descr "The Cloud Lord gathers even more cloudfolk into the area and builds the foundations of a fortified cloud city."
+
+newritual     "Seed Clouds"
+ritpow              49 # Cloud Lord
+level               2
+free
+cost              	1 25
+cost				8 5
+apcost              2
+terr                194 # Cloud
+alterloc            307 # Thunder Cloud
+nonearby3req		307
+soundfx             57
+descr "By channeling the power of Water through iron, a Cloud Lord is able to create a thunderstorm in a cloud."
+
+newritual     "Repair Clouds"
+ritpow              49 # Cloud Lord
+level               1
+free
+cost              	8 3 # 4 sapphires and 1 diamond
+cost				9 2
+terr                305 # Dispersing Cloud
+alterloc            194 # Cloud
+soundfx             57
+descr "The Cloud Caster repairs and strengthens dispersing clouds by combining the power of Air and Water."
+
+newritual     "Reinforce Clouds"
+ritpow              49 # Cloud Lord
+level               1
+free
+cost				8 2 # 2 sapphires and 1 diamond
+cost				9 2
+terr                306 # Unstable Cloud
+alterloc            194 # Cloud
+soundfx             57
+descr "The Cloud Caster combines the power of Air and Water to reinforce unstable clouds."
+
+newritual     "Make Clouds"
+ritpow              49 # Cloud Lord
+level               2
+rebatelvl			3
+free
+cost              	8 4 #4 diamond and sapphires, half at T2+
+cost				9 4
+apcost              1
+terr                251 # Sky
+alterloc            194 # Cloud
+soundfx             57
+descr "The Cloud Lord combines the power of Air and Water to create new clouds."
+
+#newritual "Temple Portal to Water"
+#ritpow 			49 # Cloud Lord
+#planeloc			0
+#terr				265 # Cloud Castle
+#level 				3
+#cost                15 250 # 250 gems, randomly distributed
+#cost				0 250
+#portalroom			-49
+#noportalreq		1
+#free
+#soundfx			57
+#descr "."
+
+newritual "Protection Against Air"
+ritpow				49 # Cloud Lord
+level				3
+free
+apcost				-1
+cost				9 10 #10 diamond
+bentargall			32
+soundfx				57
+descr "The Eagle Lord calls upon the power of air to shield his army from the effects of electricity. Note: Until bentarg and bentargall work properly again, this ritual's effects will only last 1 turn."
+
+newritual "Protection Against Water"
+ritpow				49 # Cloud Lord
+level				3
+free
+apcost				-1
+cost				8 15 #15 sapphire
+bentargall			8
+soundfx				57
+descr "The Eagle Lord calls upon the power of air to shield his army from the effects of cold. Note: Until bentarg and bentargall work properly again, this ritual's effects will only last 1 turn."
+
+newritual "Protection Against Arrows"
+ritpow				49 # Cloud Lord
+level				3
+free
+apcost				-1
+cost				9 15 #15 diamond
+bentargall			2048
+soundfx				57
+descr "The Eagle Lord calls upon the power of air to shield his army from ranged attacks. Note: Until bentarg and bentargall work properly again, this ritual's effects will only last 1 turn."
+
+newritual "Portal of Air"
+ritpow 				15 # Pale One Shaman
+planeloc			0
+terr				265 # Cloud castle
+level 				3
+cost                9 200 # 200 diamond
+portalroom			-50
+noportalreq			1
+free
+soundfx				57
+descr "The Cloud Lord connects his castle to the Plane of Air. Note: Elemental planes might not spawn on mapgen. Having a warlock in play should ensure they do. Cannot be used where another portal exists."
+
+####################### Kobold King Faction 23
