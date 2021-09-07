@@ -1303,11 +1303,11 @@ gems 4096
 sacr 2
 bonusrelics 2
 
-####################### Inderpendent Changes
+####################### Independent Changes
 
 newritpow
 
-newritual "Cut Dead Jungle For Resources"
+newritual "Remove the dead trees"
 level 1
 free
 cost 1 -5 #Gives 5 iron
@@ -1320,7 +1320,7 @@ addstring "1*bear"
 addstring "1d5*wolf"
 addstring "1d10*deer"
 alterloc 119 #savanna
-descr "Cut dead jungle for resources. But beware some might intervene"
+descr "Remove the dead trees"
 
 selectmonster "Captain"
 power 0 1
@@ -1340,14 +1340,14 @@ addstring "8*lion tribe"
 addstring "1d5*lion"
 addstring "1d10*spider"
 alterloc 116 #dead jungle
-descr "Cut jungle for resources. But beware some might intervene"
+descr "Harvest the jungle for its resources. But beware some might intervene"
 
 selectmonster "Captain"
 power 0 1
 
 newritpow
 
-newritual "Cut Dead Forest For Resources"
+newritual "Remove the dead trees"
 level 1
 free
 cost 1 -5 #Gives 5 iron
@@ -1360,7 +1360,7 @@ addstring "1*bear"
 addstring "1d5*wolf"
 addstring "1d10*deer"
 alterloc 0 #plain
-descr "Cut woods for resources. But beware some might intervene"
+descr "Remove the dead trees"
 
 selectmonster "Captain"
 power 0 1
@@ -1380,7 +1380,7 @@ addstring "3*bear"
 addstring "2d5*wolf"
 addstring "2d10*deer"
 alterloc 36 #Dead Forest
-descr "Cut woods for resources. But beware some might intervene"
+descr "Harvest the forest for it's resources"
 
 selectmonster "Captain"
 power 0 1
@@ -1395,12 +1395,12 @@ cost 0 -10 #Gives 10 gold
 terr 340 #Makes Spell only applicable to destroyed stuff
 apcost 2
 alterloc 0 #plain
-descr "These magic resources are needed elsewhere."
+descr "Fully dismantle the broken portal for it's resources"
 
 selectmonster "Captain"
 power 0 1
 
-newritual "Strip Old Castle Ruin For Resources"
+newritual "Strip Old Castle Ruin"
 level 1
 free
 cost 1 -40 #Gives 10 iron
@@ -1408,7 +1408,7 @@ cost 0 -15 #Gives 10 gold
 terr 38 #Makes Spell only applicable to destroyed stuff
 apcost 2
 alterloc 0 #plain
-descr "These resources are needed elsewhere."
+descr "Fully dismantle the destroyed castle for it's resources"
 
 selectmonster "Captain"
 power 0 1
@@ -1423,7 +1423,7 @@ cost 0 -10 #Gives 10 gold
 terr 184 #Makes Spell only applicable to destroyed stuff
 apcost 2
 alterloc 0 #plain
-descr "These resources are needed elsewhere."
+descr "Dismantle what's left of the ruins to use elsewhere"
 
 selectmonster "Captain"
 power 0 1
@@ -1438,7 +1438,7 @@ cost 0 -15 #Gives 15 gold
 terr 185 #Makes Spell only applicable to destroyed stuff
 apcost 2
 alterloc 0 #plain
-descr "These resources are needed elsewhere."
+descr "Dismantle what's left of the ruins to use elsewhere"
 
 selectmonster "Captain"
 power 0 1
@@ -1474,13 +1474,13 @@ summoning
 defctrl 100 #Makes The Monsters Ally
 addstring "1*Pirate Chest"
 alterloc 316 #pirate port
-descr "Set up an pirate crew and send out the crew to do our bidding with their new port."
+descr "Set up a pirate coalition and send out the crew."
 
 selectmonster "sea father"
 power 0 1
 
 newmonster "Pirate Chest"
-descr "Knowing these cuttthroats, This chest of the gangs booty is the only thing keeping them in line."
+descr "Knowing these cuttthroats, This communal chest of the gangs loot is the only thing keeping them in line."
 spr1 "sprites/Chest.tga"
 hp 10
 str 5
@@ -1506,7 +1506,7 @@ spawnoffs 1
 spawnmon 300
 
 newmonster "Privateer"
-descr "privateer in the words of the aristochry but to the common man, a jumped up cuttthroat."
+descr "privateer to the Aristocracy but to the comman man, cuttthroat."
 copystats "pirate captain"
 
 selectmonster "Privateer"
@@ -1585,7 +1585,7 @@ affres 100
 ############# Inderpendent Unit Changes
 
 newmonster "Bandit Chest"
-descr "Knowing these cuttthroats, This chest of the gangs loot is the only thing keeping them in line."
+descr "Knowing these savages, This chest of their loot is the only thing keeping them in line."
 spr1 "sprites/Chest.tga"
 hp 10
 str 5
@@ -1610,7 +1610,7 @@ stealth
 spawnmon 300
 
 newmonster "Paid Bandit"
-descr "These bandits are being paid by someone to harass the countryside." 
+descr "These bandits are being bought out by someone to harass the countryside." 
 copystats "bandit"
 
 selectmonster "Paid Bandit"
@@ -1725,7 +1725,7 @@ temple
 iron 2
 farsight
 
-#emeralds on vocanos
+#emeralds on volcanoes
 selectterr 102
 gems 1026
 
@@ -1736,7 +1736,7 @@ gems 1026
 selectritual "Raise Castle" #More terrain options. Was just farms.
 	terr -8 #Farm-village
 
-newritual     "View Kings Castle"
+newritual     "Read maps"
 ritpow                27 # monk
 level                  2
 cost              0   10 # 10 Gold
@@ -1745,9 +1745,9 @@ scryloc               35 # Scry radius 3.5 around target location.
 soundfx               70 # Sound effect when the ritual is cast: echo.wav.
 free                     # This ritual is learned for free and everyone will know it from the start if able to.
 closewin                 # Closes cast ritual window.
-descr "The king hopes to obtain a map of the castle and the surrounding area."
+descr "The king uses random maps bought from shady merchants to perhaps determine the location of the Kings Castle, or more commonly, his enemies."
 
-newritual "Outfit King's Castle" #Turns his castle into a king's castle
+newritual "Outfit the Baron's Castle" #Turns his castle into a king's castle
 	free
 	ritpow 6 #Baron rituals
 	level 2 #Baron tier
@@ -1761,7 +1761,7 @@ newritual "Outfit King's Castle" #Turns his castle into a king's castle
 	addstring "(-)Dark Emperor"
 	addstring "(-)God Emperor"
 	addstring "(-)God Emperor of the Underworld"
-	descr "Gold can buy many things in Elysium, one of them being skilled craftsmen. By spending enough hard taxed coin a baron can improve his castle to something worthy of a king. ^Any existing Kings or Emperors will no doubt stifle any efforts to do this however."
+	descr "Gold can buy many things in Elysium, one of them being skilled craftsmen. By spending enough hard taxed coin a baron can improve his own castle to something worthy of a king. ^Any existing Kings or Emperors will no doubt attempt to stifle any efforts to do this however."
 
 selectritual     "Drain Swamp"
 clearritspec
@@ -1773,7 +1773,7 @@ terr                 -20 # Required terrain: swamp/bog.
 alterloc               0 # Change target location's terrain to: Plane.
 soundfx               57 # Sound effect when the ritual is cast: orchhit.smp (summoning).
 free                     # This ritual is learned for free and everyone will know it from the start if able to.
-descr "Draining a swamp turns a useless tract of fenland into a fertile plot suitable to build a farm on."
+descr "Draining a swamp turns a useless tract of fenland into a fertile plot suitable to farm on."
 
 newritual     "Desert Fertilization"
 ritpow                27 # Monk
